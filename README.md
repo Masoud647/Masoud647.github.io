@@ -14,15 +14,15 @@ Masoud647.github.io
 Table of Contents
 -----------------
 
-1. Executive Summary[\#executivesummary](#executivesummary)
+1.  Executive Summary[\#executivesummary](#executivesummary)
 
-2. Background
+2.  Background
 
-3. Methodology
+3.  Methodology
 
-4. Concluding Remarks
+4.  Concluding Remarks
 
-5. References
+5.  References
 
 Executive Summary[\#executivesummary](#executivesummary)
 --------------------------------------------------------
