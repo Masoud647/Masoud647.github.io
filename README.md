@@ -161,7 +161,7 @@ important to start tasks as soon as possible to be able to meet deadlines.
 | **Phase 3 Total**                                                                         | **TBD**        |                                                                                                                                |
 | **Material Estimates**                                                                    | **Cost**       | **Notes**                                                                                                                      |
 | **Phase 1**                                                                               |                |                                                                                                                                |
-| Raspberry pI 3.0(Kit), HDMI, Webcam, LED lights, PCB, Speaker                             | \$189          |                                                                                                                                |
+| Raspberry pI 3.0(Kit), HDMI, Webcam, LED lights, PCB, Speaker                             | 189            |                                                                                                                                |
 | Peripherals with cables                                                                   |                |                                                                                                                                |
 | Sensors                                                                                   |                |                                                                                                                                |
 |                                                                                           |                |                                                                                                                                |
@@ -172,10 +172,10 @@ important to start tasks as soon as possible to be able to meet deadlines.
 | **Phase 2 Total**                                                                         | **TBD**        |                                                                                                                                |
 | **Phase 3**                                                                               |                |                                                                                                                                |
 | Off campus colocation                                                                     | N/A            | N/A                                                                                                                            |
-| *Shipping*                                                                                | *\$25*         |                                                                                                                                |
-| *Tax*                                                                                     | *\$18*         |                                                                                                                                |
+| *Shipping*                                                                                | *25*           |                                                                                                                                |
+| *Tax*                                                                                     | *18*           |                                                                                                                                |
 | *Duty*                                                                                    | *N/A*          |                                                                                                                                |
-| **Phase 3 Total**                                                                         | **\$43**       |                                                                                                                                |
+| **Phase 3 Total**                                                                         | **43**         |                                                                                                                                |
 
 Concluding remarks
 ------------------
