@@ -1,5 +1,3 @@
-![](media/image1.jpeg)
-
 September 13, 2016
 
 *Proposal for the development of Parts Crib DataBase*
