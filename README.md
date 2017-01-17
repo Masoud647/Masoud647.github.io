@@ -14,35 +14,37 @@ Masoud647.github.io
 Table of Contents
 -----------------
 
-1.  [Executive Summary](README.md)
+1.  Executive Summary
 
-2.  [Background](README.md)
+2.  Background
 
-3.  [Methodology](README.md)
+3.  Methodology
 
-4.  [Concluding Remarks](README.md)
+4.  Concluding Remarks
 
-5.  [References](README.md)
+5.  References
 
-[Executive Summary  
-](README.md)As a student in the Computer Engineering Technology program, I will
-be integrating the knowledge and skills I have learned from our program into
-this Internet of Things themed capstone project. This proposal requests the
-approval to build the hardware portion that will connect to a database as well
-as to a mobile device application. The internet connected hardware will include
-a custom PCB with sensors and actuators for **Parts Crib Database**. The
-database will **store information of students whom rent out items from the parts
-crib**. The mobile device functionality will include **list amount of each item
-in the parts crib and how many are left after being rented out and** will be
-further detailed in the mobile application proposal. I will be collaborating
-with the following company/department **Humber College Information Technology**.
-In the winter semester I plan to form a group with the following students, who
-are also building similar hardware this term and working on the mobile
-application with me are **Rafil Yashooa and Divesh Oree**. The hardware will be
-completed in CENG 317 Hardware Production Techniques independently and the
-application will be completed in CENG 319 Software Project. These will be
-integrated together in the subsequent term in CENG 355 Computer Systems Project
-as a member of a 2 or 3 student group.
+Executive Summary
+-----------------
+
+As a student in the Computer Engineering Technology program, I will be
+integrating the knowledge and skills I have learned from our program into this
+Internet of Things themed capstone project. This proposal requests the approval
+to build the hardware portion that will connect to a database as well as to a
+mobile device application. The internet connected hardware will include a custom
+PCB with sensors and actuators for **Parts Crib Database**. The database will
+**store information of students whom rent out items from the parts crib**. The
+mobile device functionality will include **list amount of each item in the parts
+crib and how many are left after being rented out and** will be further detailed
+in the mobile application proposal. I will be collaborating with the following
+company/department **Humber College Information Technology**. In the winter
+semester I plan to form a group with the following students, who are also
+building similar hardware this term and working on the mobile application with
+me are **Rafil Yashooa and Divesh Oree**. The hardware will be completed in CENG
+317 Hardware Production Techniques independently and the application will be
+completed in CENG 319 Software Project. These will be integrated together in the
+subsequent term in CENG 355 Computer Systems Project as a member of a 2 or 3
+student group.
 
 Background
 ----------
