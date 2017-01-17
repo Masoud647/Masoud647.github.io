@@ -1,6 +1,6 @@
 ---
-bibliography: RPiCitations.bib
 csl: apa.csl
+bibliography: RPiCitations.bib
 ---
 
 September 13, 2016
@@ -167,10 +167,8 @@ This proposal presents a plan for providing an IoT solution for Parts Crib. This
 is an opportunity to integrate the knowledge and skills developed in our program
 to create a collaborative IoT capstone project demonstrating my ability to learn
 how to support projects such as the initiative described by [3]. I request
-approval of this project.
+approval of this project.[@7374231; @5635329; @810282]
 
 **References**
 
-[@7374231; @5635329]
-
-[@810282]
+ 
