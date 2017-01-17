@@ -14,18 +14,18 @@ Masoud647.github.io
 Table of Contents
 -----------------
 
-1.  Executive Summary[\#executivesummary](#executivesummary)
+1.  [Executive Summary](README.md)
 
-2.  Background
+2.  [Background](README.md)
 
-3.  Methodology
+3.  [Methodology](README.md)
 
-4.  Concluding Remarks
+4.  [Concluding Remarks](README.md)
 
-5.  References
+5.  [References](README.md)
 
-Executive Summary[\#executivesummary](#executivesummary)
---------------------------------------------------------
+Executive Summary
+-----------------
 
 As a student in the Computer Engineering Technology program, I will be
 integrating the knowledge and skills I have learned from our program into this
