@@ -11,7 +11,21 @@ Prepared by Masoud Rahguzar
 *Computer Engineering Technology Student*  
 Masoud647.github.io
 
-**Executive Summary**
+Table of Contents
+-----------------
+
+1. Executive Summary[\#executivesummary](#executivesummary)
+
+2. Background
+
+3. Methodology
+
+4. Concluding Remarks
+
+5. References
+
+Executive Summary[\#executivesummary](#executivesummary)
+--------------------------------------------------------
 
 As a student in the Computer Engineering Technology program, I will be
 integrating the knowledge and skills I have learned from our program into this
@@ -32,7 +46,8 @@ completed in CENG 319 Software Project. These will be integrated together in the
 subsequent term in CENG 355 Computer Systems Project as a member of a 2 or 3
 student group.
 
-**Background**
+Background
+----------
 
 The problem solved by project is it will improve the efficiency of students
 taking out items from the parts crib. This project will connect to a database
@@ -73,7 +88,8 @@ following topics from the respective relevant courses:
 This knowledge and skill set will enable me to build the subsystems and
 integrate them together as my capstone project.
 
-**Methodology**
+Methodology
+-----------
 
 This proposal is assigned in the first week of class and is due at the beginning
 of class in the second week of the fall semester. My coursework will focus on
@@ -161,7 +177,8 @@ important to start tasks as soon as possible to be able to meet deadlines.
 | *Duty*                                                                                                                                                                                                                                                                                                                                | *TBD*          |                                                                                                                                |
 | **Phase 3 Total**                                                                                                                                                                                                                                                                                                                     | **TBD**        |                                                                                                                                |
 
-**Concluding remarks**
+Concluding remarks
+------------------
 
 This proposal presents a plan for providing an IoT solution for Parts Crib. This
 is an opportunity to integrate the knowledge and skills developed in our program
@@ -170,5 +187,6 @@ how to support projects such as the initiative described by [3]. I request
 approval of this project.[@7374231; @5635329; @810282]
 
 **References**
+--------------
 
  
