@@ -310,8 +310,6 @@ which will be identified by a ‘p’ character. Every item that the user will s
 will go under the student’s name for check out which will go to a database
 stored in the raspberry pI.
 
- 
-
 This application is designed for an android device. This project also cannot
 work offline due to the database being a huge part of the hardware aspect.
 However, internet availability in the college is very static and will no need to
