@@ -251,30 +251,6 @@ Application](https://github.com/Masoud647/Masoud647.github.io#234-database-with-
 
 3.  Progress Reports
 
-2.1.1 Purpose
--------------
-
-2.1.2 Product Overview
-----------------------
-
-2.1.3 Targeted Audience Group
------------------------------
-
-2.2 Product Information
------------------------
-
-2.2.1 Main Functionality
-------------------------
-
-2.2.2 Extra Requirements
-------------------------
-
-2.2.3 Best Performance
-----------------------
-
-2.3 Overall Description
------------------------
-
 1. Introduction/Overview
 ------------------------
 
@@ -314,6 +290,30 @@ This application is designed for an android device. This project also cannot
 work offline due to the database being a huge part of the hardware aspect.
 However, internet availability in the college is very static and will no need to
 be offline at anytime
+
+2.1.1 Purpose
+-------------
+
+2.1.2 Product Overview
+----------------------
+
+2.1.3 Targeted Audience Group
+-----------------------------
+
+2.2 Product Information
+-----------------------
+
+2.2.1 Main Functionality
+------------------------
+
+2.2.2 Extra Requirements
+------------------------
+
+2.2.3 Best Performance
+----------------------
+
+2.3 Overall Description
+-----------------------
 
 2.3.1 Database & work breakdown identified
 ------------------------------------------
