@@ -209,8 +209,6 @@ Illustrations and Diagrams
 2.  [Software Requirements Specifications
     (SRS)](https://github.com/Masoud647/Masoud647.github.io#system-requirements-specifications)
 
-2.1 Introduction/ Overview
-
 2.1.1 Purpose
 
 2.1.2 Product Overview
@@ -253,8 +251,32 @@ Application](https://github.com/Masoud647/Masoud647.github.io#database-with-web-
 
 3.  Progress Reports
 
-Introduction/Overview
----------------------
+2.1.1 Purpose
+-------------
+
+2.1.2 Product Overview
+----------------------
+
+2.1.3 Targeted Audience Group
+-----------------------------
+
+2.2 Product Information
+-----------------------
+
+2.2.1 Main Functionality
+------------------------
+
+2.2.2 Extra Requirements
+------------------------
+
+2.2.3 Best Performance
+----------------------
+
+2.3 Overall Description
+-----------------------
+
+1. Introduction/Overview
+------------------------
 
 The main point of this project is to create a new parts crib system that is more
 efficient and more advanced than just using paper slips to sign out item from
@@ -276,8 +298,8 @@ the information. Note: only administrators will be able to view the student
 numbers, regular users will only be able to view the inventory count of items in
 the crib.
 
-System Requirements Specifications
-----------------------------------
+2. System Requirements Specifications
+-------------------------------------
 
 The goal of this project is to create a better system for the Humber part’s crib
 system. It is a more organized way of signing in and out items. This application
@@ -286,8 +308,37 @@ device located in the parts crib. The user has to first scan the student id and
 that is recognized by the first ‘n’ character. And then scan the part number
 which will be
 
-Hardware present
-----------------
+2.3.1 Database & work breakdown identified
+------------------------------------------
+
+For our capstone project this term, we are building a PartCrib system which
+hopefully be successful enough to be used by the Humber’s parts crib department.
+This project consists of 2 major parts, hardware and software. And in order to
+have the hardware interact with the software, we need them both to be connected
+to the same database so that one can send data and the other receive data, and
+vise versa.
+
+The hardware part of this project is going to act as a scanner to scan barcode
+items and student id barcode. After it scan them successfully, the database
+would create a table for each student id it scans with a row of the exact time
+stamp and part number. Students would be able to sign out multiple items at once
+since the table can handle many rows under it.
+
+The software part would be the project’s android application and it would
+retrieve data from the database and display it live to the application. The data
+it retrieves would be based on the user’s privilege, if it was an administrator
+using the app, it would display the full database with the student numbers and
+part numbers. But if it was only a guest browsing the app, it would only display
+the inventory with the items available in stock to sign out.
+
+For the database, we are going to be using an SQL based service, the database we
+have up and running right now is firebase which doesn’t allow full access to
+retrieve data to the application. We are either going to find a solution for
+this or use an SQL server running on another computer which is going to be port
+forwarded from home.
+
+2.3.2 Hardware present
+----------------------
 
 The Humber parts crib is a project that will be able to keep track of students
 who take out and return items from the crib. This will occur because of three
@@ -323,37 +374,8 @@ order to have a more elegant design, they will also be working on the software
 application just to make sure there are no bugs and improve the design interface
 to make the application more user friendly.
 
-Database & work breakdown identified
-------------------------------------
-
-For our capstone project this term, we are building a PartCrib system which
-hopefully be successful enough to be used by the Humber’s parts crib department.
-This project consists of 2 major parts, hardware and software. And in order to
-have the hardware interact with the software, we need them both to be connected
-to the same database so that one can send data and the other receive data, and
-vise versa.
-
-The hardware part of this project is going to act as a scanner to scan barcode
-items and student id barcode. After it scan them successfully, the database
-would create a table for each student id it scans with a row of the exact time
-stamp and part number. Students would be able to sign out multiple items at once
-since the table can handle many rows under it.
-
-The software part would be the project’s android application and it would
-retrieve data from the database and display it live to the application. The data
-it retrieves would be based on the user’s privilege, if it was an administrator
-using the app, it would display the full database with the student numbers and
-part numbers. But if it was only a guest browsing the app, it would only display
-the inventory with the items available in stock to sign out.
-
-For the database, we are going to be using an SQL based service, the database we
-have up and running right now is firebase which doesn’t allow full access to
-retrieve data to the application. We are either going to find a solution for
-this or use an SQL server running on another computer which is going to be port
-forwarded from home.
-
-Application & Work Breakdown
-----------------------------
+2.3.3 Application & Work Breakdown
+----------------------------------
 
 The application for the Humber parts crib is an interactive, simple and
 user-friendly app (available only on android) that has the potential of being
@@ -373,8 +395,8 @@ the design of the app by making it user-friendly and functional. Lastly, Divesh
 Oree will be responsible for bug fixes on the app, searching issues occurring in
 the app.
 
-Database with Web Interface
----------------------------
+2.3.4 Database with Web Interface
+---------------------------------
 
 For our Humber Part Crib project, our web interface will be designed using a
 two-tier architecture where the administrator will communicate and interact with
@@ -390,3 +412,24 @@ As the database, will be connected on the Humber Server, we expect the wireless
 internet connection to be fast enough and is connected to the right access point
 so that the administrator can perform his daily task without any difficulty and
 hence making this whole project an effective one.
+
+2.4 Future Considerations
+-------------------------
+
+2.4.1 Operating Environment
+---------------------------
+
+2.4.2 Safety Considerations
+---------------------------
+
+2.4.3 Future Additions
+----------------------
+
+Conclusions
+-----------
+
+Recommendations
+---------------
+
+Progress Reports
+----------------
