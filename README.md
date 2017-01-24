@@ -303,10 +303,19 @@ the crib.
 
 The goal of this project is to create a better system for the Humber part’s crib
 system. It is a more organized way of signing in and out items. This application
-is going to receive data from a raspberry pi that will be used as our hardware
+is going to receive data from a raspberry pI that will be used as our hardware
 device located in the parts crib. The user has to first scan the student id and
 that is recognized by the first ‘n’ character. And then scan the part number
-which will be
+which will be identified by a ‘p’ character. Every item that the user will scan
+will go under the student’s name for check out which will go to a database
+stored in the raspberry pI.
+
+ 
+
+This application is designed for an android device. This project also cannot
+work offline due to the database being a huge part of the hardware aspect.
+However, internet availability in the college is very static and will no need to
+be offline at anytime
 
 2.3.1 Database & work breakdown identified
 ------------------------------------------
