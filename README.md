@@ -248,8 +248,8 @@ Illustrations and Diagrams
 
 3.  Progress Reports
 
-*Introduction/Overview*
------------------------
+Introduction/Overview
+---------------------
 
 The main point of this project is to create a new parts crib system that is more
 efficient and more advanced than just using paper slips to sign out item from
@@ -271,8 +271,8 @@ the information. Note: only administrators will be able to view the student
 numbers, regular users will only be able to view the inventory count of items in
 the crib.
 
-*System Requirements Specifications*
-------------------------------------
+System Requirements Specifications
+----------------------------------
 
 The goal of this project is to create a better system for the Humber part’s crib
 system. It is a more organized way of signing in and out items. This application
@@ -281,8 +281,8 @@ device located in the parts crib. The user has to first scan the student id and
 that is recognized by the first ‘n’ character. And then scan the part number
 which will be
 
-*Hardware present*
-------------------
+Hardware present
+----------------
 
 The Humber parts crib is a project that will be able to keep track of students
 who take out and return items from the crib. This will occur because of three
@@ -307,8 +307,8 @@ work offline due to the database being a huge part of the hardware aspect.
 However, internet availability in the college is very static and will no need to
 be offline at anytime
 
-*Workload Breakdown*
---------------------
+Workload Breakdown
+------------------
 
 As for the work breakdown, I (Rafil Yashooa) will be working with the database
 and connect the hardware aspect and software to an online server. As for Divesh
@@ -318,8 +318,8 @@ order to have a more elegant design, they will also be working on the software
 application just to make sure there are no bugs and improve the design interface
 to make the application more user friendly.
 
-*Database & work breakdown identified*
---------------------------------------
+Database & work breakdown identified
+------------------------------------
 
 For our capstone project this term, we are building a PartCrib system which
 hopefully be successful enough to be used by the Humber’s parts crib department.
@@ -347,8 +347,8 @@ retrieve data to the application. We are either going to find a solution for
 this or use an SQL server running on another computer which is going to be port
 forwarded from home.
 
-*Application & Work Breakdown*
-------------------------------
+Application & Work Breakdown
+----------------------------
 
 The application for the Humber parts crib is an interactive, simple and
 user-friendly app (available only on android) that has the potential of being
@@ -368,8 +368,8 @@ the design of the app by making it user-friendly and functional. Lastly, Divesh
 Oree will be responsible for bug fixes on the app, searching issues occurring in
 the app.
 
-*Database with Web Interface*
------------------------------
+Database with Web Interface
+---------------------------
 
 For our Humber Part Crib project, our web interface will be designed using a
 two-tier architecture where the administrator will communicate and interact with
