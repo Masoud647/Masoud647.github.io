@@ -191,7 +191,7 @@ parts crib. I request approval of this project.[@7374231; @5635329; @810282]
 **References**
 --------------
 
-\------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+\-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 Table of Contents
 -----------------
@@ -204,7 +204,7 @@ Abstract
 
 Illustrations and Diagrams
 
-1.  Introduction
+1.  [Introduction](https://github.com/Masoud647/Masoud647.github.io#introductionoverview)
 
 2.  Software Requirements Specifications (SRS)
 
@@ -226,13 +226,17 @@ Illustrations and Diagrams
 
 2.3 Overall Description
 
-2.3.1 Database
+2.3.1
+[Database](https://github.com/Masoud647/Masoud647.github.io#database--work-breakdown-identified)
 
-2.3.2 Hardware Present
+2.3.2 [Hardware
+Present](https://github.com/Masoud647/Masoud647.github.io#hardware-present)
 
-2.3.3 Mobile Application
+2.3.3 [Mobile
+Application](https://github.com/Masoud647/Masoud647.github.io#application--work-breakdown)
 
-2.3.4 Web Application
+2.3.4 [Web
+Application](https://github.com/Masoud647/Masoud647.github.io#database-with-web-interface)
 
 2.4 Future Considerations
 
