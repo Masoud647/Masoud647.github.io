@@ -204,10 +204,10 @@ Abstract
 
 Illustrations and Diagrams
 
-1.  [Introduction](https://github.com/Masoud647/Masoud647.github.io#introductionoverview)
+1.  [Introduction](https://github.com/Masoud647/Masoud647.github.io#1-introductionoverview)
 
 2.  [Software Requirements Specifications
-    (SRS)](https://github.com/Masoud647/Masoud647.github.io#system-requirements-specifications)
+    (SRS)](https://github.com/Masoud647/Masoud647.github.io#2-system-requirements-specifications)
 
 2.1.1 Purpose
 
@@ -226,16 +226,16 @@ Illustrations and Diagrams
 2.3 Overall Description
 
 2.3.1
-[Database](https://github.com/Masoud647/Masoud647.github.io#database--work-breakdown-identified)
+[Database](https://github.com/Masoud647/Masoud647.github.io#231-database--work-breakdown-identified)
 
 2.3.2 [Hardware
-Present](https://github.com/Masoud647/Masoud647.github.io#hardware-present)
+Present](https://github.com/Masoud647/Masoud647.github.io#232-hardware-present)
 
 2.3.3 [Mobile
-Application](https://github.com/Masoud647/Masoud647.github.io#application--work-breakdown)
+Application](https://github.com/Masoud647/Masoud647.github.io#233-application--work-breakdown)
 
 2.3.4 [Web
-Application](https://github.com/Masoud647/Masoud647.github.io#database-with-web-interface)
+Application](https://github.com/Masoud647/Masoud647.github.io#234-database-with-web-interface)
 
 2.4 Future Considerations
 
