@@ -191,4 +191,197 @@ parts crib. I request approval of this project.[@7374231; @5635329; @810282]
 **References**
 --------------
 
- 
+\------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Table of Contents
+-----------------
+
+Declaration of Sole Authorship
+
+Approved Proposal
+
+Abstract
+
+Illustrations and Diagrams
+
+1.  Introduction
+
+2.  Software Requirements Specifications (SRS)
+
+2.1 Introduction/ Overview
+
+2.1.1 Purpose
+
+2.1.2 Product Overview
+
+2.1.3 Targeted Audience Group
+
+2.2 Product Information
+
+2.2.1 Main Functionality
+
+2.2.2 Extra Requirements
+
+2.2.3 Best Performance
+
+2.3 Overall Description
+
+2.3.1 Database
+
+2.3.2 Hardware Present
+
+2.3.3 Mobile Application
+
+2.3.4 Web Application
+
+2.4 Future Considerations
+
+2.4.1 Operating Environment
+
+2.4.2 Safety Considerations
+
+2.4.3 Future Additions
+
+1.  Conclusions
+
+2.  Recommendations
+
+3.  Progress Reports
+
+*Introduction/Overview*
+-----------------------
+
+The main point of this project is to create a new parts crib system that is more
+efficient and more advanced than just using paper slips to sign out item from
+the crib. What I have in mind for the project is to create a barcode scanner
+using either a web cam or either a laser scanner (if we can afford one) to scan
+student numbers and items that will be checked out by the students.
+
+So, when a student comes to the parts crib for an item, they will be assigned a
+barcode will their student number if it’s their first time coming and then
+they’ll be ready for item take out. All the administrator has to do then is to
+scan the student number and then start scanning then items that that user
+requested as they will each have a barcode. After the scanning is done, the user
+is ready to go and their student number will be stored in the local database on
+the raspberry pi.
+
+The barcode scanned will be processed by the raspberry pI which will store it on
+the SQL database and then the application fetches from the database and displays
+the information. Note: only administrators will be able to view the student
+numbers, regular users will only be able to view the inventory count of items in
+the crib.
+
+*System Requirements Specifications*
+------------------------------------
+
+The goal of this project is to create a better system for the Humber part’s crib
+system. It is a more organized way of signing in and out items. This application
+is going to receive data from a raspberry pi that will be used as our hardware
+device located in the parts crib. The user has to first scan the student id and
+that is recognized by the first ‘n’ character. And then scan the part number
+which will be
+
+*Hardware present*
+------------------
+
+The Humber parts crib is a project that will be able to keep track of students
+who take out and return items from the crib. This will occur because of three
+main hardware components; the raspberry pi, a camera, and barcodes. The
+raspberry pi is basically single-board computer which will be the brains of the
+project by computing and keeping track of all the student’s activity in the
+parts crib by using the code/program implement by us the developers. Secondly,
+the camera, an important hardware component because it will be used to scan
+items in the parts crib which then will be sent to the raspberry pi. Lastly, the
+paper barcodes will be used to identify the items in the parts crib when scanned
+by the camera. In addition, the Humber parts crib project will have additional
+hardware components such as LED lights to notify when an item is scanned or when
+it is unable to be scanned and there will also be a sound bar implementing the
+LED characteristics but with sound.
+
+identified by a ‘p’ character. Every item that the user will scan will go under
+the student’s name for check out which will go to a database stored in the
+raspberry pi.
+
+This application is designed for an android device. This project also cannot
+work offline due to the database being a huge part of the hardware aspect.
+However, internet availability in the college is very static and will no need to
+be offline at anytime
+
+*Workload Breakdown*
+--------------------
+
+As for the work breakdown, I (Rafil Yashooa) will be working with the database
+and connect the hardware aspect and software to an online server. As for Divesh
+Oree and Masoud Rahguzar they will be improving the design of the hardware and
+software by printing and soldering a PCB to fit the speaker and LED light in
+order to have a more elegant design, they will also be working on the software
+application just to make sure there are no bugs and improve the design interface
+to make the application more user friendly.
+
+*Database & work breakdown identified*
+--------------------------------------
+
+For our capstone project this term, we are building a PartCrib system which
+hopefully be successful enough to be used by the Humber’s parts crib department.
+This project consists of 2 major parts, hardware and software. And in order to
+have the hardware interact with the software, we need them both to be connected
+to the same database so that one can send data and the other receive data, and
+vise versa.
+
+The hardware part of this project is going to act as a scanner to scan barcode
+items and student id barcode. After it scan them successfully, the database
+would create a table for each student id it scans with a row of the exact time
+stamp and part number. Students would be able to sign out multiple items at once
+since the table can handle many rows under it.
+
+The software part would be the project’s android application and it would
+retrieve data from the database and display it live to the application. The data
+it retrieves would be based on the user’s privilege, if it was an administrator
+using the app, it would display the full database with the student numbers and
+part numbers. But if it was only a guest browsing the app, it would only display
+the inventory with the items available in stock to sign out.
+
+For the database, we are going to be using an SQL based service, the database we
+have up and running right now is firebase which doesn’t allow full access to
+retrieve data to the application. We are either going to find a solution for
+this or use an SQL server running on another computer which is going to be port
+forwarded from home.
+
+*Application & Work Breakdown*
+------------------------------
+
+The application for the Humber parts crib is an interactive, simple and
+user-friendly app (available only on android) that has the potential of being
+very useful for students at Humber. The app will consist of two types of users,
+the first being the student user and the second being the administrator. The
+student users in the app will only have access to the inventory status of the
+items in the parts crib. The administrator users will have a username and
+password that will give them access to everything in the app such as inventory
+status, database, add items and delete items. The way the app will continuously
+update the inventory status is by the use of a database program called firebase.
+
+The work break down will consist of three sections the first is the database,
+the second is the design and the last section is bug fixes. Rafil Yashooa will
+be responsible for the database which he will connect the app and the hardware
+together to work seamlessly together. Masoud Rahguzar will be responsible for
+the design of the app by making it user-friendly and functional. Lastly, Divesh
+Oree will be responsible for bug fixes on the app, searching issues occurring in
+the app.
+
+*Database with Web Interface*
+-----------------------------
+
+For our Humber Part Crib project, our web interface will be designed using a
+two-tier architecture where the administrator will communicate and interact with
+a server. The web application will be based on a Java platform where it will
+communicate directly with a firebase database by using the appropriate Java
+Database Connectivity API. The latter will use his credentials that is his email
+address and password in order to log in. Inside the database, the administrator
+will have the privilege to check all the items available in the inventory,
+remove a student once the items have been returned, and also add a new student
+with the item parts which are being signed out from the crib.
+
+As the database, will be connected on the Humber Server, we expect the wireless
+internet connection to be fast enough and is connected to the right access point
+so that the administrator can perform his daily task without any difficulty and
+hence making this whole project an effective one.
