@@ -488,15 +488,15 @@ connected to a rapid internet connection.
 
 Safety precautions to take into consideration:
 
-Protect the device from any liquid exposure and always wear safety glasses
+-   Protect the device from any liquid exposure and always wear safety glasses
 
-Check your connections first before powering the raspberry Pi
+-   Check your connections first before powering the raspberry Pi
 
-Always have your username and password , in order to have access to the database
-web interface
+-   Always have your username and password , in order to have access to the
+    database web interface
 
-Remember to sign students off after they return the parts in order to avoid
-database stack overflow
+-   Remember to sign students off after they return the parts in order to avoid
+    database stack overflow
 
 2.4.3 Future Additions
 ----------------------
@@ -577,6 +577,4 @@ programming for this stage.
 Links to the web application:
 [http://munro.humber.ca/\~n01040349/](http://munro.humber.ca/%7En01040349/)
 
-User: admin
-
-Pass: root
+ 
