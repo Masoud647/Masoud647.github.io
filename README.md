@@ -231,12 +231,9 @@ Application](https://github.com/Masoud647/Masoud647.github.io#234-database-with-
 2.4.3 Future Additions
 
 2.4.4 Work Breakdown
-
-4. Conclusions
-
+4. Conclusion
 5. Recommendations
-
-6. Progress Reports
+6. Progress Report
 
 Declaration of Joint Authorship
 -------------------------------
