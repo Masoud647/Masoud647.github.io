@@ -235,9 +235,10 @@ Environment](https://github.com/Masoud647/Masoud647.github.io#241-operating-envi
 [2.4.2 Safety
 Considerations](https://github.com/Masoud647/Masoud647.github.io#242-safety-considerations)
 
-[2.4.3 Future Additions  
-](https://github.com/Masoud647/Masoud647.github.io#243-future-additions)[2.4.4
-Work
+[2.4.3 Future
+Additions](https://github.com/Masoud647/Masoud647.github.io#243-future-additions)
+
+[2.4.4 Work
 Breakdown](https://github.com/Masoud647/Masoud647.github.io#244-workload-breakdown)
 
 [3. Conclusions](https://github.com/Masoud647/Masoud647.github.io#3-conclusions)
