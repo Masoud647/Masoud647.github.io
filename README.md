@@ -88,8 +88,8 @@ Phase 3 Demonstration to future employers.
 *Phase 1 Hardware build*
 
 The hardware build will be completed in the fall term. It will fit within the
-CENG Project maximum dimensions of 7.0" x 4.50" x 4.50" (17.78cm x 11.43cm x
-11.43cm) which represents the space below the tray in the parts kit. The highest
+CENG Project maximum dimensions of 12 13/16" x 6" x 2 7/8" (32.5cm x 15.25cm x
+7.25cm) which represents the space below the tray in the parts kit. The highest
 AC voltage that will be used is 16Vrms from a wall adaptor from which +/- 15V or
 as high as 45 VDC can be obtained. Maximum power consumption will be 20 Watts.
 
