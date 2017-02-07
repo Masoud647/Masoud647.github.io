@@ -232,11 +232,11 @@ Application](https://github.com/Masoud647/Masoud647.github.io#234-database-with-
 
 2.4.4 Work Breakdown
 
-3. Conclusions
+4. Conclusions
 
-4. Recommendations
+5. Recommendations
 
-5. Progress Reports
+6. Progress Reports
 
 Declaration of Joint Authorship
 -------------------------------
@@ -303,7 +303,7 @@ device located in the parts crib. The user has to first scan the student id and
 that is recognized by the first ‘n’ character. And then scan the part number
 which will be identified by a ‘p’ character. Every item that the user will scan
 will go under the student’s name for check out which will go to a database
-stored in the raspberry pI.
+stored in the raspberry pi.
 
 This application is designed for an android device. This project also cannot
 work offline due to the database being a huge part of the hardware aspect.
@@ -389,8 +389,8 @@ work offline due to the database being a huge part of the hardware aspect.
 However, internet availability in the college is very static and will no need to
 be offline at anytime
 
-2.3.3 Application 
-------------------
+2.3.3 Application
+-----------------
 
 The application for the Humber parts crib is an interactive, simple and
 user-friendly app (available only on android) that has the potential of being
