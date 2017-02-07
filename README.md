@@ -458,3 +458,52 @@ user-friendly and functional.
 
 5. Progress Reports
 -------------------
+
+Progress Report
+
+At this moment on week 4, we are supposed to handle in our progress report
+stating the progress of the whole project.  On Week 2, we submitted our proposal
+and port it into Markdown and the two relevant pages printed out, the one with
+the inline citations and one with the references list. On week 3, we submitted
+our SRS (Requirement specification) which included the following sections:
+
+1.  Hardware present
+
+2.  Skeleton with SRS completed
+
+3.  Database and work breakdown
+
+4.  Application and work breakdown
+
+5.  Web and web breakdown 
+
+As of week 4 we are all on track according to our project schedule, we have
+started working on the web application for our project, the application is
+connected to a firebase server and currently has the functionality of fetching
+live data from the database. The application has 3 main functionalities, ‘sign
+out item’ which lets the administrator scan student ids and the part numbers. A
+‘Return Item’ which lets the administrator scan or manually input the student id
+and then ability to return parts all at once. And finally a ‘View database’
+button which lets the admin access the full database with all the current
+holdings, it also tells you the number of people that have items signed out in
+total and a search option which is a work of progress as of right now. The
+application was build using HTML, JavaScript and JSP for the login credentials.
+
+As for the problems we encountered, the search option still does not work
+properly, it only displays the last item in the database list and doesn’t find a
+result for the entries above. I’m hoping to fix sometime tomorrow or at the end
+of this day. The next step is to insert data from the raspberry pi into the
+database and them after, fetch that data and use it for the following
+functionalities.
+
+We have not exceeded our financial status as our project consists of only
+programming for this stage.
+
+ 
+
+Links to the web application:
+[http://munro.humber.ca/\~n01040349/](http://munro.humber.ca/%7En01040349/)
+
+User: admin
+
+Pass: root
