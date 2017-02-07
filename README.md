@@ -275,7 +275,7 @@ efficient and reliable, instead of the present way of using paper slips that are
 used to sign out items. The parts crib is an area that is used for technology
 students at Humber who can sign out hardware items that can be useful for labs
 and projects which is very useful. Our project will consist of three major
-hardware parts the Raspberry pi, webcam and barcodes. Raspberry pi is the brain
+hardware parts the Raspberry pi, webcam and barcodes. Raspberry Pi is the brain
 of the operation computing and processing all the actives in the parts crib. The
 webcam is the eyes of the operation by scanning the barcodes. Lastly, the
 barcodes hold the information to identify each item in the parts crib and
