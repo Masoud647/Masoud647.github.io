@@ -319,11 +319,27 @@ be offline at anytime
 2.1.1 Purpose
 -------------
 
+This project is a collaboration of the Humber Parts Crib which will allows
+students to sign off items for their labs on regular basis. Our main objective
+and goal is to make the Humber Parts Crib more effective by using cutting edge
+technologies.
+
 2.1.2 Product Overview
 ----------------------
 
+The main product that we will be using is a Raspberry Pi 3, a camera, a
+well-designed PCB with the LEDs and speaker mounted on it. All of these
+component will be assembled inside a case for the safety and provide a better
+presentation of the project.
+
 2.1.3 Targeted Audience Group
 -----------------------------
+
+The main targeted audience group will be the students studying at Humber
+College, mostly in engineering programs. The administrator will obviously have
+to be a staff of the college in order to be able to use it. This device will
+allow students to sign parts much quicker and help us to reduce the usage of
+paper.
 
 2.2 Product Information
 -----------------------
@@ -331,11 +347,32 @@ be offline at anytime
 2.2.1 Main Functionality
 ------------------------
 
+The functionality is pretty simple. Basically, we will have a camera which we
+will use in order to scan the barcode strip on the student card and that barcode
+information will be processed by the raspberry pi 3 and will get input
+electronically in the system. On the new custom made PCB, we will mount a
+speaker and the LEDs which will allow the user to recognize if the barcode got
+scanned successfully or not.
+
 2.2.2 Extra Requirements
 ------------------------
 
+In order to be able to use the device and have access to the database web
+interface, it is important that we have internet connection as everything will
+be connected on a server. As an extra requirement, we might use an RF scanner
+(we are planning on discussing with our Professor first before moving forward)
+in order to speed up the scanning of barcodes.
+
 2.2.3 Best Performance
 ----------------------
+
+As stated above, we will mount both the LEDs and the speaker on a newly designed
+PCB instead of having them connected separately. The LEDs will toggle a green
+light if scanning is successful and then red if unsuccessful. The speaker will
+produce a “beep” sound which will allow the admin to recognize whether the
+barcode got scanned or not. We also decided that we will consider designing,
+building a stand and attaching it to the case which will hold the student card
+in order to provide a best performance when it comes to scanning the barcode.
 
 2.3 Overall Description
 -----------------------
@@ -432,11 +469,30 @@ hence making this whole project an effective one.
 2.4.1 Operating Environment
 ---------------------------
 
+In order to be able to use this device, you will need a system which is
+connected to a rapid internet connection.
+
 2.4.2 Safety Considerations
 ---------------------------
 
+Safety precautions to take into consideration:
+
+Protect the device from any liquid exposure and always wear safety glasses
+
+Check your connections first before powering the raspberry Pi
+
+Always have your username and password , in order to have access to the database
+web interface
+
+Remember to sign students off after they return the parts in order to avoid
+database stack overflow
+
 2.4.3 Future Additions
 ----------------------
+
+We might consider on designing and cutting out a new acrylic case as the
+previous one that we made was a bit too big. Also, as mentioned above regarding
+the RF scanner, we will make the stand first and see how it works.
 
 2.4.4 Workload Breakdown
 ------------------------
@@ -452,6 +508,12 @@ user-friendly and functional.
 
 3. Conclusions
 --------------
+
+Divesh is responsible for mounting the hardware. He will also work with Masoud
+in order to get the PCB designed and printed in order to have the LEDs and
+speakers ready. Rafel is in charge for the database. However, we have decided
+that we will help each other throughout the development of this project in order
+to come out with a more productive and realistic project.
 
 4. Recommendations
 ------------------
