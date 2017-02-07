@@ -250,6 +250,12 @@ project is divide equally.
 Approved Proposal
 -----------------
 
+*Proposal for the development of Parts Crib DataBase*
+
+Prepared by Masoud Rahguzar, Divesh Oree, Rafil Yashooa  
+*Computer Engineering Technology Student*  
+Masoud647.github.io
+
 Abstract
 --------
 
