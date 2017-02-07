@@ -238,14 +238,37 @@ Application](https://github.com/Masoud647/Masoud647.github.io#234-database-with-
 
 5. Progress Reports
 
-Declaration of Sole Authorship
-------------------------------
+Declaration of Joint Authorship
+-------------------------------
+
+The work that is specified in this report is a joint project by Masoud Rahguzar,
+Rafil Yashooa, and Divesh Oree. The work that has been done is our own and is
+expressed in our own words. We have clearly defined all work cited using the APA
+format expressing the authors/owners and their information. All work in this
+project is divide equally.
 
 Approved Proposal
 -----------------
 
 Abstract
 --------
+
+The reason for this project is to develop a new parts crib system that is
+efficient and reliable, instead of the present way of using paper slips that are
+used to sign out items. The parts crib is an area that is used for technology
+students at Humber who can sign out hardware items that can be useful for labs
+and projects which is very useful. Our project will consist of three major
+hardware parts the Raspberry pi, webcam and barcodes. Raspberry pi is the brain
+of the operation computing and processing all the active in the parts crib. The
+webcam is the eyes of the operation by scanning the barcodes. Lastly, the
+barcodes hold the information to identify each item in the parts crib and
+students who take out items. All information will be fetched to a database that
+will categorized using firebase. The database will be working along with our app
+and website, these applications will be used for showing the inventory status of
+the parts crib. In addition, the applications will also be used for the
+administrator (individual who works at the parts crib.) whom will have
+additional options to manipulate the inventory status and the students who took
+out items. This is brief description of our project.
 
 1. Introduction/Overview
 ------------------------
