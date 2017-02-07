@@ -203,8 +203,9 @@ Overview](https://github.com/Masoud647/Masoud647.github.io#212-product-overview)
 Group](https://github.com/Masoud647/Masoud647.github.io#213-targeted-audience-group)
 
 [2.2 Product Information  
-](https://github.com/Masoud647/Masoud647.github.io#221-main-functionality)2.2.1
-Main Functionality
+](https://github.com/Masoud647/Masoud647.github.io#221-main-functionality)[2.2.1
+Main
+Functionality](https://github.com/Masoud647/Masoud647.github.io#221-main-functionality)
 
 [2.2.2 Extra
 Requirements](https://github.com/Masoud647/Masoud647.github.io#222-extra-requirements)
@@ -286,7 +287,7 @@ additional options to manipulate the inventory status and the students who took
 out items. This is brief description of our project.
 
 1. Introduction/Overview
-------------------------
+========================
 
 The main point of this project is to create a new parts crib system that is more
 efficient and more advanced than just using paper slips to sign out item from
@@ -309,7 +310,7 @@ numbers, regular users will only be able to view the inventory count of items in
 the crib.
 
 2. System Requirements Specifications
--------------------------------------
+=====================================
 
 The goal of this project is to create a better system for the Humber part’s crib
 system. It is a more organized way of signing in and out items. This application
@@ -384,7 +385,7 @@ building a stand and attaching it to the case which will hold the student card
 in order to provide a best performance when it comes to scanning the barcode.
 
 2.3 Overall Description
------------------------
+=======================
 
 2.3.1 Database
 --------------
@@ -473,7 +474,7 @@ so that the administrator can perform his daily task without any difficulty and
 hence making this whole project an effective one.
 
 2.4 Future Considerations
--------------------------
+=========================
 
 2.4.1 Operating Environment
 ---------------------------
@@ -516,7 +517,7 @@ will be responsible for the software of the app and website by making
 user-friendly and functional.
 
 3. Conclusions
---------------
+==============
 
 Divesh is responsible for mounting the hardware. He will also work with Masoud
 in order to get the PCB designed and printed in order to have the LEDs and
@@ -525,10 +526,10 @@ that we will help each other throughout the development of this project in order
 to come out with a more productive and realistic project.
 
 4. Recommendations
-------------------
+==================
 
 5. Progress Reports
--------------------
+===================
 
 Progress Report
 
