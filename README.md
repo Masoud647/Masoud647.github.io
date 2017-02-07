@@ -3,7 +3,7 @@ csl: apa.csl
 bibliography: RPiCitations.bib
 ---
 
-January 17, 2017
+Winter 2017
 
 *Proposal for the development of Parts Crib DataBase*
 
