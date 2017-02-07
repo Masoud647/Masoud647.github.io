@@ -238,6 +238,15 @@ Application](https://github.com/Masoud647/Masoud647.github.io#234-database-with-
 
 5. Progress Reports
 
+Declaration of Sole Authorship
+------------------------------
+
+Approved Proposal
+-----------------
+
+Abstract
+--------
+
 1. Introduction/Overview
 ------------------------
 
@@ -266,7 +275,7 @@ the crib.
 
 The goal of this project is to create a better system for the Humber part’s crib
 system. It is a more organized way of signing in and out items. This application
-is going to receive data from a raspberry pI that will be used as our hardware
+is going to receive data from a Raspberry Pi that will be used as our hardware
 device located in the parts crib. The user has to first scan the student id and
 that is recognized by the first ‘n’ character. And then scan the part number
 which will be identified by a ‘p’ character. Every item that the user will scan
