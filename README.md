@@ -245,7 +245,7 @@ The work that is specified in this report is a joint project by Masoud Rahguzar,
 Rafil Yashooa, and Divesh Oree. The work that has been done is our own and is
 expressed in our own words. We have clearly defined all work cited using the APA
 format expressing the authors/owners and their information. All work in this
-project is divide equally.
+project is equally divided.
 
 Approved Proposal
 -----------------
