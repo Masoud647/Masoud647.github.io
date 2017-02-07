@@ -11,21 +11,6 @@ Prepared by Masoud Rahguzar, Divesh Oree, Rafil Yashooa
 *Computer Engineering Technology Student*  
 Masoud647.github.io
 
-Table of Contents
------------------
-
-1.  [Executive
-    Summary](https://github.com/Masoud647/Masoud647.github.io#executive-summary)
-
-2.  [Background](https://github.com/Masoud647/Masoud647.github.io#background)
-
-3.  [Methodology](https://github.com/Masoud647/Masoud647.github.io#methodology)
-
-4.  [Concluding
-    Remarks](https://github.com/Masoud647/Masoud647.github.io#concluding-remarks)
-
-5.  [References](https://github.com/Masoud647/Masoud647.github.io#references)
-
 Executive Summary
 -----------------
 
@@ -228,8 +213,8 @@ Illustrations and Diagrams
 2.3.1
 [Database](https://github.com/Masoud647/Masoud647.github.io#231-database--work-breakdown-identified)
 
-2.3.2 [Hardware
-Present](https://github.com/Masoud647/Masoud647.github.io#232-hardware-present)
+2.3.2
+[Hardware](https://github.com/Masoud647/Masoud647.github.io#232-hardware-present)
 
 2.3.3 [Mobile
 Application](https://github.com/Masoud647/Masoud647.github.io#233-application--work-breakdown)
@@ -245,11 +230,13 @@ Application](https://github.com/Masoud647/Masoud647.github.io#234-database-with-
 
 2.4.3 Future Additions
 
-1.  Conclusions
+2.4.4 Work Breakdown
 
-2.  Recommendations
+3. Conclusions
 
-3.  Progress Reports
+4. Recommendations
+
+5. Progress Reports
 
 1. Introduction/Overview
 ------------------------
@@ -315,8 +302,8 @@ be offline at anytime
 2.3 Overall Description
 -----------------------
 
-2.3.1 Database & work breakdown identified
-------------------------------------------
+2.3.1 Database
+--------------
 
 For our capstone project this term, we are building a PartCrib system which
 hopefully be successful enough to be used by the Humber’s parts crib department.
@@ -344,8 +331,8 @@ retrieve data to the application. We are either going to find a solution for
 this or use an SQL server running on another computer which is going to be port
 forwarded from home.
 
-2.3.2 Hardware present
-----------------------
+2.3.2 Hardware
+--------------
 
 The Humber parts crib is a project that will be able to keep track of students
 who take out and return items from the crib. This will occur because of three
@@ -370,19 +357,8 @@ work offline due to the database being a huge part of the hardware aspect.
 However, internet availability in the college is very static and will no need to
 be offline at anytime
 
-Workload Breakdown
+2.3.3 Application 
 ------------------
-
-As for the work breakdown, I (Rafil Yashooa) will be working with the database
-and connect the hardware aspect and software to an online server. As for Divesh
-Oree and Masoud Rahguzar they will be improving the design of the hardware and
-software by printing and soldering a PCB to fit the speaker and LED light in
-order to have a more elegant design, they will also be working on the software
-application just to make sure there are no bugs and improve the design interface
-to make the application more user friendly.
-
-2.3.3 Application & Work Breakdown
-----------------------------------
 
 The application for the Humber parts crib is an interactive, simple and
 user-friendly app (available only on android) that has the potential of being
@@ -393,14 +369,6 @@ items in the parts crib. The administrator users will have a username and
 password that will give them access to everything in the app such as inventory
 status, database, add items and delete items. The way the app will continuously
 update the inventory status is by the use of a database program called firebase.
-
-The work break down will consist of three sections the first is the database,
-the second is the design and the last section is bug fixes. Rafil Yashooa will
-be responsible for the database which he will connect the app and the hardware
-together to work seamlessly together. Masoud Rahguzar will be responsible for
-the design of the app by making it user-friendly and functional. Lastly, Divesh
-Oree will be responsible for bug fixes on the app, searching issues occurring in
-the app.
 
 2.3.4 Database with Web Interface
 ---------------------------------
@@ -432,11 +400,23 @@ hence making this whole project an effective one.
 2.4.3 Future Additions
 ----------------------
 
-Conclusions
------------
+2.4.4 Workload Breakdown
+------------------------
 
-Recommendations
----------------
+The work break down will consist of three sections the first is the database,
+the second is the hardware and the last section is software. Rafil Yashooa will
+be responsible for the database which he will connect the app/website and the
+hardware together to work seamlessly together. Masoud Rahguzar will be
+responsible for the hardware, printing a PCB which will connect the speaker to
+the Raspberry Pi and many other additional hardware aspects. Lastly, Divesh Oree
+will be responsible for the software of the app and website by making
+user-friendly and functional.
 
-Progress Reports
-----------------
+3. Conclusions
+--------------
+
+4. Recommendations
+------------------
+
+5. Progress Reports
+-------------------
