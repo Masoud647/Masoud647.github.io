@@ -181,7 +181,7 @@ References
 Table of Contents
 -----------------
 
-Declaration of Sole Authorship
+Declaration of Joint Authorship
 
 Approved Proposal
 
