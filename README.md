@@ -3,9 +3,19 @@ csl: apa.csl
 bibliography: RPiCitations.bib
 ---
 
-Winter 2017
+Declaration of Joint Authorship
+-------------------------------
 
-*Proposal for the development of Parts Crib DataBase*
+The work that is specified in this report is a joint project by Masoud Rahguzar,
+Rafil Yashooa, and Divesh Oree. The work that has been done is our own and is
+expressed in our own words. We have clearly defined all work cited using the APA
+format expressing the authors/owners and their information. All work in this
+project is equally divided defined in section 2.4.4.
+
+Approved Proposal
+-----------------
+
+*Technicap Report for the development of Parts Crib DataBase*
 
 Prepared by Masoud Rahguzar, Divesh Oree, Rafil Yashooa  
 *Computer Engineering Technology Student*  
@@ -173,10 +183,28 @@ to create a collaborative IoT capstone project demonstrating my ability to learn
 how to support projects such as the initiative described by our group, Humber
 parts crib. I request approval of this project.[@7374231; @5635329; @810282]
 
-References
-----------
+ 
+-
 
-\------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Abstract
+--------
+
+The reason for this project is to develop a new parts crib system that is
+efficient and reliable, instead of the present way of using paper slips that are
+used to sign out items. The parts crib is an area that is used for technology
+students at Humber who can sign out hardware items that can be useful for labs
+and projects which is very useful. Our project will consist of three major
+hardware parts the Raspberry pi, webcam and barcodes. Raspberry Pi is the brain
+of the operation computing and processing all the actives in the parts crib. The
+webcam is the eyes of the operation by scanning the barcodes. Lastly, the
+barcodes hold the information to identify each item in the parts crib and
+students who take out items. All information will be fetched to a database that
+will categorized using firebase. The database will be working along with our app
+and website, these applications will be used for showing the inventory status of
+the parts crib. In addition, the applications will also be used for the
+administrator (individual who works at the parts crib.) whom will have
+additional options to manipulate the inventory status and the students who took
+out items. This is brief description of our project.
 
 Table of Contents
 -----------------
@@ -241,51 +269,12 @@ Additions](https://github.com/Masoud647/Masoud647.github.io#243-future-additions
 [2.4.4 Work
 Breakdown](https://github.com/Masoud647/Masoud647.github.io#244-workload-breakdown)
 
+2.4.5 Progress Reports
+
 [3. Conclusions](https://github.com/Masoud647/Masoud647.github.io#3-conclusions)
 
 [4.
-Recommendations](https://github.com/Masoud647/Masoud647.github.io#4-recommendations)
-
-[5. Progress
-Reports](https://github.com/Masoud647/Masoud647.github.io#5-progress-reports)
-
-Declaration of Joint Authorship
--------------------------------
-
-The work that is specified in this report is a joint project by Masoud Rahguzar,
-Rafil Yashooa, and Divesh Oree. The work that has been done is our own and is
-expressed in our own words. We have clearly defined all work cited using the APA
-format expressing the authors/owners and their information. All work in this
-project is equally divided.
-
-Approved Proposal
------------------
-
-*Proposal for the development of Parts Crib DataBase*
-
-Prepared by Masoud Rahguzar, Divesh Oree, Rafil Yashooa  
-*Computer Engineering Technology Student*  
-Masoud647.github.io
-
-Abstract
---------
-
-The reason for this project is to develop a new parts crib system that is
-efficient and reliable, instead of the present way of using paper slips that are
-used to sign out items. The parts crib is an area that is used for technology
-students at Humber who can sign out hardware items that can be useful for labs
-and projects which is very useful. Our project will consist of three major
-hardware parts the Raspberry pi, webcam and barcodes. Raspberry Pi is the brain
-of the operation computing and processing all the actives in the parts crib. The
-webcam is the eyes of the operation by scanning the barcodes. Lastly, the
-barcodes hold the information to identify each item in the parts crib and
-students who take out items. All information will be fetched to a database that
-will categorized using firebase. The database will be working along with our app
-and website, these applications will be used for showing the inventory status of
-the parts crib. In addition, the applications will also be used for the
-administrator (individual who works at the parts crib.) whom will have
-additional options to manipulate the inventory status and the students who took
-out items. This is brief description of our project.
+Recommendations](https://github.com/Masoud647/Masoud647.github.io#4-recommendationshttps://github.com/Masoud647/Masoud647.github.io#5-progress-reports)
 
 1. Introduction/Overview
 ========================
@@ -510,27 +499,14 @@ the RF scanner, we will make the stand first and see how it works.
 
 The work break down will consist of three sections the first is the database,
 the second is the hardware and the last section is software. Rafil Yashooa will
-be responsible for the database which he will connect the app/website and the
-hardware together to work seamlessly together. Masoud Rahguzar will be
-responsible for the hardware, printing a PCB which will connect the speaker to
-the Raspberry Pi and many other additional hardware aspects. Lastly, Divesh Oree
-will be responsible for the software of the app and website by making
-user-friendly and functional.
+be responsible for the database which he will connected to the website
+application and the hardware to work seamlessly together. Masoud Rahguzar will
+be responsible for the hardware, printing a PCB which will connect the speaker
+to the Raspberry Pi, Acrylic case using corel draw. Lastly, Divesh Oree will be
+updating and improving the mobile application for inventory use.
 
-3. Conclusions
-==============
-
-Divesh is responsible for mounting the hardware. He will also work with Masoud
-in order to get the PCB designed and printed in order to have the LEDs and
-speakers ready. Rafel is in charge for the database. However, we have decided
-that we will help each other throughout the development of this project in order
-to come out with a more productive and realistic project.
-
-4. Recommendations
-==================
-
-5. Progress Reports
-===================
+2.4.5 Progress Reports
+----------------------
 
 Progress Report
 
@@ -576,5 +552,11 @@ programming for this stage.
 
 Links to the web application:
 [http://munro.humber.ca/\~n01040349/](http://munro.humber.ca/%7En01040349/)
+
+3. Conclusions
+==============
+
+4. Recommendations
+==================
 
  
