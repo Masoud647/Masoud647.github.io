@@ -504,8 +504,9 @@ the second is the hardware and the last section is software. Rafil Yashooa will
 be responsible for the database which he will connected to the website
 application and the hardware to work seamlessly together. Masoud Rahguzar will
 be responsible for the hardware, printing a PCB which will connect the speaker
-to the Raspberry Pi, Acrylic case using corel draw. Lastly, Divesh Oree will be
-updating and improving the mobile application for inventory use.
+to the Raspberry Pi, Acrylic case using corel draw and many other aspects in the
+hardware. Lastly, Divesh Oree will be updating and improving the mobile
+application for inventory use.
 
 2.4.5 Progress Reports
 ----------------------
