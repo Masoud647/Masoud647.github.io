@@ -62,7 +62,7 @@ and help students know which item to take out.
 
 We have searched for prior art via Humber’s IEEE subscription selecting “My
 Subscribed Content” and have found and read which provides insight into similar
-efforts.
+efforts.[@7374231; @5635329; @810282]
 
 In the Computer Engineering Technology program we have learned about the
 following topics from the respective relevant courses:
@@ -181,7 +181,7 @@ This proposal presents a plan for providing an IoT solution for Parts Crib. This
 is an opportunity to integrate the knowledge and skills developed in our program
 to create a collaborative IoT capstone project demonstrating my ability to learn
 how to support projects such as the initiative described by our group, Humber
-parts crib. I request approval of this project.[@7374231; @5635329; @810282]
+parts crib. I request approval of this project.
 
  
 -
@@ -278,6 +278,8 @@ Breakdown](https://github.com/Masoud647/Masoud647.github.io#244-workload-breakdo
 Recommendations](https://github.com/Masoud647/Masoud647.github.io#4-recommendationshttps://github.com/Masoud647/Masoud647.github.io#5-progress-reports)
 
 5. References
+
+ 
 
 Illustration/Diagrams
 =====================
