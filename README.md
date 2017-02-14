@@ -24,24 +24,23 @@ Masoud647.github.io
 Executive Summary
 -----------------
 
-As a student in the Computer Engineering Technology program, I will be
-integrating the knowledge and skills I have learned from our program into this
+As students in the Computer Engineering Technology program, We will be
+integrating the knowledge and skills we have learned from our program into this
 Internet of Things themed capstone project. This proposal requests the approval
 to build the hardware portion that will connect to a database as well as to a
 mobile device application. The internet connected hardware will include a custom
 PCB with sensors and actuators for **Parts Crib Database**. The database will
-**store information of students whom rent out items from the parts crib**. The
+**store information of students who sign out items from the parts crib**. The
 mobile device functionality will include **list amount of each item in the parts
-crib and how many are left after being rented out and** will be further detailed
-in the mobile application proposal. I will be collaborating with the following
+crib and how many are left after being sign out and** will be further detailed
+in the mobile application proposal. We will be collaborating with the following
 company/department **Humber College Information Technology**. In the winter
-semester I plan to form a group with the following students, who are also
+semester we plan to form a group with the following students, who are also
 building similar hardware this term and working on the mobile application with
-me are **Rafil Yashooa and Divesh Oree**. The hardware will be completed in CENG
-317 Hardware Production Techniques independently and the application will be
-completed in CENG 319 Software Project. These will be integrated together in the
-subsequent term in CENG 355 Computer Systems Project as a member of a 2 or 3
-student group.
+the following group members **Masoud Rahguzar,** **Rafil Yashooa and Divesh
+Oree**. The hardware will be completed in CENG 317 Hardware Production
+Techniques independently and the application will be completed in CENG 319
+Software Project.
 
 Background
 ----------
@@ -54,15 +53,15 @@ the database that contains every item in the parts crib. When a student takes
 out items from the parts crib their card will be scanned with the items that are
 taken out. This will put the students in the list(database) of students who
 taken out items from the parts crib. This will intern keep track of all items
-taken out and help keep everything organized. The application (app) then will be
-used to list all the items available in the parts crib and will be available to
-all students in the campus. The app will be presented in a listed form that will
-have detailed information of the items in the parts crib and help students know
-which item to take out.
+taken out and help keep everything organized. The mobile application then will
+be used to list all the items available in the parts crib and will be available
+to all students in the campus. The mobile application will be presented in a
+listed form that will have detailed information of the items in the parts crib
+and help students know which item to take out.
 
-I have searched for prior art via Humber’s IEEE subscription selecting “My
-Subscribed Content”[1] and have found and read [2] which provides insight into
-similar efforts.
+We have searched for prior art via Humber’s IEEE subscription selecting “My
+Subscribed Content” and have found and read which provides insight into similar
+efforts.
 
 In the Computer Engineering Technology program we have learned about the
 following topics from the respective relevant courses:
@@ -217,10 +216,11 @@ Abstract
 
 Illustrations and Diagrams
 
-1.  [Introduction](https://github.com/Masoud647/Masoud647.github.io/blob/master/README.md#1-introductionoverview)
+[1.
+Introduction](https://github.com/Masoud647/Masoud647.github.io/blob/master/README.md#1-introductionoverview)
 
-2.  [Software Requirements Specifications
-    (SRS)](https://github.com/Masoud647/Masoud647.github.io#2-system-requirements-specifications)
+[2. Software Requirements Specifications
+(SRS)](https://github.com/Masoud647/Masoud647.github.io#2-system-requirements-specifications)
 
 [2.1.1 Purpose](https://github.com/Masoud647/Masoud647.github.io#211-purpose)
 
