@@ -15,7 +15,7 @@ project is equally divided defined in section 2.4.4.
 Approved Proposal
 -----------------
 
-*Technicap Report for the development of Parts Crib DataBase*
+*Technical Report for the development of Parts Crib DataBase*
 
 Prepared by Masoud Rahguzar, Divesh Oree, Rafil Yashooa  
 *Computer Engineering Technology Student*  
@@ -277,6 +277,9 @@ Breakdown](https://github.com/Masoud647/Masoud647.github.io#244-workload-breakdo
 Recommendations](https://github.com/Masoud647/Masoud647.github.io#4-recommendationshttps://github.com/Masoud647/Masoud647.github.io#5-progress-reports)
 
 5. References
+
+Illustration/Diagrams
+=====================
 
 1. Introduction/Overview
 ========================
