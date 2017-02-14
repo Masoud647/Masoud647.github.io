@@ -38,10 +38,10 @@ in the mobile application proposal. We will be collaborating with the following
 company/department **Humber College Information Technology**. In the winter
 semester we plan to form a group with the following students, who are also
 building similar hardware this term and working on the mobile application with
-the following group members **Masoud Rahguzar,** **Rafil Yashooa and Divesh
-Oree**. The hardware will be completed in CENG 317 Hardware Production
-Techniques independently and the application will be completed in CENG 319
-Software Project.
+the following group members **Masoud Rahguzar, Rafil Yashooa and Divesh Oree**.
+The hardware will be completed in CENG 317 Hardware Production Techniques
+independently and the application will be completed in CENG 319 Software
+Project.
 
 Background
 ----------
