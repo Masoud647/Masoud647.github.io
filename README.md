@@ -10,7 +10,8 @@ The work that is specified in this report is a joint project by Masoud Rahguzar,
 Rafil Yashooa, and Divesh Oree. The work that has been done is our own and is
 expressed in our own words. We have clearly defined all work cited using the APA
 format expressing the authors/owners and their information. All work in this
-project is equally divided defined in section 2.4.4.
+project is equally divided defined in [section
+2.4.4.](https://github.com/Masoud647/Masoud647.github.io#244-workload-breakdown)
 
 Approved Proposal
 -----------------
