@@ -522,11 +522,27 @@ application for inventory use.
 2.5.1 Introduction
 ------------------
 
-The project I decide to work on is the Parts crib database. The reason why I
-choose this project is because I felt like it met all my capabilities. The
-purpose of this project is to create a quick and efficient way to take out items
-from the parts and store them in a database. The group members I decided to work
-with on this project are Rafel Yashooa, Divesh Oree and Gurpreet Jhita.
+This build log instructions will help students replicate our project for future
+use, We will describe and show step by step instructions on how to do so. The
+group members who participated to create this project are Masoud Rahguzar, Rafil
+Yashooa, Divesh Oree and felt like it was their duty to make a better system to
+take out parts from the parts crib.
+
+The main point of this project is to create a new parts crib system that is more
+efficient and more advanced than just using paper slips to sign out item from
+the crib. What we have in mind for the project is to create a barcode scanner
+using either a web cam or either a laser scanner (if we can afford one) to scan
+student numbers and items that will be checked out by the students.
+
+So when a student comes to the parts crib for an item, they will be assigned a
+barcode will their student number if its their first time coming and then
+they’ll be ready for item take out. All the administrator has to do then is to
+scan the student number and then start scanning then items that that user
+requested as they will each have a barcode. After the scanning is done, the user
+is ready to go and their student number will be stored in the local database on
+the raspberry pi.
+
+a.
 
 2.5.2 System Diagram
 --------------------
@@ -617,29 +633,48 @@ everything goes.
 
 **Easy Steps to follow**
 
-1. The raspberry pi must be updated by using "sudo apt-get update" and "sudo
-apt-get upgrade" command.
+When you start up a Raspberry Pi, you should always start with updating it by
+using these commands: sudo apt-get update and sudo apt-get upgrade.
 
-2. Install python program and the the python/zbar library using "sudo apt-get
-install python-dev" and "sudo apt-get install python-pip".
+You’ll want to do this as your Raspberry Pi will get the latest patches and
+updates from the developers.
 
-3. Install pillow using "sudo apt-get install python-pip" and "sudo apt-get
-install python-httplib2" command.
+First of all, you’ll need to install python and the python/zbar library using
+the following commands:
 
-4. Install FSWEBCAM by using the "sudoapt-get install fswebcam" command to test
-webcam.
+Next, you’ll need to install pillow
 
-5. Download the zbar library from the github main page.
+After, go ahead and download the zbar library from this github
+account:[Here](https://github.com/npinchot/zbar)
 
-6. Unzip the folder using the command, zip = ZipFile('file.zip');
-zip.extractall()
+Click on “Clone Or download” and you should see it start downloading
 
-7. Next, insert the zip files into the correct folder.
+After that, use the unzip command to extract the folder and the cd into the
+folder.
 
-8. Compile the files using the command "gcc –Wall –o executable name c\_file.c –
-lwiringPi".
+After you’re in the folder, execute the following command: python setup.py
+install –user
 
-9. Run the program with the command "python program\_name.py".
+If everything was done right, you should get no errors and the files should be
+extracted.
+
+After that, use the code that I provided in the downloads bellow and download
+all the downloads as they all link to each other.
+
+After downloading all the files, you’ll need to compile the red\_light.c,
+green\_light.c and also softTone.c
+
+Compiling them using: gcc –Wall –o executable name c\_file.c – lwiringPi
+
+Where ‘executable name’ is the name of the executable you’ll want them to be,
+‘c\_file.c’ is the source file. NOTE: make sure the executable names are the
+same as the ones in the bar\_code.py file as they will be called from there.
+
+If everything is done right, you should be able to run and scan a barcode, when
+it successfully scans the barcode, you should notice the light turning green and
+the beep audio sound coming from the speaker, after it scans it, you should be
+able to see the created file called student\_number.txt which will contain the
+stored student numbers.
 
 2.5.7 Unit Testing
 ------------------
