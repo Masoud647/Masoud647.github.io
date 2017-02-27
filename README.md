@@ -282,14 +282,11 @@ Breakdown](https://github.com/Masoud647/Masoud647.github.io#244-workload-breakdo
 
 2.5.5 Mechanical Assembly
 
-<https://github.com/Masoud647/Masoud647.github.io#256-pcb--soldering>2.5.6 PCB /
-Soldering
+2.5.6 PCB / Soldering
 
-<https://github.com/Masoud647/Masoud647.github.io#257-unit-testing>2.5.7 Unit
-Testing
+2.5.7 Unit Testing
 
-<https://github.com/Masoud647/Masoud647.github.io#258-production-testing>2.5.8
-Production Testing
+2.5.8 Production Testing
 
 2.5.9 Reproducible
 
