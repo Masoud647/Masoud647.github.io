@@ -297,7 +297,8 @@ Testing](https://github.com/Masoud647/Masoud647.github.io#258-production-testing
 [2.5.9
 Reproducible](https://github.com/Masoud647/Masoud647.github.io#259-reproducible)
 
-2.6 Progress Reports
+[2.6 Progress
+Reports](https://github.com/Masoud647/Masoud647.github.io#26-progress-reports)
 
 [3. Conclusions](https://github.com/Masoud647/Masoud647.github.io#3-conclusions)
 
