@@ -270,16 +270,41 @@ Additions](https://github.com/Masoud647/Masoud647.github.io#243-future-additions
 [2.4.4 Work
 Breakdown](https://github.com/Masoud647/Masoud647.github.io#244-workload-breakdown)
 
-2.5 Build Instructions
+[2.5 Build
+Instructions](https://github.com/Masoud647/Masoud647.github.io#25-build-instructions)
 
-2.6 Progress Reports
+2.5.1 Introduction
+
+<https://github.com/Masoud647/Masoud647.github.io#252-system-diagram>2.5.2
+System Diagram
+
+2.5.3 Bill of Materials/Budget
+
+<https://github.com/Masoud647/Masoud647.github.io#254-time-commitment>2.5.4 Time
+Commitment
+
+2.5.5 Mechanical Assembly
+
+<https://github.com/Masoud647/Masoud647.github.io#256-pcb--soldering>2.5.6 PCB /
+Soldering
+
+<https://github.com/Masoud647/Masoud647.github.io#257-unit-testing>2.5.7 Unit
+Testing
+
+<https://github.com/Masoud647/Masoud647.github.io#258-production-testing>2.5.8
+Production Testing
+
+2.5.9 Reproducible
+
+[2.6 Progress
+Reports](https://github.com/Masoud647/Masoud647.github.io#26-progress-reports)
 
 [3. Conclusions](https://github.com/Masoud647/Masoud647.github.io#3-conclusions)
 
 [4.
 Recommendations](https://github.com/Masoud647/Masoud647.github.io#4-recommendationshttps://github.com/Masoud647/Masoud647.github.io#5-progress-reports)
 
-1.  References
+5. References
 
  
 
@@ -760,5 +785,3 @@ Links to the web application:
 
 5. References
 =============
-
- 
