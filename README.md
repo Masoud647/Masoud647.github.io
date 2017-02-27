@@ -270,8 +270,7 @@ Additions](https://github.com/Masoud647/Masoud647.github.io#243-future-additions
 [2.4.4 Work
 Breakdown](https://github.com/Masoud647/Masoud647.github.io#244-workload-breakdown)
 
-[2.5 Build
-Instructions](https://github.com/Masoud647/Masoud647.github.io#25-build-instructions)
+2.5 Build Instructions
 
 2.5.1 Introduction
 
@@ -296,15 +295,14 @@ Production Testing
 
 2.5.9 Reproducible
 
-[2.6 Progress
-Reports](https://github.com/Masoud647/Masoud647.github.io#26-progress-reports)
+2.6 Progress Reports
 
 [3. Conclusions](https://github.com/Masoud647/Masoud647.github.io#3-conclusions)
 
 [4.
 Recommendations](https://github.com/Masoud647/Masoud647.github.io#4-recommendationshttps://github.com/Masoud647/Masoud647.github.io#5-progress-reports)
 
-5. References
+1.  References
 
  
 
@@ -566,8 +564,6 @@ scan the student number and then start scanning then items that that user
 requested as they will each have a barcode. After the scanning is done, the user
 is ready to go and their student number will be stored in the local database on
 the raspberry pi.
-
-a.
 
 2.5.2 System Diagram
 --------------------
