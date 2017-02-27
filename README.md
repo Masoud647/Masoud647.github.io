@@ -270,14 +270,16 @@ Additions](https://github.com/Masoud647/Masoud647.github.io#243-future-additions
 [2.4.4 Work
 Breakdown](https://github.com/Masoud647/Masoud647.github.io#244-workload-breakdown)
 
-2.4.5 Progress Reports
+2.5 Build Instructions
+
+2.6 Progress Reports
 
 [3. Conclusions](https://github.com/Masoud647/Masoud647.github.io#3-conclusions)
 
 [4.
 Recommendations](https://github.com/Masoud647/Masoud647.github.io#4-recommendationshttps://github.com/Masoud647/Masoud647.github.io#5-progress-reports)
 
-5. References
+1.  References
 
  
 
@@ -514,8 +516,161 @@ to the Raspberry Pi, Acrylic case using corel draw and many other aspects in the
 hardware. Lastly, Divesh Oree will be updating and improving the mobile
 application for inventory use.
 
-2.4.5 Progress Reports
+2.5 Build Instructions
 ----------------------
+
+2.5.1 Introduction
+------------------
+
+The project I decide to work on is the Parts crib database. The reason why I
+choose this project is because I felt like it met all my capabilities. The
+purpose of this project is to create a quick and efficient way to take out items
+from the parts and store them in a database. The group members I decided to work
+with on this project are Rafel Yashooa, Divesh Oree and Gurpreet Jhita.
+
+2.5.2 System Diagram
+--------------------
+
+The humber parts crib database project functionality is to be able to scan
+barcodes on student id cards and the associated part items from the parts crib
+and then be placed in a database. Now understanding what the concept of the
+humber part crib database project is, the system diagram can be easily
+interpreted.
+
+![systemdiagram](https://masoud647.github.io/Buildlog/SystemDiagram.PNG)
+
+*Image 1: This picture displays the system and how it works*
+
+2.5.3 Bill of Materials/Budget
+------------------------------
+
+The main materials/components required for my project are a raspberry pi, webcam
+and barcodes. Added features/materials are PCB for light indicator, sound bar
+and acrylic box. The PCB and acrylic box were both provided by the school. In
+addition, the raspberry pi requires a monitor, keyboard and mouse to be setup.
+My budget was fairly simple and not expensive except for the raspberry pi kit.
+My full excel version of my budget is provided in my GitHub page.
+
+![Budget](https://masoud647.github.io/Buildlog/BudgetPciture.PNG)
+
+*Image 2: This picture displays the budget in a excel format*
+
+### 2.5.4 Time Commitment
+
+The time commitment for my project took about 15 weeks to complete in its
+entirety. Firstly, the project began with ordering parts through websites like
+amazon, eBay and all sorts of technology base websites. Once ordered, the
+delivery took about week and a half (week 2 & 3) to come in. As everything
+arrived, I then began to setup my raspberry pi and all of its components which
+took my about 1 hour to setup. As week 5 approached I printed out my PCB and
+started soldering everything. The soldering approximately took me about 2 hours
+to complete at school. Afterward, at week 6 and week 7 I started to test my
+raspberry pi and its components which took me about 6 hours in its entirety.
+Firstly, I tested if the PCB by implementing the code given by the teacher that
+can test if the lights work and the sensors. Then I started implementing the
+code in which will scan barcodes with my webcam which then again took me about 5
+hours to complete. Next, during week 9 I created I remote desktop with my
+raspberry pi and laptop so I could connect it remotely without using an external
+monitor, keyboard and mouse. Lastly, during week 12 and 13 I began and created
+my acrylic box, the box design took me about 1 hour to complete and the lazar
+cut took about 20 minutes. Here at the bottom is all the task I completed and
+will be easier to understand.
+
+**Time Commitment Schedule:**
+
+| **Tasks**                 | **Time Required**         |
+|---------------------------|---------------------------|
+| Ordering Parts & Delivery | 2 Weeks                   |
+| Raspberry Pi Setup        | 1 hour                    |
+| PCB Soldering             | 2 hours                   |
+| Testing PCB               | 1 hour                    |
+| Coding                    | 5 hours in span of 4 days |
+| Remote Desktop            | 1 hour                    |
+| Mechanical Assembly       | 15 minutes                |
+| Designing acrylic box     | 2 hours                   |
+| Laser Cutting             | 15-30 minutes             |
+
+*Table 1: Display time commitment in a table format*
+
+2.5.5 Mechanical Assembly
+-------------------------
+
+The assembly of my project is very simple first connect the PCB on top of the
+raspberry pi which contains the light indicator. Secondly, proceed and connect
+the webcam to the USB port on the raspberry pi and then lastly connect the
+raspberry pi to a power outlet. And that’s how to Assembly all the parts of my
+project.
+
+2.5.6 PCB / Soldering
+---------------------
+
+Humber college provided us with a PCB which is called the Modular Sensor Hat.
+The PCB contains 20 pin GPIO header, two 4 pin header, 5 pin header, a couple of
+resistors, transistors and a light. Before soldering I took care of my safety by
+wearing my safety glasses and making sure my work place was clear. The soldering
+was fairly simple to complete because of the schematic which outlined where
+everything goes.
+
+![PCB](https://masoud647.github.io/Buildlog/pcb.jpg)
+
+*Image 3: Displays the PCB and all its glory*
+
+**Easy Steps to follow**
+
+1. The raspberry pi must be updated by using "sudo apt-get update" and "sudo
+apt-get upgrade" command.
+
+2. Install python program and the the python/zbar library using "sudo apt-get
+install python-dev" and "sudo apt-get install python-pip".
+
+3. Install pillow using "sudo apt-get install python-pip" and "sudo apt-get
+install python-httplib2" command.
+
+4. Install FSWEBCAM by using the "sudoapt-get install fswebcam" command to test
+webcam.
+
+5. Download the zbar library from the github main page.
+
+6. Unzip the folder using the command, zip = ZipFile('file.zip');
+zip.extractall()
+
+7. Next, insert the zip files into the correct folder.
+
+8. Compile the files using the command "gcc –Wall –o executable name c\_file.c –
+lwiringPi".
+
+9. Run the program with the command "python program\_name.py".
+
+2.5.7 Unit Testing
+------------------
+
+The uniting testing begins the PCB as mentioned in the power up. It is
+recommended to use the code that is given by Humber College or at my GitHub page
+to test if the light indicator works. The light indictor can work with the
+command “sudo./traffic2B” if the code is there. The next step is to check if the
+webcam work. This can be done by installing FSWEBCAM by putting “sudo apt-get
+install fswebcam” in the command line of the terminal which will install an easy
+way to check if the camera works. Once installed type “fswebcam image.jpg” in
+the command line and if it takes a picture with good quality the webcam works.
+After this, the code created for this project can be used which is in my GitHub
+page. The program can run by typing “python bar\_code.py” in the command line.
+
+2.5.8 Production Testing
+------------------------
+
+The production testing is fairly simple. Run the barcode program bar\_code.py
+and place a barcode in front of the webcam. In addition, focus the webcam
+(manually if needed) so that it can quickly scan the barcode. Once scanned the
+barcode will be place in a txt file and in the terminal it can display the txt
+file by typing for example “cat nameoftxt.txt”.
+
+2.5.9 Reproducible
+------------------
+
+Our project can be reproducible by following the instruction I have laid out.
+
+2.6 Progress Reports
+--------------------
 
 Progress Report
 
