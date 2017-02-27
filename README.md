@@ -274,13 +274,11 @@ Breakdown](https://github.com/Masoud647/Masoud647.github.io#244-workload-breakdo
 
 2.5.1 Introduction
 
-<https://github.com/Masoud647/Masoud647.github.io#252-system-diagram>2.5.2
-System Diagram
+2.5.2 System Diagram
 
 2.5.3 Bill of Materials/Budget
 
-<https://github.com/Masoud647/Masoud647.github.io#254-time-commitment>2.5.4 Time
-Commitment
+2.5.4 Time Commitment
 
 2.5.5 Mechanical Assembly
 
