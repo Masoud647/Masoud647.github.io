@@ -3,6 +3,11 @@ csl: apa.csl
 bibliography: RPiCitations.bib
 ---
 
+Parts Crib Database
+===================
+
+Project Website: Masoud647.github.io
+
 Declaration of Joint Authorship
 -------------------------------
 
@@ -82,14 +87,14 @@ following topics from the respective relevant courses:
 
 -   Wireless protocols such as 802.11 from TECH152 Telecom Networks.
 
-This knowledge and skill set will enable me to build the subsystems and
-integrate them together as my capstone project.
+This knowledge and skill set will enable us to build the subsystems and
+integrate them together as our capstone project.
 
 Methodology
 -----------
 
 This proposal is assigned in the first week of class and is due at the beginning
-of class in the second week of the fall semester. My coursework will focus on
+of class in the second week of the fall semester. Our coursework will focus on
 the first two of the 3 phases of this project:  
 Phase 1 Hardware build.  
 Phase 2 System integration.  
@@ -584,12 +589,12 @@ interpreted.
 2.5.3 Bill of Materials/Budget
 ------------------------------
 
-The main materials/components required for my project are a raspberry pi, webcam
-and barcodes. Added features/materials are PCB for light indicator, sound bar
-and acrylic box. The PCB and acrylic box were both provided by the school. In
-addition, the raspberry pi requires a monitor, keyboard and mouse to be setup.
-My budget was fairly simple and not expensive except for the raspberry pi kit.
-My full excel version of my budget is provided in my GitHub page.
+The main materials/components required for our project are a raspberry pi,
+webcam and barcodes. Added features/materials are PCB for light indicator, sound
+bar and acrylic box. The PCB and acrylic box were both provided by the school.
+In addition, the raspberry pi requires a monitor, keyboard and mouse to be
+setup. Our budget was fairly simple and not expensive except for the raspberry
+pi kit. Our full excel version of my budget is provided in our GitHub page.
 
 ![Budget](https://masoud647.github.io/Buildlog/BudgetPciture.PNG)
 
@@ -597,24 +602,24 @@ My full excel version of my budget is provided in my GitHub page.
 
 ### 2.5.4 Time Commitment
 
-The time commitment for my project took about 15 weeks to complete in its
+The time commitment for our project took about 15 weeks to complete in its
 entirety. Firstly, the project began with ordering parts through websites like
 amazon, eBay and all sorts of technology base websites. Once ordered, the
 delivery took about week and a half (week 2 & 3) to come in. As everything
-arrived, I then began to setup my raspberry pi and all of its components which
-took my about 1 hour to setup. As week 5 approached I printed out my PCB and
+arrived, I then began to setup our raspberry pi and all of its components which
+took our about 1 hour to setup. As week 5 approached we printed out the PCB and
 started soldering everything. The soldering approximately took me about 2 hours
-to complete at school. Afterward, at week 6 and week 7 I started to test my
-raspberry pi and its components which took me about 6 hours in its entirety.
+to complete at school. Afterward, at week 6 and week 7 I started to test the
+raspberry pi and its components which took us about 6 hours in its entirety.
 Firstly, I tested if the PCB by implementing the code given by the teacher that
 can test if the lights work and the sensors. Then I started implementing the
 code in which will scan barcodes with my webcam which then again took me about 5
-hours to complete. Next, during week 9 I created I remote desktop with my
-raspberry pi and laptop so I could connect it remotely without using an external
-monitor, keyboard and mouse. Lastly, during week 12 and 13 I began and created
-my acrylic box, the box design took me about 1 hour to complete and the lazar
-cut took about 20 minutes. Here at the bottom is all the task I completed and
-will be easier to understand.
+hours to complete. Next, during week 9 we created the remote desktop with the
+raspberry pi and laptop so we could connect it remotely without using an
+external monitor, keyboard and mouse. Lastly, during week 12 and 13 we began and
+created my acrylic box, the box design took about 1 hour to complete and the
+lazar cut took about 20 minutes. Here at the bottom is all the task we completed
+and will be easier to understand.
 
 **Time Commitment Schedule:**
 
@@ -666,7 +671,15 @@ updates from the developers.
 First of all, you’ll need to install python and the python/zbar library using
 the following commands:
 
+sudo apt-get install python-dev
+
+sudo apt-get install python-pip
+
 Next, you’ll need to install pillow
+
+sudo apt-get install python-pip
+
+sudo apt-get install python-httplib2
 
 After, go ahead and download the zbar library from this github
 account:[Here](https://github.com/npinchot/zbar)
