@@ -163,7 +163,7 @@ important to start tasks as soon as possible to be able to meet deadlines.
 | **Phase 3 Total**                                                                         | **TBD**        |                                                                                                                                |
 | **Material Estimates**                                                                    | **Cost**       | **Notes**                                                                                                                      |
 | **Phase 1**                                                                               |                |                                                                                                                                |
-| Raspberry pI 3.0(Kit), HDMI, Webcam, LED lights, PCB, Speaker                             | 189            |                                                                                                                                |
+| Raspberry Pi 3.0(Kit), HDMI, Webcam, LED lights, PCB, Speaker                             | 189            |                                                                                                                                |
 | Peripherals with cables                                                                   |                |                                                                                                                                |
 | Sensors                                                                                   |                |                                                                                                                                |
 |                                                                                           |                |                                                                                                                                |
@@ -186,7 +186,7 @@ This proposal presents a plan for providing an IoT solution for Parts Crib. This
 is an opportunity to integrate the knowledge and skills developed in our program
 to create a collaborative IoT capstone project demonstrating my ability to learn
 how to support projects such as the initiative described by our group, Humber
-parts crib. I request approval of this project.
+parts crib. We request approval of this project.
 
 Abstract
 --------
@@ -322,7 +322,7 @@ Illustration/Diagrams
 
 The main point of this project is to create a new parts crib system that is more
 efficient and more advanced than just using paper slips to sign out item from
-the crib. What I have in mind for the project is to create a barcode scanner
+the crib. What we have in mind for the project is to create a barcode scanner
 using either a web cam or either a laser scanner (if we can afford one) to scan
 student numbers and items that will be checked out by the students.
 
@@ -334,11 +334,11 @@ requested as they will each have a barcode. After the scanning is done, the user
 is ready to go and their student number will be stored in the local database on
 the raspberry pi.
 
-The barcode scanned will be processed by the raspberry pI which will store it on
-the SQL database and then the application fetches from the database and displays
-the information. Note: only administrators will be able to view the student
-numbers, regular users will only be able to view the inventory count of items in
-the crib.
+The barcode scanned will be processed by the Raspberry Pi  which will store it
+on the SQL database and then the application fetches from the database and
+displays the information. Note: only administrators will be able to view the
+student numbers, regular users will only be able to view the inventory count of
+items in the crib.
 
 2. System Requirements Specifications
 =====================================
@@ -594,7 +594,7 @@ webcam and barcodes. Added features/materials are PCB for light indicator, sound
 bar and acrylic box. The PCB and acrylic box were both provided by the school.
 In addition, the raspberry pi requires a monitor, keyboard and mouse to be
 setup. Our budget was fairly simple and not expensive except for the raspberry
-pi kit. Our full excel version of my budget is provided in our GitHub page.
+pi kit. Our full excel version of our budget is provided in our GitHub page.
 
 ![Budget](https://masoud647.github.io/Buildlog/BudgetPciture.PNG)
 
@@ -606,18 +606,18 @@ The time commitment for our project took about 15 weeks to complete in its
 entirety. Firstly, the project began with ordering parts through websites like
 amazon, eBay and all sorts of technology base websites. Once ordered, the
 delivery took about week and a half (week 2 & 3) to come in. As everything
-arrived, I then began to setup our raspberry pi and all of its components which
-took our about 1 hour to setup. As week 5 approached we printed out the PCB and
+arrived, we then began to setup our Raspberry Pi and all of its components which
+took about 1 hour to setup. As week 5 approached we printed out the PCB and
 started soldering everything. The soldering approximately took me about 2 hours
-to complete at school. Afterward, at week 6 and week 7 I started to test the
+to complete at school. Afterward, at week 6 and week 7 we started to test the
 raspberry pi and its components which took us about 6 hours in its entirety.
-Firstly, I tested if the PCB by implementing the code given by the teacher that
-can test if the lights work and the sensors. Then I started implementing the
-code in which will scan barcodes with my webcam which then again took me about 5
-hours to complete. Next, during week 9 we created the remote desktop with the
+Firstly, we tested if the PCB by implementing the code given by the teacher that
+can test if the lights work and the sensors. Then we started implementing the
+code in which will scan barcodes with our webcam which then again took me about
+5 hours to complete. Next, during week 9 we created the remote desktop with the
 raspberry pi and laptop so we could connect it remotely without using an
 external monitor, keyboard and mouse. Lastly, during week 12 and 13 we began and
-created my acrylic box, the box design took about 1 hour to complete and the
+created our acrylic box, the box design took about 1 hour to complete and the
 lazar cut took about 20 minutes. Here at the bottom is all the task we completed
 and will be easier to understand.
 
@@ -640,10 +640,10 @@ and will be easier to understand.
 2.5.5 Mechanical Assembly
 -------------------------
 
-The assembly of my project is very simple first connect the PCB on top of the
+The assembly of our project is very simple first connect the PCB on top of the
 raspberry pi which contains the light indicator. Secondly, proceed and connect
 the webcam to the USB port on the raspberry pi and then lastly connect the
-raspberry pi to a power outlet. And that’s how to Assembly all the parts of my
+raspberry pi to a power outlet. And that’s how to Assembly all the parts of our
 project.
 
 2.5.6 PCB / Soldering
@@ -651,9 +651,9 @@ project.
 
 Humber college provided us with a PCB which is called the Modular Sensor Hat.
 The PCB contains 20 pin GPIO header, two 4 pin header, 5 pin header, a couple of
-resistors, transistors and a light. Before soldering I took care of my safety by
-wearing my safety glasses and making sure my work place was clear. The soldering
-was fairly simple to complete because of the schematic which outlined where
+resistors, transistors and a light. Before soldering, we took care of safety by
+wearing safety glasses and make sure the workplace is clear. The soldering was
+fairly simple to complete because of the schematic which outlined where
 everything goes.
 
 ![PCB](https://masoud647.github.io/Buildlog/pcb.jpg)
@@ -717,14 +717,14 @@ stored student numbers.
 ------------------
 
 The uniting testing begins the PCB as mentioned in the power up. It is
-recommended to use the code that is given by Humber College or at my GitHub page
-to test if the light indicator works. The light indictor can work with the
+recommended to use the code that is given by Humber College or at the GitHub
+page to test if the light indicator works. The light indictor can work with the
 command “sudo./traffic2B” if the code is there. The next step is to check if the
 webcam work. This can be done by installing FSWEBCAM by putting “sudo apt-get
 install fswebcam” in the command line of the terminal which will install an easy
 way to check if the camera works. Once installed type “fswebcam image.jpg” in
 the command line and if it takes a picture with good quality the webcam works.
-After this, the code created for this project can be used which is in my GitHub
+After this, the code created for this project can be used which is in the GitHub
 page. The program can run by typing “python bar\_code.py” in the command line.
 
 2.5.8 Production Testing
