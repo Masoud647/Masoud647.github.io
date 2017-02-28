@@ -334,11 +334,11 @@ requested as they will each have a barcode. After the scanning is done, the user
 is ready to go and their student number will be stored in the local database on
 the raspberry pi.
 
-The barcode scanned will be processed by the Raspberry Pi  which will store it
-on the SQL database and then the application fetches from the database and
-displays the information. Note: only administrators will be able to view the
-student numbers, regular users will only be able to view the inventory count of
-items in the crib.
+The barcode scanned will be processed by the Raspberry Pi which will store it on
+the SQL database and then the application fetches from the database and displays
+the information. Note: only administrators will be able to view the student
+numbers, regular users will only be able to view the inventory count of items in
+the crib.
 
 2. System Requirements Specifications
 =====================================
@@ -695,8 +695,8 @@ install –user
 If everything was done right, you should get no errors and the files should be
 extracted.
 
-After that, use the code that I provided in the downloads bellow and download
-all the downloads as they all link to each other.
+After that, use the code that that is provided in the downloads bellow and
+download all the downloads as they all link to each other.
 
 After downloading all the files, you’ll need to compile the red\_light.c,
 green\_light.c and also softTone.c
@@ -739,7 +739,7 @@ file by typing for example “cat nameoftxt.txt”.
 2.5.9 Reproducible
 ------------------
 
-Our project can be reproducible by following the instruction I have laid out.
+Our project can be reproducible by following the instruction we have laid out.
 
 2.6 Progress Reports
 --------------------
