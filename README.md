@@ -6,7 +6,7 @@ bibliography: RPiCitations.bib
 Parts Crib Database
 ===================
 
-Project Website: Masoud647.github.io
+Project Website: [Masoud647.github.io](https://masoud647.github.io/)
 
 Declaration of Joint Authorship
 -------------------------------
