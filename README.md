@@ -236,7 +236,7 @@ Group](https://github.com/Masoud647/Masoud647.github.io#213-targeted-audience-gr
 [2.2 Product
 Information](https://github.com/Masoud647/Masoud647.github.io#221-main-functionality)
 
-[2.2.1 Main Functionality]
+[2.2.1 Main Functionality](#main-functionality)
 
 [2.2.2 Extra
 Requirements](https://github.com/Masoud647/Masoud647.github.io#222-extra-requirements)
@@ -310,7 +310,7 @@ Reports](https://github.com/Masoud647/Masoud647.github.io#26-progress-reports)
 [4.
 Recommendations](https://github.com/Masoud647/Masoud647.github.io#4-recommendationshttps://github.com/Masoud647/Masoud647.github.io#5-progress-reports)
 
-5. References
+1.  References
 
  
 
@@ -736,8 +736,12 @@ and place a barcode in front of the webcam. In addition, focus the webcam
 barcode will be place in a txt file and in the terminal it can display the txt
 file by typing for example “cat nameoftxt.txt”.
 
- 
--
+**Downloads:**
+
+All the downloads will be posted under my github page:
+
+Source Files:
+[Here](https://github.com/rafyo127/rafyo127.github.io/tree/master/Build-Instructions/BARCODE_RAFF/PYTHON)
 
 2.6 Progress Reports
 --------------------
