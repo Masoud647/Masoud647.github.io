@@ -596,7 +596,18 @@ In addition, the raspberry pi requires a monitor, keyboard and mouse to be
 setup. Our budget was fairly simple and not expensive except for the raspberry
 pi kit. Our full excel version of our budget is provided in our GitHub page.
 
-![Budget](https://masoud647.github.io/Buildlog/BudgetPciture.PNG)
+| Item                   | Site            | Price (Including Tax) |
+|------------------------|-----------------|-----------------------|
+| Raspberry Pi 3.0 (Kit) | Amazon.ca       | \$135.99              |
+| HDMI                   | Bestbuy.ca      | \$15.99               |
+| Web-camera             | Amazon.ca       | \$19.99               |
+| Barcode Strips         | Barcodesinc.com | \$4.99                |
+| Acrylic Box            | N/A             | \$10.00               |
+| PCB                    | N/A             | N/A                   |
+| LEDS                   | Amazon.ca       | \$2.00                |
+|                        | Total:          | \$188.96              |
+
+~   Budget
 
 *Image 2: This picture displays the budget in a excel format*
 
@@ -794,8 +805,25 @@ Links to the web application:
 3. Conclusions
 ==============
 
+The project, Humber Parts Crib has been created to keep track of all items in
+the parts crib when items are lent out and returned back. The Humber Parts Crib
+consists of a camera, raspberry pi, PCB (speaker & lights) and a case. This
+project intern will be able to scan barcodes representing the students and
+items. The data will be placed in a database called firebase using the website
+application which will be fetched by the mobile application. The mobile
+application will be able to display the inventory status of the parts crib,
+helping students determine if there is an item they want in the parts crib. The
+website application will contain the administrative tools/control to be able to
+lend out and return items which will be used by the employee at the parts crib.
+
 4. Recommendations
 ==================
+
+Throughout the creation process of our project there are recommendations that
+could be made if reproduced again.  The first being the web camera, having a
+better web camera will help accelerate the speed at which barcodes are scanned,
+thus increasing the performance. In addition, having small web camera can allow
+for a smaller and compact case which can be much portable if need. Secondly, ?
 
 5. References
 =============
