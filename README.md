@@ -1,13 +1,14 @@
 ---
 csl: apa.csl
 bibliography: RPiCitations.bib
-Title: 
 ---
 
 Parts Crib Database
 ===================
 
 Project Website: [Masoud647.github.io](https://masoud647.github.io/)
+
+March/21/2017
 
 Declaration of Joint Authorship
 -------------------------------
@@ -311,7 +312,7 @@ Reports](https://github.com/Masoud647/Masoud647.github.io#26-progress-reports)
 [4.
 Recommendations](https://github.com/Masoud647/Masoud647.github.io#4-recommendationshttps://github.com/Masoud647/Masoud647.github.io#5-progress-reports)
 
-5.Reference
+5. References
 
  
 
@@ -597,18 +598,19 @@ In addition, the raspberry pi requires a monitor, keyboard and mouse to be
 setup. Our budget was fairly simple and not expensive except for the raspberry
 pi kit. Our full excel version of our budget is provided in our GitHub page.
 
-| Item                   | Site            | Price (Including Tax) |
-|------------------------|-----------------|-----------------------|
-| Raspberry Pi 3.0 (Kit) | Amazon.ca       | \$135.99              |
-| HDMI                   | Bestbuy.ca      | \$15.99               |
-| Web-camera             | Amazon.ca       | \$19.99               |
-| Barcode Strips         | Barcodesinc.com | \$4.99                |
-| Acrylic Box            | N/A             | \$10.00               |
-| PCB                    | N/A             | N/A                   |
-| LEDS                   | Amazon.ca       | \$2.00                |
-|                        | Total:          | \$188.96              |
+| Item                   | Site/Provider    | Price (Including Tax) |
+|------------------------|------------------|-----------------------|
+| Raspberry Pi 3.0 (Kit) | Amazon.ca        | \$135.99              |
+| HDMI                   | Bestbuy.ca       | \$15.99               |
+| Web-camera             | Amazon.ca        | \$19.99               |
+| Web-camera 2           | Canada Computers | \$76.01               |
+| Barcode Strips         | Barcodesinc.com  | \$4.99                |
+| Acrylic Box            | Humber College   | \$15.00               |
+| PCB                    | Humber College   | N/A                   |
+| LEDS                   | Amazon.ca        | \$2.00                |
+|                        | Total:           | \$264.97              |
 
-~   Budget
+\~ Budget
 
 *Image 2: This picture displays the budget in a excel format*
 
@@ -824,7 +826,7 @@ Throughout the creation process of our project there are recommendations that
 could be made if reproduced again.  The first being the web camera, having a
 better web camera will help accelerate the speed at which barcodes are scanned,
 thus increasing the performance. In addition, having small web camera can allow
-for a smaller and compact case which can be much portable if need. Secondly, ?
+for a smaller and compact case which can be much portable if need.
 
 5. References
 =============
