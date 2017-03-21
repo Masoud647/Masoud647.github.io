@@ -3,10 +3,6 @@ csl: apa.csl
 bibliography: RPiCitations.bib
 ---
 
-| Csl     | Bibliography     | Title                                                                                                |
-|---------|------------------|------------------------------------------------------------------------------------------------------|
-| apa.csl | RPiCitations.bib | Humber Parts Crib Database By: The Walking Programmers (Rafil Yashooa, Masoud Rahguzar, Divesh Oree) |
-
 Parts Crib Database
 ===================
 
