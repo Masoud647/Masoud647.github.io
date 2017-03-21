@@ -1,7 +1,7 @@
 ---
 csl: apa.csl
 bibliography: RPiCitations.bib
-title: Humber Parts Crib Database By: The Walking Programmers (Rafil Yashooa, Masoud Rahguzar, Divesh Oree)
+title: "Humber Parts Crib Database By: The Walking Programmers (Rafil Yashooa, Masoud Rahguzar, Divesh Oree)"
 ---
 
 Parts Crib Database
