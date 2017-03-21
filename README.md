@@ -1,15 +1,20 @@
 ---
 csl: apa.csl
 bibliography: RPiCitations.bib
-Title: Humber Parts Crib Database 
 ---
+
+| Csl     | Bibliography     | Title                                                                                                |
+|---------|------------------|------------------------------------------------------------------------------------------------------|
+| apa.csl | RPiCitations.bib | Humber Parts Crib Database By: The Walking Programmers (Rafil Yashooa, Masoud Rahguzar, Divesh Oree) |
 
 Parts Crib Database
 ===================
 
 Project Website: [Masoud647.github.io](https://masoud647.github.io/)
 
-21th March 2017
+March/28/2017
+
+\\pagebreak
 
 Declaration of Joint Authorship
 -------------------------------
@@ -20,6 +25,8 @@ expressed in our own words. We have clearly defined all work cited using the APA
 format expressing the authors/owners and their information. All work in this
 project is equally divided defined in [section
 2.4.4.](https://github.com/Masoud647/Masoud647.github.io#244-workload-breakdown)
+
+ 
 
 Approved Proposal
 -----------------
