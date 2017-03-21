@@ -1,8 +1,6 @@
 ---
 csl: apa.csl
 bibliography: RPiCitations.bib
-title: "Humber Parts Crib Database By: The Walking Programmers (Rafil Yashooa, Masoud Rahguzar, Divesh Oree)
-March 28th, 2017"
 ---
 
 Parts Crib Database
@@ -10,9 +8,7 @@ Parts Crib Database
 
 Project Website: [Masoud647.github.io](https://masoud647.github.io/)
 
-March/28/2017
-
-\\pagebreak
+\\\\pagebreak
 
 Declaration of Joint Authorship
 -------------------------------
