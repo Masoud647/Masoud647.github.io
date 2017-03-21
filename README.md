@@ -1,6 +1,7 @@
 ---
 csl: apa.csl
 bibliography: RPiCitations.bib
+Title: Humber Parts Crib Database 
 ---
 
 Parts Crib Database
@@ -8,7 +9,7 @@ Parts Crib Database
 
 Project Website: [Masoud647.github.io](https://masoud647.github.io/)
 
-March/21/2017
+21th March 2017
 
 Declaration of Joint Authorship
 -------------------------------
