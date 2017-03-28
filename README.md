@@ -306,10 +306,12 @@ PCB/Soldering](https://github.com/Masoud647/Masoud647.github.io#256-pcb--solderi
 
 2.5.7 Web Interface Design
 
-[2.5.8 Unit
+2.5.8 Mobile Application
+
+[2.5.9 Unit
 Testing](https://github.com/Masoud647/Masoud647.github.io#257-unit-testing)
 
-[2.5.9 Production
+[2.5.10 Production
 Testing](https://github.com/Masoud647/Masoud647.github.io#258-production-testinghttps://github.com/Masoud647/Masoud647.github.io#259-reproducible)
 
 [2.6 Progress
@@ -869,6 +871,7 @@ lead to Malicious data being stoned inside your cache.
 To get JavaScript to recognize the firebase library you’ll need to add a .jar
 file to the servers working directory. You can do so by downloading the .jar
 from here:
+
 <http://grepcode.com/snapshot/repo1.maven.org/maven2/com.firebase/firebase-client-jvm/2.0.2>
 
 And then adding it to working directory, don’t forget to change the file’s
@@ -920,8 +923,8 @@ into a child by using the .child() function and set out by using the .parent()
 function. In our case, we are retrieving student numbers and each of the
 student’s parts and input that in a corresponding table.
 
-  Here’s an example of the data snapshot function retrieving live student data
-and inserting it in a table.
+Here’s an example of the data snapshot function retrieving live student data and
+inserting it in a table.
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 /*
@@ -1027,8 +1030,12 @@ to the web interface application when the user focuses on a certain field.  
 ### Installing the python-firebase library on a raspberry Pi
 
 Installing the firebase-python library is fairly easy and can be done using the
-following commands: \~\~\~\~ Sudo pip install requests Sudo pip install
-python-firebase \~\~\~\~
+following commands: 
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Sudo pip install requests 
+Sudo pip install python-firebase 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 ### Creating the python executable file to scan and send data to the database
 
@@ -1139,6 +1146,7 @@ version 1.5 or higher
 
 You can also check below as an example how your gradle build should look like:
 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 /\*
 
 apply **plugin**: **'com.android.application'**  
@@ -1207,6 +1215,7 @@ allprojects {
 }
 
 \*/
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 It is also very important to set up the firebase with proper firebase libraries.
 Connect it in the right way to a firebase server I in order to have the
@@ -1264,6 +1273,7 @@ order to enable the gradle plugin. You can check the example attached above.
 4. Lastly, add these libraries under the dependencies for the Firebase SDK you
 want to use:
 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 /\*
 
 'com.google.firebase:firebase-auth:9.6.0'  
@@ -1271,6 +1281,7 @@ want to use:
 ‘com.firebaseui:firebase-ui-database:0.4.0'
 
 \*/
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 2.5.9 Unit Testing
 ------------------
