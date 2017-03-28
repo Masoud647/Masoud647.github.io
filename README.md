@@ -6,9 +6,8 @@ title: Humber Parts Crib Database by The Walking Programmers
 author: "Rafil Yashooa, Masoud Rahguzar, Divesh Oree"
 ---
 
-Project Website: [Masoud647.github.io](https://masoud647.github.io/)
-Parts Crib Database
-\pagebreak  
+Project Website: [Masoud647.github.io](https://masoud647.github.io/) Parts Crib
+Database \pagebreak
 
 Declaration of Joint Authorship
 -------------------------------
@@ -33,8 +32,8 @@ Masoud647.github.io
 
 \pagebreak
 
-Executive Summary 
-----------------------------
+Executive Summary
+-----------------
 
 As students in the Computer Engineering Technology program, We will be
 integrating the knowledge and skills we have learned from our program into this
@@ -57,7 +56,7 @@ Project.
 \pagebreak
 
 Background
---------------------
+----------
 
 The problem solved by project is it will improve the efficiency of students
 taking out items from the parts crib. This project will connect to a database
@@ -196,6 +195,10 @@ to create a collaborative IoT capstone project demonstrating my ability to learn
 how to support projects such as the initiative described by our group, Humber
 parts crib. We request approval of this project.
 
+\pagebreak
+
+ 
+
 Abstract
 --------
 
@@ -324,8 +327,12 @@ Recommendations](https://github.com/Masoud647/Masoud647.github.io#4-recommendati
 Illustration/Diagrams
 =====================
 
-\pagebreak  
-1. Introduction/Overview ========================
+\pagebreak
+
+ 
+
+1. Introduction/Overview 
+=========================
 
 The main point of this project is to create a new parts crib system that is more
 efficient and more advanced than just using paper slips to sign out item from
@@ -346,6 +353,8 @@ the SQL database and then the application fetches from the database and displays
 the information. Note: only administrators will be able to view the student
 numbers, regular users will only be able to view the inventory count of items in
 the crib. \pagebreak
+
+ 
 
 2. System Requirements Specifications
 =====================================
@@ -831,9 +840,10 @@ doesn’t provide much.
  
 
 The first thing to do is to update your raspberry Pi to the latest settings, you
-can do so by the following commands: \~\~\~ sudo apt-get update sudo apt-get
-upgrade \~\~\~
-
+can do so by the following commands:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ sudo apt-get update sudo apt-get upgrade 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 you’ll want to do this as updating software gets rid of unwanted bugs that could
 lead to Malicious data being stoned inside your cache.
 
@@ -867,9 +877,20 @@ Project” and following the instruction on the screen.
 To add and retrieve data from firebase, you’ll need to initialize the correct
 configuration keys on each web interface page you’ll be using it in.
 
-An example might look like this: \~\~\~\~\~
+An example might look like this: 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+<script> // Initialize Firebase 
+var config = { apiKey: "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+authDomain: "humberparts.firebaseapp.com", 
+databaseURL: "https://humberparts.firebaseio.com", 
+storageBucket: "humberparts.appspot.com", 
+messagingSenderId: "XXXXXXXXXXXXXXX”
+};
+ firebase.initializeApp(config);
+ var ref = firebase.database().ref("pathTo/folder/");
+</script>
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Where ref will be where you’re going to be referencing data from every time you
 want to add retrieve data.  
 
@@ -885,8 +906,8 @@ student’s parts and input that in a corresponding table.
 
   Here’s an example of the data snapshot function retrieving live student data
 and inserting it in a table.
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 ref.once("value").then(function(snapshot) { var i=0; var index=0; var count=0;
 var partCount=0; snapshot.forEach(function(childSnapshot) { //number of children
 var numChild = snapshot.numChildren(); var key1 = [childSnapshot.key]; //
@@ -896,7 +917,7 @@ snapshot.child(key1.toString()).child("date"+count).val(); var partR =
 snapshot.child(key1.toString()).child("part"+count).val();
 cell1.innerHTML+=""+key1+"";
 
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
         for(var i=0;i<20;i++){
             if(snapshot.child(key1.toString()).child("date"+i).val()==null){
                 //do nothing
@@ -930,8 +951,6 @@ cell1.innerHTML+=""+key1+"";
     }); //childSnapshot
 }); //snapshot
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 This function is also checking if a student has a part that is over 3 days old
 and if that returns true, it will add a yellow highlighter under its date for
 each student. The cell1,2, and 3 is how each student is getting inserted into
@@ -951,9 +970,10 @@ again need your firebase configuration identifiers and your reference variable
 will have to set to where you’ll want to add data. Next, you’ll want to create
 element identifiers so that you can get input from the html input field and use
 them in JavaScript as strings, to do so use the following code:
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Var id = document.getElementById("student\_id").value; \~\~\~\~\~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Var id = document.getElementById("student\_id").value; 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 In my case, the ‘id’ variable is the student’s id and that’s what’s going to be
 added to the database including the part number provided that same way. To this
@@ -961,12 +981,15 @@ data to the database, we will have to use the .update() function because using
 the .set() function will delete all the older data and only display what’s newly
 added.
 
-Function source code: \~\~\~
+Function source code: 
 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 if(document.getElementById("part"+i).value !=null){
 firebase.database().ref("dirTest/test2/"+id).update({ date0: date\_p.toString(),
-part0: document.getElementById("part"+i).value }); }//1 \~\~\~ This if statement
-is first checking if the input field is null or empty, and if that returns a
+part0: document.getElementById("part"+i).value }); }//1
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ 
+This if statement is first checking if the input field is null or empty, and if that returns a
 true, it will skip to the next field because we don’t want to be adding null
 fields in our database. But however, if the input wasn’t empty, it would take
 the input from the input id ‘part+i’ (I as in number) and we add that into the
@@ -984,31 +1007,50 @@ to the web interface application when the user focuses on a certain field.  
 ### Installing the python-firebase library on a raspberry Pi
 
 Installing the firebase-python library is fairly easy and can be done using the
-following commands: \~\~\~\~\~\~ Sudo pip install requests Sudo pip install
-python-firebase \~\~\~\~\~
+following commands:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Sudo pip install requests 
+Sudo pip install python-firebase 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-\#\#\# Creating the python executable file to scan and send data to the database
+### Creating the python executable file to scan and send data to the database
 
 Programming in python is much easier than programming in any other language, to
 set up firebase, all that is required is to import the firebase library and then
-use the following code to connect it to your own database: \~\~\~\~\~
+use the following code to connect it to your own database:
 
-When you need to send data use the following code: \~\~\~\~\~
-firebase.put('dir/path','value', symbol.data) \~\~\~\~\~ where ‘smybol.data’ is
-a variable that holds the scanned barcode information.  
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+firebase = firebase.FirebaseApplication('https://yourfirebase.firebaseio.com',None)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+When you need to send data use the following code: 
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+firebase.put('dir/path','value', symbol.data)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ 
+where ‘smybol.data’ is a variable that holds the scanned barcode information.  
 
 ### Setting up the web interface to retrieve scanned barcode
 
 When your raspberry Pi is correctly sending data, all we have to do now is to
 create a function that will take the data and do something with it on a trigger.
-This trigger is going to be using the focus() Jquery function. \~\~\~\~\~\~\~
+This trigger is going to be using the focus() Jquery function. 
 
-if(\$("\#part0").length){ \$("\#part0").focus(function() { //display the value
-ref2.once("value").then(function(snapshot) {
-snapshot.forEach(function(childSnapshot) {  
-document.getElementById("part0").value=childSnapshot.val();  
-}); //childSnapshot }); //snapshot }); }//if \~\~\~\~\~\~\~ This function first
-checks if the element id exists, then checks if the field with ‘part0’ id is set
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+if($("#part0").length){
+                $("#part0").focus(function() {
+                        //display the value
+                        ref2.once("value").then(function(snapshot) {
+                                snapshot.forEach(function(childSnapshot) {                                             
+                                        document.getElementById("part0").value=childSnapshot.val();       
+                                }); //childSnapshot
+                        }); //snapshot
+                });
+        }//if
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+This function first checks if the element id exists, then checks if the field with ‘part0’ id is set
 on focus and if everything returns a true, it will retrieve a value from the
 scanned value by the raspberry Pi and input that value instantly to the input
 field.   
@@ -1050,12 +1092,22 @@ normally already exists when you create a new project. Then you will have to
 configure the testing dependencies for your project so that it will be able to
 use the standard APIs provided by the JUnit 4 framework.
 
-2.      Add libraries under dependencies \~\~\~\~\~ dependencies { // Required
--- JUnit 4 framework testCompile 'junit:junit:4.12' // Optional -- Mockito
-framework testCompile 'org.mockito:mockito-core:1.10.19' } \~\~\~\~\~ 3.     
-Create a local unit test class
+2. Add libraries under dependencies
 
-For instance, you can follow this example for sampling purposes: \~\~\~\~\~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+dependencies {
+    // Required -- JUnit 4 framework
+    testCompile 'junit:junit:4.12'
+    // Optional -- Mockito framework
+    testCompile 'org.mockito:mockito-core:1.10.19'
+}
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+3. Create a local unit test class
+
+For instance, you can follow this example for sampling purposes:
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 package humberparts.walkingprogrammers;
 
 import android.content.Context; import android.test.InstrumentationTestCase;
@@ -1067,7 +1119,7 @@ import static org.junit.Assert.assertTrue;
 /\*\* \* Created by Divesh on 2016-12-12. \*/ public class DatabaseActivityTest
 extends InstrumentationTestCase {
 
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
 private DatabaseActivity testDB= new DatabaseActivity(getInstrumentation().getTargetContext());
 
 @Test
@@ -1092,9 +1144,10 @@ public void deleteData() throws Exception {
     assertNotNull(testDB.deleteData("n123"));
 
 }
+}
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-} \~\~\~\~\~ In this example, we tested the insertion of a new record in the
+In this example, we tested the insertion of a new record in the
 database (Sign out items), search for a specific record, and show all the
 records in the database (View database) and deleting a record from the database
 (Return item)
@@ -1583,8 +1636,7 @@ makes a total of \$264.97 for our project budget.
 
 Sincerely,
 
-Rafil Yashooa \pagebreak  
-3. Conclusions ==============
+Rafil Yashooa \pagebreak   3. Conclusions ==============
 
 The project, Humber Parts Crib has been created to keep track of all items in
 the parts crib when items are lent out and returned back. The Humber Parts Crib
