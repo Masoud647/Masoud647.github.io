@@ -915,18 +915,20 @@ function. In our case, we are retrieving student numbers and each of the
 student’s parts and input that in a corresponding table.
 
   Here’s an example of the data snapshot function retrieving live student data
-and inserting it in a table. \~\~\~\~
+and inserting it in a table. 
 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/*
 ref.once("value").then(function(snapshot) { var i=0; var index=0; var count=0;
 var partCount=0; snapshot.forEach(function(childSnapshot) { //number of children
 var numChild = snapshot.numChildren(); var key1 = [childSnapshot.key]; //
 childData will be the actual contents of the child var childData =
 childSnapshot.val(); var dateR =
-snapshot.child(key1.toString()).child("date"+count).val(); var partR =
+snapshot.child(key1.toString()).child("date"+count).val();
+ var partR =
 snapshot.child(key1.toString()).child("part"+count).val();
 cell1.innerHTML+=""+key1+"";
 
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
     for(var i=0;i<20;i++){
         if(snapshot.child(key1.toString()).child("date"+i).val()==null){
             //do nothing
@@ -957,10 +959,13 @@ cell1.innerHTML+=""+key1+"";
     arr[index]=key1.toString();
     index++;
     count++;
-}); //childSnapshot
+}); 
+
+}); //snapshot 
+*/
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-}); //snapshot \~\~\~\~ This function is also checking if a student has a part
+This function is also checking if a student has a part
 that is over 3 days old and if that returns true, it will add a yellow
 highlighter under its date for each student. The cell1,2, and 3 is how each
 student is getting inserted into each row of the table, cell1 is for the student
