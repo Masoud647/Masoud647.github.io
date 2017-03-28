@@ -2,6 +2,8 @@
 csl: apa.csl
 bibliography: RPiCitations.bib
 title: "Humber Parts Crib Database By: The Walking Programmers (Rafil Yashooa, Masoud Rahguzar, Divesh Oree) March 28th, 2017"
+auther: "Rafil Yashooa, Masoud Rahguzar, Divesh Oree"
+date: "March 28th, 2017"
 ---
 
 \pagebreak   Parts Crib Database ===================
@@ -712,7 +714,6 @@ updates from the developers.
 First of all, you’ll need to install python and the python/zbar library using
 the following commands:
 <pre><code>
-
 sudo apt-get install python-dev
 
 sudo apt-get install python-pip
@@ -880,28 +881,19 @@ configuration keys on each web interface page you’ll be using it in.
 
 An example might look like this:
 
- <pre><code>
-
-\<script\> // Initialize Firebase 
-
-var config = { apiKey: "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX", authDomain:
-"humberparts.firebaseapp.com", 
-
+<pre><code>
+<script> // Initialize Firebase 
+var config = { apiKey: "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX", 
+authDomain: "humberparts.firebaseapp.com", 
 databaseURL: "https://humberparts.firebaseio.com", 
-
 storageBucket: "humberparts.appspot.com", 
-
 messagingSenderId: "XXXXXXXXXXXXXXX”
-
 };
+ firebase.initializeApp(config);
+ var ref = firebase.database().ref("pathTo/folder/");
+</script>
 
- firebase.initializeApp(config);
-
- var ref = firebase.database().ref("pathTo/folder/");
-
-\</script\>
-
- </pre></code>
+</pre></code>
 
 Where ref will be where you’re going to be referencing data from every time you
 want to add retrieve data.
@@ -926,113 +918,54 @@ Here’s an example of the data snapshot function retrieving live student data a
 inserting it in a table.
 
 <pre><code>
-
 ref.once("value").then(function(snapshot) {
+		var i=0;
+		var index=0;
+		var count=0;
+		var partCount=0;
+		snapshot.forEach(function(childSnapshot) {
+			//number of children
+			var numChild = snapshot.numChildren();
+      			var key1 = [childSnapshot.key];
+      			// childData will be the actual contents of the child
+      			var childData = childSnapshot.val();
+			var dateR = snapshot.child(key1.toString()).child("date"+count).val();
+			var partR = snapshot.child(key1.toString()).child("part"+count).val();
+			cell1.innerHTML+="<b>"+key1+"<b><br>";
+			
+			for(var i=0;i<20;i++){
+				if(snapshot.child(key1.toString()).child("date"+i).val()==null){
+					//do nothing
+				}else{
+					dateR = snapshot.child(key1.toString()).child("date"+i).val();
+					partR = snapshot.child(key1.toString()).child("part"+i).val();
+					cell1.innerHTML+="<br>";
+					date_old = new Date(dateR.toString());
+					var diffDays = Math.round(Math.abs((date_now.getTime() - date_old.getTime())/(oneDay)));
+					if(diffDays > 3){
+						//more than 3 days old
+						cell2.innerHTML+="<mark>"+dateR+"</mark><br>";
+					}else{
+						//less than 3 days old
+						cell2.innerHTML+=dateR+"<br>";	
+					}//else
+					cell3.innerHTML+=partR+"<br>";
+					partCount++;
+				}//if
+			}//for
+			cell2.innerHTML+="<hr>"; 
+			cell3.innerHTML+="<hr>"; 
+			//number of students
+			itemN.innerHTML=numChild;
+			//number of parts in total 
+			part_num.innerHTML=partCount;
+			//add to array for search
+			arr[index]=key1.toString();
+			index++;
+			count++;
+  		}); //childSnapshot
+  	}); //snapshot
 
-                        var i=0;
-
-                        var index=0;
-
-                        var count=0;
-
-                        var partCount=0;
-
-                        snapshot.forEach(function(childSnapshot) {
-
-                                    //number of children
-
-                                    var numChild = snapshot.numChildren();
-
-                                     var key1 = [childSnapshot.key];
-
-                                     // childData will be the actual contents
-of the child
-
-                                     var childData = childSnapshot.val();
-
-                                    var dateR =
-snapshot.child(key1.toString()).child("date"+count).val();
-
-                                    var partR =
-snapshot.child(key1.toString()).child("part"+count).val();
-
-                                   
-cell1.innerHTML+="\<b\>"+key1+"\<b\>\<br\>";
-
-                                    for(var i=0;i\<20;i++){
-
-                                               
-if(snapshot.child(key1.toString()).child("date"+i).val()==null){
-
-                                                            //do nothing
-
-                                                }else{
-
-                                                            dateR =
-snapshot.child(key1.toString()).child("date"+i).val();
-
-                                                            partR =
-snapshot.child(key1.toString()).child("part"+i).val();
-
-                                                           
-cell1.innerHTML+="\<br\>";
-
-                                                            date\_old = new
-Date(dateR.toString());
-
-                                                            var diffDays =
-Math.round(Math.abs((date\_now.getTime() - date\_old.getTime())/(oneDay)));
-
-                                                            if(diffDays \> 3){
-
-                                                                        //more
-than 3 days old
-
-                                                                       
-cell2.innerHTML+="\<mark\>"+dateR+"\</mark\>\<br\>";
-
-                                                            }else{
-
-                                                                        //less
-than 3 days old
-
-                                                                       
-cell2.innerHTML+=dateR+"\<br\>";      
-
-                                                            }//else
-
-                                                           
-cell3.innerHTML+=partR+"\<br\>";
-
-                                                            partCount++;
-
-                                                }//if
-
-                                    }//for
-
-                                    cell2.innerHTML+="\<hr\>"; 
-
-                                    cell3.innerHTML+="\<hr\>"; 
-
-                                    //number of students
-
-                                    itemN.innerHTML=numChild;
-
-                                    //number of parts in total 
-
-                                    part\_num.innerHTML=partCount;
-
-                                    //add to array for search
-
-                                    arr[index]=key1.toString();
-
-                                    index++;
-
-                                    count++;
-
-                        }); //childSnapshot
-
-            }); //snapshot
 </pre></code>
  
 This function is also checking if a student has a part that is over 3 days old
@@ -1054,9 +987,9 @@ again need your firebase configuration identifiers and your reference variable
 will have to set to where you’ll want to add data. Next, you’ll want to create
 element identifiers so that you can get input from the html input field and use
 them in JavaScript as strings, to do so use the following code:
-
+<pre><code>
 Var id = document.getElementById("student\_id").value;
-
+</pre></code>
 In my case, the ‘id’ variable is the student’s id and that’s what’s going to be
 added to the database including the part number provided that same way. To this
 data to the database, we will have to use the .update() function because using
@@ -1065,19 +998,13 @@ added.
 
 Function source code:
 <pre><code>
-                        if(document.getElementById("part"+i).value !=null){
+		if(document.getElementById("part"+i).value !=null){
+	    		firebase.database().ref("dirTest/test2/"+id).update({
+				date0: date_p.toString(),
+				part0: document.getElementById("part"+i).value
+	    		});
+		}//1
 
-                                    
-firebase.database().ref("dirTest/test2/"+id).update({
-
-                                                date0: date\_p.toString(),
-
-                                                part0:
-document.getElementById("part"+i).value
-
-                                     });
-
-                        }//1
 </pre></code>
 This if statement is first checking if the input field is null or empty, and if
 that returns a true, it will skip to the next field because we don’t want to be
@@ -1108,11 +1035,11 @@ Installing the firebase-python library is fairly easy and can be done using the
 following commands:
 
  
-
+<pre><code>
 Sudo pip install requests 
 
 Sudo pip install python-firebase
-
+</pre></code>
  
 
 ### Creating the python executable file to scan and send data to the database
@@ -1124,9 +1051,9 @@ set up firebase, all that is required is to import the firebase library and then
 use the following code to connect it to your own database:
 
  
-
-firebase =
-firebase.FirebaseApplication('https://yourfirebase.firebaseio.com',None)
+<pre><code>
+firebase = firebase.FirebaseApplication('https://yourfirebase.firebaseio.com',None)
+</pre></code>
 
  
 
@@ -1135,9 +1062,9 @@ firebase.FirebaseApplication('https://yourfirebase.firebaseio.com',None)
             When you need to send data use the following code:
 
  
-
+<pre><code>
 firebase.put('dir/path','value', symbol.data)
-
+</pre></code>
  
 
 where ‘smybol.data’ is a variable that holds the scanned barcode information.
@@ -1152,27 +1079,17 @@ When your raspberry Pi is correctly sending data, all we have to do now is to
 create a function that will take the data and do something with it on a trigger.
 This trigger is going to be using the focus() Jquery function.
 <pre><code>
-if(\$("\#part0").length){
+if($("#part0").length){
+                $("#part0").focus(function() {
+                        //display the value
+                        ref2.once("value").then(function(snapshot) {
+                                snapshot.forEach(function(childSnapshot) {                                             
+                                        document.getElementById("part0").value=childSnapshot.val();       
+                                }); //childSnapshot
+                        }); //snapshot
+                });
+        }//if
 
-                \$("\#part0").focus(function() {
-
-                        //display the value
-
-                        ref2.once("value").then(function(snapshot) {
-
-                                snapshot.forEach(function(childSnapshot)
-{                                             
-
-                                       
-document.getElementById("part0").value=childSnapshot.val();       
-
-                                }); //childSnapshot
-
-                        }); //snapshot
-
-                });
-
-        }//if
 </pre></code>
 This function first checks if the element id exists, then checks if the field
 with ‘part0’ id is set on focus and if everything returns a true, it will
@@ -1213,7 +1130,6 @@ JUnit testing can also be used in order to check the mobile application. But
 these requires some steps:
 
  
-<pre><code>
 1.      Set up your testing environment
 
 You must have a directory module-name`/src/test/java/` where you must store the
@@ -1225,104 +1141,59 @@ use the standard APIs provided by the JUnit 4 framework.
  
 
 2.      Add libraries under dependencies
-
+<pre><code>
 dependencies {
-
-    // Required -- JUnit 4 framework
-
-    testCompile 'junit:junit:4.12'
-
-    // Optional -- Mockito framework
-
-    testCompile 'org.mockito:mockito-core:1.10.19'
-
+    // Required -- JUnit 4 framework
+    testCompile 'junit:junit:4.12'
+    // Optional -- Mockito framework
+    testCompile 'org.mockito:mockito-core:1.10.19'
 }
+</pre></code>
 
 3.      Create a local unit test class
 
 For instance, you can follow this example for sampling purposes:
-
+<pre><code>
 package humberparts.walkingprogrammers;
 
-
-
 import android.content.Context;
-
 import android.test.InstrumentationTestCase;
 
-
-
 import org.junit.Assert;
-
 import org.junit.Before;
-
 import org.junit.Test;
-
-
 
 import static org.junit.Assert.assertTrue;
 
-
-
-/
-
-  Created by RAF on 2016-12-12.
-
- /
-
+/**
+ * Created by RAF on 2016-12-12.
+ */
 public class DatabaseActivityTest extends InstrumentationTestCase {
 
+    private DatabaseActivity testDB= new DatabaseActivity(getInstrumentation().getTargetContext());
 
+    @Test
+    public void insertData() throws Exception {
 
-    private DatabaseActivity testDB= new DatabaseActivity(getInstrumentation().getTargetContext());
+        assertTrue(testDB.insertData("n123","kk", "p123"));
+    }
 
+    @Test
+    public void search() throws Exception {
 
+        Assert.assertNotNull(testDB.search("n123"));
+    }
 
-    @Test
+    @Test
+    public void databaseViewer() throws Exception {
+        assertNotNull(testDB.databaseViewer());
+    }
 
-    public void insertData() throws Exception {
+    @Test
+    public void deleteData() throws Exception {
+        assertNotNull(testDB.deleteData("n123"));
 
-
-
-        assertTrue(testDB.insertData("n123","kk", "p123"));
-
-    }
-
-
-
-    @Test
-
-    public void search() throws Exception {
-
-
-
-        Assert.assertNotNull(testDB.search("n123"));
-
-    }
-
-
-
-    @Test
-
-    public void databaseViewer() throws Exception {
-
-        assertNotNull(testDB.databaseViewer());
-
-    }
-
-
-
-    @Test
-
-    public void deleteData() throws Exception {
-
-        assertNotNull(testDB.deleteData("n123"));
-
-
-
-    }
-
-
+    }
 
 }
 </pre></code>
