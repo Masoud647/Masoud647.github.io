@@ -622,7 +622,7 @@ and then be placed in a database. Now understanding what the concept of the
 humber part crib database project is, the system diagram can be easily
 interpreted.
 
-![systemdiagram](https://masoud647.github.io/Buildlog/SystemDiagram.PNG)
+![systemdiagram](Picture/Design.PNG)
 
 *Image 1: This picture displays the system and how it works*
 
@@ -764,7 +764,7 @@ wearing safety glasses and make sure the workplace is clear. The soldering was
 fairly simple to complete because of the schematic which outlined where
 everything goes.
 
-![PCB](https://masoud647.github.io/Buildlog/pcb.jpg)
+![PCB](Picture/PCB.PNG)
 
 *Image 3: Displays the PCB and all its glory*
 
@@ -793,8 +793,6 @@ addition LED light.
 --------------------------
 
 ### Getting Started
-
- 
 
 First of all, when you’re starting to build a completely new web interface,
 you’ll need a few things planned. You’ll need to make sure to answer each of the
@@ -837,8 +835,8 @@ can do so by the following commands:
 
  
 
- you’ll want to do this as updating software gets rid of unwanted bugs that
-could lead to Malicious data being stoned inside your cache.
+you’ll want to do this as updating software gets rid of unwanted bugs that could
+lead to Malicious data being stoned inside your cache.
 
  
 
@@ -885,7 +883,7 @@ configuration keys on each web interface page you’ll be using it in.
 
 An example might look like this:
 
- 
+ <pre><code>
 
 *\<script\> // Initialize Firebase *
 
@@ -906,7 +904,7 @@ An example might look like this:
 
 *\</script\>*
 
- 
+ </pre></code>
 
 Where ref will be where you’re going to be referencing data from every time you
 want to add retrieve data.
@@ -930,7 +928,7 @@ student’s parts and input that in a corresponding table.
 Here’s an example of the data snapshot function retrieving live student data and
 inserting it in a table.
 
- 
+ <pre><code>
 
 *ref.once("value").then(function(snapshot) {*
 
@@ -1038,9 +1036,8 @@ cell3.innerHTML+=partR+"\<br\>";*
 *                        }); //childSnapshot*
 
 *            }); //snapsho*t
-
+</pre></code>
  
-
 This function is also checking if a student has a part that is over 3 days old
 and if that returns true, it will add a yellow highlighter under its date for
 each student. The cell1,2, and 3 is how each student is getting inserted into
@@ -1049,17 +1046,11 @@ date, and cell3 is for the last column which is the part number. The partR and
 dateR variables are the part and date that is getting retrieved from each
 student.
 
- 
-
 As you can already tell, loops are the key for this function, here we have
 nested for loops each working together at corresponding rates in order to
 retrieve different data from the database.
 
- 
-
 ### Adding data to firebase
-
- 
 
 Adding data to firebase is way simpler from retrieving data. To add data, you’ll
 again need your firebase configuration identifiers and your reference variable
@@ -1069,18 +1060,14 @@ them in JavaScript as strings, to do so use the following code:
 
 Var id = document.getElementById("student\_id").value;
 
- 
-
 In my case, the ‘id’ variable is the student’s id and that’s what’s going to be
 added to the database including the part number provided that same way. To this
 data to the database, we will have to use the .update() function because using
 the .set() function will delete all the older data and only display what’s newly
 added.
 
- 
-
 Function source code:
-
+<pre><code>
                        * if(document.getElementById("part"+i).value !=null){*
 
 *                                    
@@ -1094,9 +1081,7 @@ document.getElementById("part"+i).value*
 *                                     });*
 
 *                        }//1*
-
- 
-
+</pre></code>
 This if statement is first checking if the input field is null or empty, and if
 that returns a true, it will skip to the next field because we don’t want to be
 adding null fields in our database. But however, if the input wasn’t empty, it
@@ -1116,9 +1101,9 @@ which we can then retrieve it and display it instantly on the screen using the
 .focus() Jquery function so that the barcode scanned will be instantly displayed
 to the web interface application when the user focuses on a certain field.
 
-###  
+ 
 
-###             Installing the python-firebase library on a raspberry Pi
+### Installing the python-firebase library on a raspberry Pi
 
  
 
@@ -1133,7 +1118,9 @@ following commands:
 
  
 
-###             Creating the python executable file to scan and send data to the database
+### Creating the python executable file to scan and send data to the database
+
+ 
 
 Programming in python is much easier than programming in any other language, to
 set up firebase, all that is required is to import the firebase library and then
@@ -1160,16 +1147,14 @@ where ‘smybol.data’ is a variable that holds the scanned barcode information
 
  
 
-###             Setting up the web interface to retrieve scanned barcode
+### Setting up the web interface to retrieve scanned barcode
 
  
 
 When your raspberry Pi is correctly sending data, all we have to do now is to
 create a function that will take the data and do something with it on a trigger.
 This trigger is going to be using the focus() Jquery function.
-
- 
-
+<pre><code>
 *if(\$("\#part0").length){*
 
 *                \$("\#part0").focus(function() {*
@@ -1191,9 +1176,7 @@ document.getElementById("part0").value=childSnapshot.val();       *
 *                });*
 
 *        }//if*
-
- 
-
+</pre></code>
 This function first checks if the element id exists, then checks if the field
 with ‘part0’ id is set on focus and if everything returns a true, it will
 retrieve a value from the scanned value by the raspberry Pi and input that value
@@ -1233,10 +1216,8 @@ JUnit testing can also be used in order to check the mobile application. But
 these requires some steps:
 
  
-
+<pre><code>
 1.      Set up your testing environment
-
- 
 
 You must have a directory module-name`/src/test/java/` where you must store the
 source files for the local unit tests under the Android Studio project. It is
@@ -1248,11 +1229,6 @@ use the standard APIs provided by the JUnit 4 framework.
 
 2.      Add libraries under dependencies
 
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
- 
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 dependencies {
 
     // Required -- JUnit 4 framework
@@ -1264,29 +1240,11 @@ dependencies {
     testCompile 'org.mockito:mockito-core:1.10.19'
 
 }
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
- 
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 3.      Create a local unit test class
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
- 
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 For instance, you can follow this example for sampling purposes:
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
- 
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 package humberparts.walkingprogrammers;
 
 
@@ -1370,11 +1328,12 @@ public class DatabaseActivityTest extends InstrumentationTestCase {
 
 
 }
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
+</pre></code>
 In this example, we tested the insertion of a new record in the database (Sign
 out items), search for a specific record, and show all the records in the
 database (View database) and deleting a record from the database (Return item)
+
+ 
 
 ### Test Cases
 
@@ -1382,7 +1341,9 @@ We created a testplan with multiple test cases in order to see the functionality
 of the mobile application and check if everything is working as expected. The
 test cases are as follows:
 
-**Mobile Application**
+ 
+
+### Mobile Application
 
 **Test Case \#1: Inventory**
 
@@ -1405,7 +1366,6 @@ The admin should be able to navigate to the inventory successfully.
 As expected
 
  
-
 **Test Case \#2: Inventory Search**
 
 **Purpose:**
@@ -1425,7 +1385,6 @@ Enter the id number in the search on the toolbar and view that specific item
 
 As expected
 
- 
 
 **Test Case \#3: Decrement \# of stocks**
 
@@ -1446,7 +1405,6 @@ Enter the student number and part number and click submit
 
 As expected
 
- 
 
 **Test Case \#4: View Database**
 
@@ -1468,7 +1426,6 @@ are being rented out.
 
 As expected
 
- 
 
 **Test Case \#5: Settings**
 
@@ -1490,9 +1447,6 @@ Click on setting and the click on either “About us” or “Version \#”
 
 As expected
 
- 
-
- 
 
 **Test Case \#6: Back Button**
 
@@ -1513,7 +1467,9 @@ Click on the “Back” button on the toolbar and go to the previous activity
 
 As expected
 
-**Web Interface**
+ 
+
+### Web Interface
 
 **Test Case \#1: Admin Login**
 
@@ -1534,7 +1490,6 @@ For example; admin and password: root
 **Expected Results:**
 
 As expected
-
  
 
 **Test Case \#2: Add Student**
@@ -1556,7 +1511,6 @@ and click the submit button
 
 As expected
 
- 
 
 **Test Case \#3: Remove all Student parts**
 
@@ -1579,7 +1533,6 @@ the remove all button and all the parts will be returned.
 As expected
 
  
-
 **Test Case \#4: Remove Individual Student parts**
 
 **Purpose:**
@@ -1603,7 +1556,6 @@ part and click ‘Submit’
 As expected
 
  
-
 **Test Case \#5: Search student in view database**
 
 **Purpose:**
@@ -1623,8 +1575,6 @@ wasn’t found in the database
 **Expected Results:**
 
 As expected
-
- 
 
 2.5.9 Production Testing
 ------------------------
