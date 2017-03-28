@@ -330,13 +330,13 @@ Recommendations](https://github.com/Masoud647/Masoud647.github.io#4-recommendati
 Illustration/Diagrams
 =====================
 
-Image 1: System Diagram
+Figure 1: System Diagram
 
-Image 2: PCB
+Figure 2: PCB
 
-Image 3: Audio Amplifier/LED
+Figure 3: Audio Amplifier/LED
 
-Image 4: Mobile Application Diagram Mock up
+Figure 4: Mobile Application Diagram Mock up
 
 \pagebreak
 
@@ -646,11 +646,9 @@ and then be placed in a database. Now understanding what the concept of the
 humber part crib database project is, the system diagram can be easily
 interpreted.
 
+ 
+
 ![System Diagram](Picture/Design.PNG)
-
- 
-
- 
 
 2.5.3 Bill of Materials/Budget
 ------------------------------
@@ -796,10 +794,6 @@ everything goes.
 
 ![PCB](Picture/PCB.PNG)
 
- 
-
- 
-
 Also, if you don’t want to use the modular sense hat, you can create a audio
 amplifier with an additional LED included on the same circuit board. The audio
 amplifier is used to use actually audio sound instead of frequency sound, the
@@ -818,8 +812,6 @@ Here is the schematic you can use to help build the audio amplifier with an
 addition LED light.
 
 ![Audio Amplifier/LED](Picture/Audioamplifierpci.PNG)
-
- 
 
 2.5.7 Web Interface Design
 --------------------------
@@ -1110,10 +1102,6 @@ through the web interface, the number of stocks in the parts will be
 decremented.
 
 ![Mobile Application Diagram Mock up](Picture/App.PNG)
-
- 
-
- 
 
 This mockup diagram shows a general functionality of the mobile application. It
 shows how th**e** user can use the mobile application in order to navigate
