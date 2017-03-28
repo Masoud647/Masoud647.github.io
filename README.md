@@ -6,9 +6,10 @@ title: "\\Humber Parts Crib Database by The Walking Programmers"
 author: "Rafil Yashooa, Masoud Rahguzar, Divesh Oree"
 ---
 
-Project Website: [Masoud647.github.io](https://masoud647.github.io/)
+\vfill March 28th, 2017 Project Website:
+[Masoud647.github.io](https://masoud647.github.io/)
 
-Parts Crib Database \pagebreak
+Parts Crib Database \pagebreak \linespread{2} \selectfont
 
 Declaration of Joint Authorship
 -------------------------------
