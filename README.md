@@ -844,9 +844,15 @@ doesn’t provide much.
  
 
 The first thing to do is to update your raspberry Pi to the latest settings, you
-can do so by the following commands: \~\~\~ sudo apt-get update sudo apt-get
-upgrade \~\~\~ you’ll want to do this as updating software gets rid of unwanted
-bugs that could lead to Malicious data being stoned inside your cache.
+can do so by the following commands:
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+sudo apt-get update 
+sudo apt-get upgrade
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+you’ll want to do this as updating software gets rid of unwanted bugs that could
+lead to Malicious data being stoned inside your cache.
 
  
 
@@ -860,8 +866,12 @@ from here:
 <http://grepcode.com/snapshot/repo1.maven.org/maven2/com.firebase/firebase-client-jvm/2.0.2>
 
 And then adding it to working directory, don’t forget to change the file’s
-permission by executing the following command: \~\~\~\~\~ Sudo chmod 711
-firebase-client-jvm-2.0.2-sources.jar \~\~\~\~\~
+permission by executing the following command:
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Sudo chmod 711
+firebase-client-jvm-2.0.2-sources.jar 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 After doing so, your server should be firebase ready!
 
@@ -878,9 +888,19 @@ Project” and following the instruction on the screen.
 To add and retrieve data from firebase, you’ll need to initialize the correct
 configuration keys on each web interface page you’ll be using it in.
 
-An example might look like this: \~\~\~\~
+An example might look like this:
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+var config = { apiKey: "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX", 
+authDomain: "humberparts.firebaseapp.com", 
+databaseURL: "https://humberparts.firebaseio.com", 
+storageBucket: "humberparts.appspot.com", 
+messagingSenderId: "XXXXXXXXXXXXXXX”
+};
+ firebase.initializeApp(config);
+ var ref = firebase.database().ref("pathTo/folder/");
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
 Where ref will be where you’re going to be referencing data from every time you
 want to add retrieve data.  
 
@@ -895,8 +915,7 @@ function. In our case, we are retrieving student numbers and each of the
 student’s parts and input that in a corresponding table.
 
   Here’s an example of the data snapshot function retrieving live student data
-and inserting it in a table.
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+and inserting it in a table. \~\~\~\~
 
 ref.once("value").then(function(snapshot) { var i=0; var index=0; var count=0;
 var partCount=0; snapshot.forEach(function(childSnapshot) { //number of children
