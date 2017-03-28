@@ -23,10 +23,10 @@ project is equally divided defined in [section
 Approved Proposal
 -----------------
 
-*Technical Report for the development of Parts Crib DataBase*
+Technical Report for the development of Parts Crib DataBase
 
 Prepared by Masoud Rahguzar, Divesh Oree, Rafil Yashooa  
-*Computer Engineering Technology Student*  
+Computer Engineering Technology Student  
 Masoud647.github.io
 
 Executive Summary
@@ -37,15 +37,15 @@ integrating the knowledge and skills we have learned from our program into this
 Internet of Things themed capstone project. This proposal requests the approval
 to build the hardware portion that will connect to a database as well as to a
 mobile device application. The internet connected hardware will include a custom
-PCB with sensors and actuators for **Parts Crib Database**. The database will
-**store information of students who sign out items from the parts crib**. The
-mobile device functionality will include **list amount of each item in the parts
-crib and how many are left after being sign out and** will be further detailed
+PCB with sensors and actuators for Parts Crib Database. The database will
+store information of students who sign out items from the parts crib. The
+mobile device functionality will include list amount of each item in the parts
+crib and how many are left after being sign out and will be further detailed
 in the mobile application proposal. We will be collaborating with the following
-company/department **Humber College Information Technology**. In the winter
+company/department Humber College Information Technology. In the winter
 semester we plan to form a group with the following students, who are also
 building similar hardware this term and working on the mobile application with
-the following group members **Masoud Rahguzar, Rafil Yashooa and Divesh Oree**.
+the following group members Masoud Rahguzar, Rafil Yashooa and Divesh Oree.
 The hardware will be completed in CENG 317 Hardware Production Techniques
 independently and the application will be completed in CENG 319 Software
 Project.
@@ -102,7 +102,7 @@ Phase 1 Hardware build.
 Phase 2 System integration.  
 Phase 3 Demonstration to future employers.
 
-*Phase 1 Hardware build*
+Phase 1 Hardware build
 
 The hardware build will be completed in the fall term. It will fit within the
 CENG Project maximum dimensions of 12 13/16" x 6" x 2 7/8" (32.5cm x 15.25cm x
@@ -110,11 +110,11 @@ CENG Project maximum dimensions of 12 13/16" x 6" x 2 7/8" (32.5cm x 15.25cm x
 AC voltage that will be used is 16Vrms from a wall adaptor from which +/- 15V or
 as high as 45 VDC can be obtained. Maximum power consumption will be 20 Watts.
 
-*Phase 2 System integration*
+Phase 2 System integration
 
 The system integration will be completed in the fall term.
 
-*Phase 3 Demonstration to future employers*
+Phase 3 Demonstration to future employers
 
 This project will showcase the knowledge and skills that I have learned to
 potential employers.
@@ -124,9 +124,9 @@ each phase. A Gantt chart will be added by week 3 to provide more project
 schedule details and a more complete budget will be added by week 4. It is
 important to start tasks as soon as possible to be able to meet deadlines.
 
-| **Labour Estimates**                                                                      | **Hrs**        | **Notes**                                                                                                                      |
+| Labour Estimates                                                                      | Hrs        | Notes                                                                                                                      |
 |-------------------------------------------------------------------------------------------|----------------|--------------------------------------------------------------------------------------------------------------------------------|
-| **Phase 1**                                                                               |                |                                                                                                                                |
+| Phase 1                                                                               |                |                                                                                                                                |
 | Writing proposal.                                                                         | 9              | Tech identification quiz.                                                                                                      |
 | Creating project schedule. Initial project team meeting.                                  | 9              | Proposal due.                                                                                                                  |
 | Creating budget. Status Meeting.                                                          | 9              | Project Schedule due.                                                                                                          |
@@ -142,8 +142,8 @@ important to start tasks as soon as possible to be able to meet deadlines.
 | 1st round of Presentations, Collaborators present.                                        | 9              | Presentation PowerPoint file due.                                                                                              |
 | 2nd round of Presentations                                                                | 9              | Build instructions up due.                                                                                                     |
 | Project videos, Status Meeting.                                                           | 9              | 30 second script due.                                                                                                          |
-| **Phase 1 Total**                                                                         | **135**        |                                                                                                                                |
-| **Phase 2**                                                                               |                |                                                                                                                                |
+| Phase 1 Total                                                                         | 135        |                                                                                                                                |
+| Phase 2                                                                               |                |                                                                                                                                |
 | Meet with collaborators                                                                   | 9              | Status Meeting                                                                                                                 |
 | Initial integration.                                                                      | 9              | Progress Report                                                                                                                |
 | Meet with collaborators                                                                   | 9              | Status Meeting                                                                                                                 |
@@ -159,27 +159,27 @@ important to start tasks as soon as possible to be able to meet deadlines.
 | Complete final report. 1st round of Presentations.                                        | 9              | Presentation PowerPoint file due.                                                                                              |
 | Write video script. 2nd round of Presentations, delivery of project.                      | 9              | Final written report including final budget and record of expenditures, covering both this semester and the previous semester. |
 | Project videos.                                                                           | 9              | Video script due                                                                                                               |
-| **Phase 2 Total**                                                                         | **135**        |                                                                                                                                |
-| **Phase 3**                                                                               |                |                                                                                                                                |
+| Phase 2 Total                                                                         | 135        |                                                                                                                                |
+| Phase 3                                                                               |                |                                                                                                                                |
 | Interviews                                                                                | TBD            |                                                                                                                                |
-| **Phase 3 Total**                                                                         | **TBD**        |                                                                                                                                |
-| **Material Estimates**                                                                    | **Cost**       | **Notes**                                                                                                                      |
-| **Phase 1**                                                                               |                |                                                                                                                                |
+| Phase 3 Total                                                                         | TBD        |                                                                                                                                |
+| Material Estimates                                                                    | Cost       | Notes                                                                                                                      |
+| Phase 1                                                                               |                |                                                                                                                                |
 | Raspberry Pi 3.0(Kit), HDMI, Webcam, LED lights, PCB, Speaker                             | 189            |                                                                                                                                |
 | Peripherals with cables                                                                   |                |                                                                                                                                |
 | Sensors                                                                                   |                |                                                                                                                                |
 |                                                                                           |                |                                                                                                                                |
 |                                                                                           |                |                                                                                                                                |
-| **Phase 1 Total**                                                                         | **\>\$200.00** |                                                                                                                                |
-| **Phase 2**                                                                               |                |                                                                                                                                |
+| Phase 1 Total                                                                         | \>\$200.00 |                                                                                                                                |
+| Phase 2                                                                               |                |                                                                                                                                |
 | Materials to improve functionality, fit, and finish of project.                           |                |                                                                                                                                |
-| **Phase 2 Total**                                                                         | **TBD**        |                                                                                                                                |
-| **Phase 3**                                                                               |                |                                                                                                                                |
+| Phase 2 Total                                                                         | TBD        |                                                                                                                                |
+| Phase 3                                                                               |                |                                                                                                                                |
 | Off campus colocation                                                                     | N/A            | N/A                                                                                                                            |
-| *Shipping*                                                                                | *25*           |                                                                                                                                |
-| *Tax*                                                                                     | *18*           |                                                                                                                                |
-| *Duty*                                                                                    | *N/A*          |                                                                                                                                |
-| **Phase 3 Total**                                                                         | **43**         |                                                                                                                                |
+| Shipping                                                                                | 25           |                                                                                                                                |
+| Tax                                                                                     | 18           |                                                                                                                                |
+| Duty                                                                                    | N/A          |                                                                                                                                |
+| Phase 3 Total                                                                         | 43         |                                                                                                                                |
 
 Concluding remarks
 ------------------
@@ -624,7 +624,7 @@ interpreted.
 
 ![systemdiagram](Picture/Design.PNG)
 
-*Image 1: This picture displays the system and how it works*
+Image 1: This picture displays the system and how it works
 
 2.5.3 Bill of Materials/Budget
 ------------------------------
@@ -650,7 +650,7 @@ pi kit. Our full excel version of our budget is provided in our GitHub page.
 
 \~ Budget
 
-*Image 2: This picture displays the budget in a excel format*
+Image 2: This picture displays the budget in a excel format
 
 2.5.4 Time Commitment
 ---------------------
@@ -674,9 +674,9 @@ created our acrylic box, the box design took about 1 hour to complete and the
 lazar cut took about 20 minutes. Here at the bottom is all the task we completed
 and will be easier to understand.
 
-**Time Commitment Schedule:**
+Time Commitment Schedule:
 
-| **Tasks**                 | **Time Required**           |
+| Tasks                 | Time Required           |
 |---------------------------|-----------------------------|
 | Ordering Parts & Delivery | 2 Weeks                     |
 | Raspberry Pi Setup        | 1 hour                      |
@@ -690,7 +690,7 @@ and will be easier to understand.
 | Web-Application Interface | 3 Weeks (Approx. 150 hours) |
 | Mobile Application        | 6 Weeks (Approx. 50 hours)  |
 
-*Table 1: Display time commitment in a table format*
+Table 1: Display time commitment in a table format
 
 2.5.5 Mechanical Assembly & Setup
 ---------------------------------
@@ -701,7 +701,7 @@ proceed and connect the webcam to the USB port on the raspberry pi and then
 lastly connect the raspberry pi to a power outlet. And that’s how to Assembly
 all the parts of our project to get the Humber Parts Crib working properly.
 
-**Easy Steps to follow**
+Easy Steps to follow
 
 When you start up a Raspberry Pi, you should always start with updating it by
 using these commands: sudo apt-get update and sudo apt-get upgrade.
@@ -711,17 +711,18 @@ updates from the developers.
 
 First of all, you’ll need to install python and the python/zbar library using
 the following commands:
+<pre><code>
 
 sudo apt-get install python-dev
 
 sudo apt-get install python-pip
-
+</pre></code>
 Next, you’ll need to install pillow
-
+<pre><code>
 sudo apt-get install python-pip
 
 sudo apt-get install python-httplib2
-
+</pre></code>
 After, go ahead and download the zbar library from this github
 account:[Here](https://github.com/npinchot/zbar)
 
@@ -766,7 +767,7 @@ everything goes.
 
 ![PCB](Picture/PCB.PNG)
 
-*Image 3: Displays the PCB and all its glory*
+Image 3: Displays the PCB and all its glory
 
 Also, if you don’t want to use the modular sense hat, you can create a audio
 amplifier with an additional LED included on the same circuit board. The audio
@@ -787,7 +788,7 @@ addition LED light.
 
 ![Audio Amplifier/LED](Picture/Audioamplifierpci.PNG)
 
-*Image 4: Displays the Audio Amplifier*
+Image 4: Displays the Audio Amplifier
 
 2.5.7 Web Interface Design
 --------------------------
@@ -826,15 +827,11 @@ doesn’t provide much.
 
 The first thing to do is to update your raspberry Pi to the latest settings, you
 can do so by the following commands:
+<pre><code>
+sudo apt-get update 
 
- 
-
-*sudo apt-get update *
-
-*sudo apt-get upgrade*
-
- 
-
+sudo apt-get upgrade
+</pre></code>
 you’ll want to do this as updating software gets rid of unwanted bugs that could
 lead to Malicious data being stoned inside your cache.
 
@@ -885,24 +882,24 @@ An example might look like this:
 
  <pre><code>
 
-*\<script\> // Initialize Firebase *
+\<script\> // Initialize Firebase 
 
-*var config = { apiKey: "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX", authDomain:
-"humberparts.firebaseapp.com", *
+var config = { apiKey: "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX", authDomain:
+"humberparts.firebaseapp.com", 
 
-*databaseURL: "https://humberparts.firebaseio.com", *
+databaseURL: "https://humberparts.firebaseio.com", 
 
-*storageBucket: "humberparts.appspot.com", *
+storageBucket: "humberparts.appspot.com", 
 
-*messagingSenderId: "XXXXXXXXXXXXXXX”*
+messagingSenderId: "XXXXXXXXXXXXXXX”
 
-*};*
+};
 
-* firebase.initializeApp(config);*
+ firebase.initializeApp(config);
 
-* var ref = firebase.database().ref("pathTo/folder/");*
+ var ref = firebase.database().ref("pathTo/folder/");
 
-*\</script\>*
+\</script\>
 
  </pre></code>
 
@@ -928,114 +925,114 @@ student’s parts and input that in a corresponding table.
 Here’s an example of the data snapshot function retrieving live student data and
 inserting it in a table.
 
- <pre><code>
+<pre><code>
 
-*ref.once("value").then(function(snapshot) {*
+ref.once("value").then(function(snapshot) {
 
-*                        var i=0;*
+                        var i=0;
 
-*                        var index=0;*
+                        var index=0;
 
-*                        var count=0;*
+                        var count=0;
 
-*                        var partCount=0;*
+                        var partCount=0;
 
-*                        snapshot.forEach(function(childSnapshot) {*
+                        snapshot.forEach(function(childSnapshot) {
 
-*                                    //number of children*
+                                    //number of children
 
-*                                    var numChild = snapshot.numChildren();*
+                                    var numChild = snapshot.numChildren();
 
-*                                     var key1 = [childSnapshot.key];*
+                                     var key1 = [childSnapshot.key];
 
-*                                     // childData will be the actual contents
-of the child*
+                                     // childData will be the actual contents
+of the child
 
-*                                     var childData = childSnapshot.val();*
+                                     var childData = childSnapshot.val();
 
-*                                    var dateR =
-snapshot.child(key1.toString()).child("date"+count).val();*
+                                    var dateR =
+snapshot.child(key1.toString()).child("date"+count).val();
 
-*                                    var partR =
-snapshot.child(key1.toString()).child("part"+count).val();*
+                                    var partR =
+snapshot.child(key1.toString()).child("part"+count).val();
 
-*                                   
-cell1.innerHTML+="\<b\>"+key1+"\<b\>\<br\>";*
+                                   
+cell1.innerHTML+="\<b\>"+key1+"\<b\>\<br\>";
 
-*                                    for(var i=0;i\<20;i++){*
+                                    for(var i=0;i\<20;i++){
 
-*                                               
-if(snapshot.child(key1.toString()).child("date"+i).val()==null){*
+                                               
+if(snapshot.child(key1.toString()).child("date"+i).val()==null){
 
-*                                                            //do nothing*
+                                                            //do nothing
 
-*                                                }else{*
+                                                }else{
 
-*                                                            dateR =
-snapshot.child(key1.toString()).child("date"+i).val();*
+                                                            dateR =
+snapshot.child(key1.toString()).child("date"+i).val();
 
-*                                                            partR =
-snapshot.child(key1.toString()).child("part"+i).val();*
+                                                            partR =
+snapshot.child(key1.toString()).child("part"+i).val();
 
-*                                                           
-cell1.innerHTML+="\<br\>";*
+                                                           
+cell1.innerHTML+="\<br\>";
 
-*                                                            date\_old = new
-Date(dateR.toString());*
+                                                            date\_old = new
+Date(dateR.toString());
 
-*                                                            var diffDays =
-Math.round(Math.abs((date\_now.getTime() - date\_old.getTime())/(oneDay)));*
+                                                            var diffDays =
+Math.round(Math.abs((date\_now.getTime() - date\_old.getTime())/(oneDay)));
 
-*                                                            if(diffDays \> 3){*
+                                                            if(diffDays \> 3){
 
-*                                                                        //more
-than 3 days old*
+                                                                        //more
+than 3 days old
 
-*                                                                       
-cell2.innerHTML+="\<mark\>"+dateR+"\</mark\>\<br\>";*
+                                                                       
+cell2.innerHTML+="\<mark\>"+dateR+"\</mark\>\<br\>";
 
-*                                                            }else{*
+                                                            }else{
 
-*                                                                        //less
-than 3 days old*
+                                                                        //less
+than 3 days old
 
-*                                                                       
-cell2.innerHTML+=dateR+"\<br\>";      *
+                                                                       
+cell2.innerHTML+=dateR+"\<br\>";      
 
-*                                                            }//else*
+                                                            }//else
 
-*                                                           
-cell3.innerHTML+=partR+"\<br\>";*
+                                                           
+cell3.innerHTML+=partR+"\<br\>";
 
-*                                                            partCount++;*
+                                                            partCount++;
 
-*                                                }//if*
+                                                }//if
 
-*                                    }//for*
+                                    }//for
 
-*                                    cell2.innerHTML+="\<hr\>"; *
+                                    cell2.innerHTML+="\<hr\>"; 
 
-*                                    cell3.innerHTML+="\<hr\>"; *
+                                    cell3.innerHTML+="\<hr\>"; 
 
-*                                    //number of students*
+                                    //number of students
 
-*                                    itemN.innerHTML=numChild;*
+                                    itemN.innerHTML=numChild;
 
-*                                    //number of parts in total *
+                                    //number of parts in total 
 
-*                                    part\_num.innerHTML=partCount;*
+                                    part\_num.innerHTML=partCount;
 
-*                                    //add to array for search*
+                                    //add to array for search
 
-*                                    arr[index]=key1.toString();*
+                                    arr[index]=key1.toString();
 
-*                                    index++;*
+                                    index++;
 
-*                                    count++;*
+                                    count++;
 
-*                        }); //childSnapshot*
+                        }); //childSnapshot
 
-*            }); //snapsho*t
+            }); //snapshot
 </pre></code>
  
 This function is also checking if a student has a part that is over 3 days old
@@ -1068,19 +1065,19 @@ added.
 
 Function source code:
 <pre><code>
-                       * if(document.getElementById("part"+i).value !=null){*
+                        if(document.getElementById("part"+i).value !=null){
 
-*                                    
-firebase.database().ref("dirTest/test2/"+id).update({*
+                                    
+firebase.database().ref("dirTest/test2/"+id).update({
 
-*                                                date0: date\_p.toString(),*
+                                                date0: date\_p.toString(),
 
-*                                                part0:
-document.getElementById("part"+i).value*
+                                                part0:
+document.getElementById("part"+i).value
 
-*                                     });*
+                                     });
 
-*                        }//1*
+                        }//1
 </pre></code>
 This if statement is first checking if the input field is null or empty, and if
 that returns a true, it will skip to the next field because we don’t want to be
@@ -1112,9 +1109,9 @@ following commands:
 
  
 
-*Sudo pip install requests *
+Sudo pip install requests 
 
-*Sudo pip install python-firebas*e
+Sudo pip install python-firebase
 
  
 
@@ -1128,8 +1125,8 @@ use the following code to connect it to your own database:
 
  
 
-*firebase =
-firebase.FirebaseApplication('https://yourfirebase.firebaseio.com',None)*
+firebase =
+firebase.FirebaseApplication('https://yourfirebase.firebaseio.com',None)
 
  
 
@@ -1139,7 +1136,7 @@ firebase.FirebaseApplication('https://yourfirebase.firebaseio.com',None)*
 
  
 
-*firebase.put('dir/path','value', symbol.data)*
+firebase.put('dir/path','value', symbol.data)
 
  
 
@@ -1155,27 +1152,27 @@ When your raspberry Pi is correctly sending data, all we have to do now is to
 create a function that will take the data and do something with it on a trigger.
 This trigger is going to be using the focus() Jquery function.
 <pre><code>
-*if(\$("\#part0").length){*
+if(\$("\#part0").length){
 
-*                \$("\#part0").focus(function() {*
+                \$("\#part0").focus(function() {
 
-*                        //display the value*
+                        //display the value
 
-*                        ref2.once("value").then(function(snapshot) {*
+                        ref2.once("value").then(function(snapshot) {
 
-*                                snapshot.forEach(function(childSnapshot)
-{                                             *
+                                snapshot.forEach(function(childSnapshot)
+{                                             
 
-*                                       
-document.getElementById("part0").value=childSnapshot.val();       *
+                                       
+document.getElementById("part0").value=childSnapshot.val();       
 
-*                                }); //childSnapshot*
+                                }); //childSnapshot
 
-*                        }); //snapshot*
+                        }); //snapshot
 
-*                });*
+                });
 
-*        }//if*
+        }//if
 </pre></code>
 This function first checks if the element id exists, then checks if the field
 with ‘part0’ id is set on focus and if everything returns a true, it will
@@ -1267,11 +1264,11 @@ import static org.junit.Assert.assertTrue;
 
 
 
-/**
+/
 
- * Created by RAF on 2016-12-12.
+  Created by RAF on 2016-12-12.
 
- */
+ /
 
 public class DatabaseActivityTest extends InstrumentationTestCase {
 
@@ -1345,125 +1342,125 @@ test cases are as follows:
 
 ### Mobile Application
 
-**Test Case \#1: Inventory**
+Test Case \#1: Inventory
 
-**Purpose:**
-
-Have access to the inventory in order to be able to see the items name and
-number of items available in the stock
-
-**Precondition to run the case:**
+Purpose:
 
 Have access to the inventory in order to be able to see the items name and
 number of items available in the stock
 
-**Steps:**
+Precondition to run the case:
+
+Have access to the inventory in order to be able to see the items name and
+number of items available in the stock
+
+Steps:
 
 The admin should be able to navigate to the inventory successfully.
 
-**Expected Results:**
+Expected Results:
 
 As expected
 
  
-**Test Case \#2: Inventory Search**
+Test Case \#2: Inventory Search
 
-**Purpose:**
+Purpose:
 
 The admin should be able to search for a specific item alongside with the number
 of item in stock in the inventory
 
-**Precondition to run the case:**
+Precondition to run the case:
 
 Get the id number in order to do the search
 
-**Steps:**
+Steps:
 
 Enter the id number in the search on the toolbar and view that specific item
 
-**Expected Results:**
+Expected Results:
 
 As expected
 
 
-**Test Case \#3: Decrement \# of stocks**
+Test Case \#3: Decrement \# of stocks
 
-**Purpose:**
+Purpose:
 
 The admin after he signs out an item, the number of stocks for that part should
 be decremented
 
-**Precondition to run the case:**
+Precondition to run the case:
 
 Have the student number to be entered and the part number of the part
 
-**Steps:**
+Steps:
 
 Enter the student number and part number and click submit
 
-**Expected Results:**
+Expected Results:
 
 As expected
 
 
-**Test Case \#4: View Database**
+Test Case \#4: View Database
 
-**Purpose:**
+Purpose:
 
 Show the entire student currently on the database with their information
 (Student \#, Date, Part \#)
 
-**Precondition to run the case:**
+Precondition to run the case:
 
 Enter student in the database successfully
 
-**Steps:**
+Steps:
 
 Enter the student in the database using the student number and part number which
 are being rented out.
 
-**Expected Results:**
+Expected Results:
 
 As expected
 
 
-**Test Case \#5: Settings**
+Test Case \#5: Settings
 
-**Purpose:**
+Purpose:
 
 Has 2 buttons (About us, Version \#). Button 1 (About us) shows some information
 about our project and Button 2 (Version \#), displays a toast message the
 version
 
-**Precondition to run the case:**
+Precondition to run the case:
 
 Be able to navigate when setting is clicked
 
-**Steps:**
+Steps:
 
 Click on setting and the click on either “About us” or “Version \#”
 
-**Expected Results:**
+Expected Results:
 
 As expected
 
 
-**Test Case \#6: Back Button**
+Test Case \#6: Back Button
 
-**Purpose:**
+Purpose:
 
 Allow the admin to navigate back to different activities
 
-**Precondition to run the case:**
+Precondition to run the case:
 
 Be able to a set up all the activities and link them using appropriate buttons
 in order to allow the user to navigate forward when setting is clicked
 
-**Steps:**
+Steps:
 
 Click on the “Back” button on the toolbar and go to the previous activity
 
-**Expected Results:**
+Expected Results:
 
 As expected
 
@@ -1471,79 +1468,79 @@ As expected
 
 ### Web Interface
 
-**Test Case \#1: Admin Login**
+Test Case \#1: Admin Login
 
-**Purpose:**
+Purpose:
 
 Able to have access to the database.
 
-**Precondition to run the case:**
+Precondition to run the case:
 
 The admin should have a username and a password
 
-**Steps:**
+Steps:
 
 Insert a username.
 
 For example; admin and password: root
 
-**Expected Results:**
+Expected Results:
 
 As expected
  
 
-**Test Case \#2: Add Student**
+Test Case \#2: Add Student
 
-**Purpose:**
+Purpose:
 
 The admin should be able to add a student number and the part number
 
-**Precondition to run the case:**
+Precondition to run the case:
 
 Get the student number from the student and enter the part number of the items
 
-**Steps:**
+Steps:
 
 Scan/Enter the student number in the input field, scan/enter the part numbers
 and click the submit button
 
-**Expected Results:**
+Expected Results:
 
 As expected
 
 
-**Test Case \#3: Remove all Student parts**
+Test Case \#3: Remove all Student parts
 
-**Purpose:**
+Purpose:
 
 Delete a student from the database
 
-**Precondition to run the case:**
+Precondition to run the case:
 
 Enter the student Id
 
-**Steps:**
+Steps:
 
 Enter the student id in the input field and press Search ID. You will then be
 prompted with a table of the part numbers that the student has signed out, Press
 the remove all button and all the parts will be returned.
 
-**Expected Results:**
+Expected Results:
 
 As expected
 
  
-**Test Case \#4: Remove Individual Student parts**
+Test Case \#4: Remove Individual Student parts
 
-**Purpose:**
+Purpose:
 
 Delete a student from the database
 
-**Precondition to run the case:**
+Precondition to run the case:
 
 Enter the student Id
 
-**Steps:**
+Steps:
 
 Enter the student id in the input field and press Search ID. You will then be
 prompted with a table of the part numbers that the student has signed out, Click
@@ -1551,28 +1548,28 @@ on the ‘Remove Individual Part(s)’ button and you will be prompted with inpu
 equal to the same number of parts that the student has. Enter the key for each
 part and click ‘Submit’
 
-**Expected Results:**
+Expected Results:
 
 As expected
 
  
-**Test Case \#5: Search student in view database**
+Test Case \#5: Search student in view database
 
-**Purpose:**
+Purpose:
 
 Search for a specific student Id to check for usage
 
-**Precondition to run the case:**
+Precondition to run the case:
 
 Navigate to the view Database page with a student Id ready for searching
 
-**Steps:**
+Steps:
 
 Scan/enter the student Id and click ‘Search’. You will be prompted if the
 student was found with ‘Record Found!’ or a ‘Student not found!’ if the student
 wasn’t found in the database
 
-**Expected Results:**
+Expected Results:
 
 As expected
 
@@ -1585,7 +1582,7 @@ and place a barcode in front of the webcam. In addition, focus the webcam
 barcode will be place in a txt file and in the terminal it can display the txt
 file by typing for example “cat nameoftxt.txt”.
 
-**Downloads:**
+Downloads:
 
 All the downloads will be posted under my github page:
 
@@ -1595,7 +1592,7 @@ Source Files:
 2.6 Schedule
 ------------
 
-**Stage 1**
+Stage 1
 
 -   Proposal Tue. 9/6/16 - Tue. 9/13/16
 
@@ -1631,7 +1628,7 @@ Source Files:
 
 -   Individual Filming and Demonstration Mon. 11/21/16 - Tue. 12/13/16
 
-**Stage 2**
+Stage 2
 
 -   Scheduling & Group Meetings Mon. 1/09/17
 
@@ -1669,7 +1666,7 @@ Source Files:
 2.7 Progress Reports
 --------------------
 
-**January 30, 2017**
+January 30, 2017
 
 Progress Report
 
@@ -1718,7 +1715,7 @@ Links to the web application:
 
  
 
-**March 07, 2017**
+March 07, 2017
 
 Dear Kristian,
 
@@ -1775,7 +1772,7 @@ Rafil Yashooa
 
  
 
-**March 21, 2017**
+March 21, 2017
 
 Dear Kristian,
 
