@@ -7,8 +7,8 @@ author: "Rafil Yashooa, Masoud Rahguzar, Divesh Oree"
 ---
 
 Project Website: [Masoud647.github.io](https://masoud647.github.io/)
-
-\pagebreak   Parts Crib Database ===================
+Parts Crib Database
+\pagebreak  
 
 Declaration of Joint Authorship
 -------------------------------
@@ -32,6 +32,7 @@ Computer Engineering Technology Student
 Masoud647.github.io
 
 \pagebreak
+
 Executive Summary 
 ----------------------------
 
@@ -54,6 +55,7 @@ independently and the application will be completed in CENG 319 Software
 Project.
 
 \pagebreak
+
 Background
 --------------------
 
