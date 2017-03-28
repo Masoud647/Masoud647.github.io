@@ -650,7 +650,7 @@ interpreted.
 
  
 
-Image 1: This picture displays the system and how it works
+ 
 
 2.5.3 Bill of Materials/Budget
 ------------------------------
@@ -798,7 +798,7 @@ everything goes.
 
  
 
-Image 3: Displays the PCB and all its glory
+ 
 
 Also, if you don’t want to use the modular sense hat, you can create a audio
 amplifier with an additional LED included on the same circuit board. The audio
@@ -819,7 +819,7 @@ addition LED light.
 
 ![Audio Amplifier/LED](Picture/Audioamplifierpci.PNG)
 
-Image 4: Displays the Audio Amplifier
+ 
 
 2.5.7 Web Interface Design
 --------------------------
@@ -1113,7 +1113,7 @@ decremented.
 
  
 
-Image 4: Displays Mobile Application Diagram
+ 
 
 This mockup diagram shows a general functionality of the mobile application. It
 shows how th**e** user can use the mobile application in order to navigate
