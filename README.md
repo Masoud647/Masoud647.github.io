@@ -726,7 +726,7 @@ Next, you’ll need to install pillow:
 sudo apt-get install python-pip
 
 sudo apt-get install python-httplib2
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 After, go ahead and download the zbar library from this github
 account:[Here](https://github.com/npinchot/zbar)
@@ -885,8 +885,7 @@ messagingSenderId: "XXXXXXXXXXXXXXX”
  firebase.initializeApp(config);
  var ref = firebase.database().ref("pathTo/folder/");
 </script>
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Where ref will be where you’re going to be referencing data from every time you
 want to add retrieve data.  
 
@@ -950,7 +949,7 @@ ref.once("value").then(function(snapshot) {
 			count++;
   		}); //childSnapshot
   	}); //snapshot
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 This function is also checking if a student has a part that is over 3 days old
 and if that returns true, it will add a yellow highlighter under its date for
@@ -982,7 +981,7 @@ the .set() function will delete all the older data and only display what’s new
 added.
 
 Function source code:
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 if(document.getElementById("part"+i).value !=null){
 	    		firebase.database().ref("dirTest/test2/"+id).update({
@@ -1013,7 +1012,7 @@ following commands:
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Sudo pip install requests 
 Sudo pip install python-firebase
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 \#\#\# Creating the python executable file to scan and send data to the database
 
@@ -1023,9 +1022,9 @@ use the following code to connect it to your own database:
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 When you need to send data use the following code:
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 firebase.put('dir/path','value', symbol.data)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 where ‘smybol.data’ is a variable that holds the scanned barcode information.  
 
 ### Setting up the web interface to retrieve scanned barcode
@@ -1045,8 +1044,7 @@ if($("#part0").length){
                         }); //snapshot
                 });
         }//if
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 This function first checks if the element id exists, then checks if the field
 with ‘part0’ id is set on focus and if everything returns a true, it will
 retrieve a value from the scanned value by the raspberry Pi and input that value
@@ -1081,15 +1079,13 @@ page. The program can run by typing “python bar\_code.py” in the command lin
 JUnit testing can also be used in order to check the mobile application. But
 these requires some steps:
 
-  1.      Set up your testing environment
+1.      Set up your testing environment
 
 You must have a directory module-name`/src/test/java/` where you must store the
 source files for the local unit tests under the Android Studio project. It is
 normally already exists when you create a new project. Then you will have to
 configure the testing dependencies for your project so that it will be able to
 use the standard APIs provided by the JUnit 4 framework.
-
- 
 
 2.      Add libraries under dependencies
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -1099,11 +1095,11 @@ dependencies {
     // Optional -- Mockito framework
     testCompile 'org.mockito:mockito-core:1.10.19'
 }
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 3.      Create a local unit test class
 
 For instance, you can follow this example for sampling purposes:
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 package humberparts.walkingprogrammers;
 
 import android.content.Context;
@@ -1146,12 +1142,12 @@ public class DatabaseActivityTest extends InstrumentationTestCase {
     }
 
 }
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 In this example, we tested the insertion of a new record in the database (Sign
 out items), search for a specific record, and show all the records in the
 database (View database) and deleting a record from the database (Return item)
 
-  \#\#\# Test Cases
+### Test Cases
 
 We created a testplan with multiple test cases in order to see the functionality
 of the mobile application and check if everything is working as expected. The
