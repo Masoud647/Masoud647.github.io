@@ -329,15 +329,13 @@ Recommendations](https://github.com/Masoud647/Masoud647.github.io#4-recommendati
 Illustration/Diagrams
 =====================
 
-\pagebreak
-
- 
-
 Figure 1: System Diagram
 
 Figure 2: PCB
 
 Figure 3: Audio Amplifier/LED
+
+\pagebreak
 
 1. Introduction/Overview
 ========================
@@ -1030,12 +1028,12 @@ to the web interface application when the user focuses on a certain field.  
 ### Installing the python-firebase library on a raspberry Pi
 
 Installing the firebase-python library is fairly easy and can be done using the
-following commands: 
+following commands:
 
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Sudo pip install requests 
 Sudo pip install python-firebase 
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 ### Creating the python executable file to scan and send data to the database
 
@@ -1104,7 +1102,9 @@ are signed out from the inventory. Once the parts are removed from the database
 through the web interface, the number of stocks in the parts will be
 decremented.
 
-IMAGE
+![Mobile Application Diagram Mock up](Picture/App.PNG)
+
+Image 4: Displays Mobile Application Diagram
 
 This mockup diagram shows a general functionality of the mobile application. It
 shows how th**e** user can use the mobile application in order to navigate
@@ -1132,7 +1132,7 @@ a successful project:
 
  
 
-1. Prerequisites
+1.  Prerequisites
 
 -   A device running Android 4.0 (Ice Cream Sandwich) or newer, and Google Play
     services 10.2.1 or higher
@@ -1146,7 +1146,7 @@ version 1.5 or higher
 
 You can also check below as an example how your gradle build should look like:
 
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 /\*
 
 apply **plugin**: **'com.android.application'**  
@@ -1215,7 +1215,7 @@ allprojects {
 }
 
 \*/
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 It is also very important to set up the firebase with proper firebase libraries.
 Connect it in the right way to a firebase server I in order to have the
@@ -1227,7 +1227,7 @@ It is advisable that you use the latest version of Android Studio (version 2.2
 or later). In this way, you can use the Firebase Assistant in order to connect
 your app to Firebase instead of doing it manually.
 
-1. Use the Firebase Assistant
+1.  Use the Firebase Assistant
 
 -   Click **Tools \> Firebase** to open the **Assistant** window.
 
@@ -1237,7 +1237,7 @@ your app to Firebase instead of doing it manually.
 -   Click the **Connect to Firebase** button to connect to Firebase and add the
     necessary code to your app.
 
-1. Manually adding Firebase using Firebase Console
+1.  Manually adding Firebase using Firebase Console
 
 **Prerequisites**
 
@@ -1246,13 +1246,13 @@ your app to Firebase instead of doing it manually.
 
 Steps:
 
-1. Create a Firebase project in the Firebase Console in case you are missing it.
-Or else if you already have a google project which is linked to your mobile
-application, all you have to do is click Import Google Project or create new
-project.
+1.  Create a Firebase project in the Firebase Console in case you are missing
+    it. Or else if you already have a google project which is linked to your
+    mobile application, all you have to do is click Import Google Project or
+    create new project.
 
-2. Click Add Firebase to your android mobile application and download the config
-file.
+2.  Click Add Firebase to your android mobile application and download the
+    config file.
 
  
 
@@ -1266,14 +1266,15 @@ Steps to download the config file:
 
 -   Click download in order to download the google-services.json
 
-3. Add the sdk by adding the rules to your root-level build.gradle file in order
-to include the google-services plugin then apply it at the bottom of the file in
-order to enable the gradle plugin. You can check the example attached above.
+1.  Add the sdk by adding the rules to your root-level build.gradle file in
+    order to include the google-services plugin then apply it at the bottom of
+    the file in order to enable the gradle plugin. You can check the example
+    attached above.
 
-4. Lastly, add these libraries under the dependencies for the Firebase SDK you
-want to use:
+2.  Lastly, add these libraries under the dependencies for the Firebase SDK you
+    want to use:
 
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 /\*
 
 'com.google.firebase:firebase-auth:9.6.0'  
@@ -1281,7 +1282,7 @@ want to use:
 ‘com.firebaseui:firebase-ui-database:0.4.0'
 
 \*/
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 2.5.9 Unit Testing
 ------------------
