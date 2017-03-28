@@ -331,6 +331,12 @@ Illustration/Diagrams
 
  
 
+Figure 1: System Diagram
+
+Figure 2: PCB
+
+Figure 3: Audio Amplifier/LED
+
 1. Introduction/Overview
 ========================
 
@@ -915,7 +921,7 @@ function. In our case, we are retrieving student numbers and each of the
 student’s parts and input that in a corresponding table.
 
   Here’s an example of the data snapshot function retrieving live student data
-and inserting it in a table. 
+and inserting it in a table.
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 /*
@@ -965,13 +971,13 @@ cell1.innerHTML+=""+key1+"";
 */
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-This function is also checking if a student has a part
-that is over 3 days old and if that returns true, it will add a yellow
-highlighter under its date for each student. The cell1,2, and 3 is how each
-student is getting inserted into each row of the table, cell1 is for the student
-number, cell2 is for the part’s date, and cell3 is for the last column which is
-the part number. The partR and dateR variables are the part and date that is
-getting retrieved from each student.
+This function is also checking if a student has a part that is over 3 days old
+and if that returns true, it will add a yellow highlighter under its date for
+each student. The cell1,2, and 3 is how each student is getting inserted into
+each row of the table, cell1 is for the student number, cell2 is for the part’s
+date, and cell3 is for the last column which is the part number. The partR and
+dateR variables are the part and date that is getting retrieved from each
+student.
 
 As you can already tell, loops are the key for this function, here we have
 nested for loops each working together at corresponding rates in order to
@@ -1074,7 +1080,199 @@ instantly to the input field.   
 
 <https://github.com/rafyo127/rafyo127.github.io/tree/master/web_interface>
 
-2.5.8 Unit Testing
+2.5.8 Mobile Application
+------------------------
+
+### Introduction
+
+Our project plan is to create a mobile application to help keep track of all the
+parts (inventory) in the parts crib. This mobile application will consist of a
+table list all the parts in the parts crib. All parts in the parts crib will be
+put in a database. Each part (item) will have a column with the number (\#) of
+its parts that remain in the parts crib. This build log instruction will
+basically show the functionality of the mobile application, how we created the
+mobile application and how are we going to implement the inventory firebase. The
+admin should be able to use the mobile application in order to see which parts
+are signed out from the inventory. Once the parts are removed from the database
+through the web interface, the number of stocks in the parts will be
+decremented.
+
+IMAGE
+
+This mockup diagram shows a general functionality of the mobile application. It
+shows how th**e** user can use the mobile application in order to navigate
+throughout.  In order to access the inventory, the admin does not need to login.
+He can have a free access to the inventory database. In the database where he
+can sign out, return or view the database, he needs to login using his email
+address and password. After login, the user will automatically get navigated to
+the database section where he can choose what he wants to do. If he wants to
+sign out a part, all he has to do is enter his student number and the part
+number and that record will be added inside the view database. He can check it
+by selecting the view database in order to view the full database with all the
+records including the specific ones he recently signed out. He can then select
+the return items/delete where he can remove the record (student number and
+parts) by using the student number. We also have a logout button which will
+allow the user to log out from the mobile application at the end of the work
+day.
+
+ 
+
+### Gradle Build and Firebase Setup with Libraries
+
+The gradle should be built properly in order to build the project successfully.
+Make sure you have those prerequisites in order to proceed and create and build
+a successful project:
+
+ 
+
+1. Prerequisites
+
+-   A device running Android 4.0 (Ice Cream Sandwich) or newer, and Google Play
+    services 10.2.1 or higher
+
+-   The Google Play services SDK from the **Google Repository**, available in
+    the [Android SDK
+    Manager](https://developer.android.com/studio/intro/update.html#sdk-manager)
+
+The latest version of [Android Studio](http://developer.android.com/sdk),
+version 1.5 or higher
+
+You can also check below as an example how your gradle build should look like:
+
+/\*
+
+apply **plugin**: **'com.android.application'**  
+  
+android {  
+    compileSdkVersion 24  
+    buildToolsVersion **'25.0.0'**  
+  
+**   ** defaultConfig {  
+        applicationId **"humberparts.walkingprogrammers"**  
+**       ** minSdkVersion 19  
+        targetSdkVersion 24  
+        versionCode 1  
+        versionName **"1.0"**  
+  
+**       ** testInstrumentationRunner
+**"android.support.test.runner.AndroidJUnitRunner"**  
+**       ** testInstrumentationRunner
+**"android.support.test.runner.AndroidJUnitRunner"**  
+  
+**   ** }  
+    buildTypes {  
+        release {  
+            minifyEnabled **false**  
+**           ** proguardFiles
+getDefaultProguardFile(**'proguard-android.txt'**), **'proguard-rules.pro'**  
+**       ** }  
+    }  
+}  
+  
+dependencies {  
+    compile fileTree(**dir**: **'libs'**, **include**: [**'\*.jar'**])  
+   
+androidTestCompile(**'com.android.support.test.espresso:espresso-core:2.2.2'**,
+{  
+        exclude **group**: **'com.android.support'**, **module**:
+**'support-annotations'**  
+**   ** })  
+  
+  
+    compile **'com.google.gms:google-services:3.0.0'**  
+**   ** compile **'com.android.support:appcompat-v7:24.2.1'**  
+**   ** compile **'com.android.support:design:24.2.1'**  
+**   ** compile **'com.google.firebase:firebase-auth:9.6.0'**  
+**   ** compile **'com.google.firebase:firebase-database:9.6.0'**  
+**   ** compile **'com.firebaseui:firebase-ui-database:0.4.0'**  
+**   ** testCompile **'junit:junit:4.12'**  
+}  
+  
+buildscript {  
+    dependencies {  
+        classpath **'com.android.tools.build:gradle:2.3.0'**  
+**       ** classpath **'com.google.gms:google-services:3.0.0'**  
+**   ** }  
+    repositories {  
+        jcenter()  
+    }  
+}  
+  
+apply **plugin**: **'com.google.gms.google-services'**  
+  
+allprojects {  
+    repositories {  
+        jcenter()  
+    }  
+}
+
+\*/
+
+It is also very important to set up the firebase with proper firebase libraries.
+Connect it in the right way to a firebase server I in order to have the
+functionality of fetching live data from the database.
+
+### Steps on how to add firebase to your project:
+
+It is advisable that you use the latest version of Android Studio (version 2.2
+or later). In this way, you can use the Firebase Assistant in order to connect
+your app to Firebase instead of doing it manually.
+
+1. Use the Firebase Assistant
+
+-   Click **Tools \> Firebase** to open the **Assistant** window.
+
+-   Click to expand one of the listed features (for example, Analytics), then
+    click the provided tutorial link (for example, Log an Analytics event).
+
+-   Click the **Connect to Firebase** button to connect to Firebase and add the
+    necessary code to your app.
+
+1. Manually adding Firebase using Firebase Console
+
+**Prerequisites**
+
+-   You will need a Firebase project and a Firebase configuration file for the
+    mobile application.
+
+Steps:
+
+1. Create a Firebase project in the Firebase Console in case you are missing it.
+Or else if you already have a google project which is linked to your mobile
+application, all you have to do is click Import Google Project or create new
+project.
+
+2. Click Add Firebase to your android mobile application and download the config
+file.
+
+ 
+
+Steps to download the config file:
+
+-   Open the project by signing in to Firebase
+
+-   Select setting and click on project settings
+
+-   Select the package name of the mobile application in the Your apps card
+
+-   Click download in order to download the google-services.json
+
+3. Add the sdk by adding the rules to your root-level build.gradle file in order
+to include the google-services plugin then apply it at the bottom of the file in
+order to enable the gradle plugin. You can check the example attached above.
+
+4. Lastly, add these libraries under the dependencies for the Firebase SDK you
+want to use:
+
+/\*
+
+'com.google.firebase:firebase-auth:9.6.0'  
+'com.google.firebase:firebase-database:9.6.0'  
+‘com.firebaseui:firebase-ui-database:0.4.0'
+
+\*/
+
+2.5.9 Unit Testing
 ------------------
 
 The uniting testing begins the PCB as mentioned in the power up. It is
@@ -1392,8 +1590,8 @@ Expected Results:
 
 As expected
 
-2.5.9 Production Testing
-------------------------
+2.5.10 Production Testing
+-------------------------
 
 The production testing is fairly simple. Run the barcode program bar\_code.py
 and place a barcode in front of the webcam. In addition, focus the webcam
