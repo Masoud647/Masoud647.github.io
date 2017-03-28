@@ -941,8 +941,8 @@ ref.once("value").then(function(snapshot) {
 					partCount++;
 				}//if
 			}//for
-			cell2.innerHTML+='<hr>'; 
-			cell3.innerHTML+='<hr>'; 
+			cell2.innerHTML+="'<hr>'"; 
+			cell3.innerHTML+="'<hr>'"; 
 			//number of students
 			itemN.innerHTML=numChild;
 			//number of parts in total 
