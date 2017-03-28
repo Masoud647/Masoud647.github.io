@@ -859,25 +859,20 @@ After doing so, your server should be firebase ready!
 ### Creating a firebase account
 
  
-
 In order to view your database and work with it from your web interface, you’ll
 need to link your firebase account to the web application’s servers.
 
  
-
 You can do so by signing into your firebase account and clicking on “New
 Project” and following the instruction on the screen.
 
- 
 
 ### Initializing firebase
 
- 
 
 To add and retrieve data from firebase, you’ll need to initialize the correct
 configuration keys on each web interface page you’ll be using it in.
 
- 
 
 An example might look like this:
 <pre><code>
@@ -894,12 +889,10 @@ messagingSenderId: "XXXXXXXXXXXXXXX”
 </pre></code>
 Where ref will be where you’re going to be referencing data from every time you
 want to add retrieve data.
-
  
 
 ### Retrieving data from firebase
 
- 
 
 Once we have the database reference from firebase, we can now retrieve whatever
 we have up in the database. Receiving data is called data snapshots in firebase,
@@ -910,7 +903,6 @@ function. In our case, we are retrieving student numbers and each of the
 student’s parts and input that in a corresponding table.
 
  
-
 Here’s an example of the data snapshot function retrieving live student data and
 inserting it in a table.
 <pre><code>
@@ -940,17 +932,17 @@ ref.once("value").then(function(snapshot) {
 					var diffDays = Math.round(Math.abs((date_now.getTime() - date_old.getTime())/(oneDay)));
 					if(diffDays > 3){
 						//more than 3 days old
-						cell2.innerHTML+="<mark>"+dateR+"</mark><br>";
+						cell2.innerHTML+="<mark>"+dateR+"</mark><br></br>";
 					}else{
 						//less than 3 days old
-						cell2.innerHTML+=dateR+"<br>";	
+						cell2.innerHTML+=dateR+"<br></br>
 					}//else
-					cell3.innerHTML+=partR+"<br>";
+					cell3.innerHTML+=partR+"<br></br>";
 					partCount++;
 				}//if
 			}//for
-			cell2.innerHTML+="<hr>"; 
-			cell3.innerHTML+="<hr>"; 
+			cell2.innerHTML+="<hr></hr>"; 
+			cell3.innerHTML+="<hr></hr>"; 
 			//number of students
 			itemN.innerHTML=numChild;
 			//number of parts in total 
@@ -963,7 +955,7 @@ ref.once("value").then(function(snapshot) {
   	}); //snapshot
 </pre></code>
 
-  This function is also checking if a student has a part that is over 3 days old
+This function is also checking if a student has a part that is over 3 days old
 and if that returns true, it will add a yellow highlighter under its date for
 each student. The cell1,2, and 3 is how each student is getting inserted into
 each row of the table, cell1 is for the student number, cell2 is for the part’s
@@ -1007,23 +999,19 @@ would take the input from the input id ‘part+i’ (I as in number) and we add 
 into the database. The date is added using the Date() function as it is build in
 within the JavaScript API.
 
- 
 
 ### Getting the scanner to work with the web interface
 
- 
 
 To get started with the virtual barcode scanner, you’ll need to combine what we
 have build from last semester and use it to scan data and send it to firebase
 which we can then retrieve it and display it instantly on the screen using the
 .focus() Jquery function so that the barcode scanned will be instantly displayed
 to the web interface application when the user focuses on a certain field.
-
  
 
 ### Installing the python-firebase library on a raspberry Pi
 
- 
 
 Installing the firebase-python library is fairly easy and can be done using the
 following commands:
@@ -1033,7 +1021,6 @@ Sudo pip install python-firebase
 </pre></code>
 ### Creating the python executable file to scan and send data to the database
 
- 
 
 Programming in python is much easier than programming in any other language, to
 set up firebase, all that is required is to import the firebase library and then
@@ -1047,12 +1034,10 @@ When you need to send data use the following code:
 firebase.put('dir/path','value', symbol.data)
 </pre></code>
 where ‘smybol.data’ is a variable that holds the scanned barcode information.
-
  
 
 ### Setting up the web interface to retrieve scanned barcode
 
- 
 
 When your raspberry Pi is correctly sending data, all we have to do now is to
 create a function that will take the data and do something with it on a trigger.
@@ -1075,17 +1060,14 @@ with ‘part0’ id is set on focus and if everything returns a true, it will
 retrieve a value from the scanned value by the raspberry Pi and input that value
 instantly to the input field.   
 
- 
 
 ### Source files download
-
  
 
 ### All the files to the web interface can be found under my github page which is linked bellow
 
 <https://github.com/rafyo127/rafyo127.github.io/tree/master/web_interface>
 
- 
 
 2.5.8 Unit Testing
 ------------------
@@ -1179,14 +1161,12 @@ out items), search for a specific record, and show all the records in the
 database (View database) and deleting a record from the database (Return item)
 
  
-
 ### Test Cases
 
 We created a testplan with multiple test cases in order to see the functionality
 of the mobile application and check if everything is working as expected. The
 test cases are as follows:
 
- 
 
 ### Mobile Application
 
