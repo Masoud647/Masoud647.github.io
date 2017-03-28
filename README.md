@@ -6,8 +6,9 @@ title: "\\Humber Parts Crib Database by The Walking Programmers"
 author: "Rafil Yashooa, Masoud Rahguzar, Divesh Oree"
 ---
 
-Project Website: [Masoud647.github.io](https://masoud647.github.io/) Parts Crib
-Database \pagebreak
+Project Website: [Masoud647.github.io](https://masoud647.github.io/)
+
+Parts Crib Database \pagebreak
 
 Declaration of Joint Authorship
 -------------------------------
@@ -329,11 +330,13 @@ Recommendations](https://github.com/Masoud647/Masoud647.github.io#4-recommendati
 Illustration/Diagrams
 =====================
 
-Figure 1: System Diagram
+Image 1: System Diagram
 
-Figure 2: PCB
+Image 2: PCB
 
-Figure 3: Audio Amplifier/LED
+Image 3: Audio Amplifier/LED
+
+Image 4: Mobile Application Diagram Mock up
 
 \pagebreak
 
@@ -643,7 +646,9 @@ and then be placed in a database. Now understanding what the concept of the
 humber part crib database project is, the system diagram can be easily
 interpreted.
 
-![systemdiagram](Picture/Design.PNG)
+![System Diagram](Picture/Design.PNG)
+
+ 
 
 Image 1: This picture displays the system and how it works
 
@@ -790,6 +795,8 @@ fairly simple to complete because of the schematic which outlined where
 everything goes.
 
 ![PCB](Picture/PCB.PNG)
+
+ 
 
 Image 3: Displays the PCB and all its glory
 
@@ -1103,6 +1110,8 @@ through the web interface, the number of stocks in the parts will be
 decremented.
 
 ![Mobile Application Diagram Mock up](Picture/App.PNG)
+
+ 
 
 Image 4: Displays Mobile Application Diagram
 
