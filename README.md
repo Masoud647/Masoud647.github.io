@@ -1,9 +1,9 @@
 ---
 csl: apa.csl
-bibliography: RPiCitations.bib
-title: "Humber Parts Crib Database By: The Walking Programmers (Rafil Yashooa, Masoud Rahguzar, Divesh Oree) March 28th, 2017"
-auther: "Rafil Yashooa, Masoud Rahguzar, Divesh Oree"
 date: "March 28th, 2017"
+title: "Humber Parts Crib Database by The Walking Programmers"
+auther: "Rafil Yashooa, Masoud Rahguzar, Divesh Oree"
+bibliography: RPiCitations.bib
 ---
 
 \pagebreak   Parts Crib Database ===================
@@ -39,16 +39,16 @@ integrating the knowledge and skills we have learned from our program into this
 Internet of Things themed capstone project. This proposal requests the approval
 to build the hardware portion that will connect to a database as well as to a
 mobile device application. The internet connected hardware will include a custom
-PCB with sensors and actuators for Parts Crib Database. The database will
-store information of students who sign out items from the parts crib. The
-mobile device functionality will include list amount of each item in the parts
-crib and how many are left after being sign out and will be further detailed
-in the mobile application proposal. We will be collaborating with the following
-company/department Humber College Information Technology. In the winter
-semester we plan to form a group with the following students, who are also
-building similar hardware this term and working on the mobile application with
-the following group members Masoud Rahguzar, Rafil Yashooa and Divesh Oree.
-The hardware will be completed in CENG 317 Hardware Production Techniques
+PCB with sensors and actuators for Parts Crib Database. The database will store
+information of students who sign out items from the parts crib. The mobile
+device functionality will include list amount of each item in the parts crib and
+how many are left after being sign out and will be further detailed in the
+mobile application proposal. We will be collaborating with the following
+company/department Humber College Information Technology. In the winter semester
+we plan to form a group with the following students, who are also building
+similar hardware this term and working on the mobile application with the
+following group members Masoud Rahguzar, Rafil Yashooa and Divesh Oree. The
+hardware will be completed in CENG 317 Hardware Production Techniques
 independently and the application will be completed in CENG 319 Software
 Project.
 
@@ -126,62 +126,62 @@ each phase. A Gantt chart will be added by week 3 to provide more project
 schedule details and a more complete budget will be added by week 4. It is
 important to start tasks as soon as possible to be able to meet deadlines.
 
-| Labour Estimates                                                                      | Hrs        | Notes                                                                                                                      |
-|-------------------------------------------------------------------------------------------|----------------|--------------------------------------------------------------------------------------------------------------------------------|
-| Phase 1                                                                               |                |                                                                                                                                |
-| Writing proposal.                                                                         | 9              | Tech identification quiz.                                                                                                      |
-| Creating project schedule. Initial project team meeting.                                  | 9              | Proposal due.                                                                                                                  |
-| Creating budget. Status Meeting.                                                          | 9              | Project Schedule due.                                                                                                          |
-| Acquiring components and writing progress report.                                         | 9              | Budget due.                                                                                                                    |
-| Mechanical assembly and writing progress report. Status Meeting.                          | 9              | Progress Report due (components acquired milestone).                                                                           |
-| PCB fabrication.                                                                          | 9              | Progress Report due (Mechanical Assembly milestone).                                                                           |
-| Interface wiring, Placard design, Status Meeting.                                         | 9              | PCB Due (power up milestone).                                                                                                  |
-| Preparing for demonstration.                                                              | 9              | Placard due.                                                                                                                   |
-| Writing progress report and demonstrating project.                                        | 9              | Progress Report due (Demonstrations at Open House Saturday, November 7, 2015 from 10 a.m. - 2 p.m.).                           |
-| Editing build video.                                                                      | 9              | Peer grading of demonstrations due.                                                                                            |
-| Incorporation of feedback from demonstration and writing progress report. Status Meeting. | 9              | 30 second build video due.                                                                                                     |
-| Practice presentations                                                                    | 9              | Progress Report due.                                                                                                           |
-| 1st round of Presentations, Collaborators present.                                        | 9              | Presentation PowerPoint file due.                                                                                              |
-| 2nd round of Presentations                                                                | 9              | Build instructions up due.                                                                                                     |
-| Project videos, Status Meeting.                                                           | 9              | 30 second script due.                                                                                                          |
-| Phase 1 Total                                                                         | 135        |                                                                                                                                |
-| Phase 2                                                                               |                |                                                                                                                                |
-| Meet with collaborators                                                                   | 9              | Status Meeting                                                                                                                 |
-| Initial integration.                                                                      | 9              | Progress Report                                                                                                                |
-| Meet with collaborators                                                                   | 9              | Status Meeting                                                                                                                 |
-| Testing.                                                                                  | 9              | Progress Report                                                                                                                |
-| Meet with collaborators                                                                   | 9              | Status Meeting                                                                                                                 |
-| Meet with collaborators                                                                   | 9              | Status Meeting                                                                                                                 |
-| Incorporation of feedback.                                                                | 9              | Progress Report                                                                                                                |
-| Meet with collaborators                                                                   | 9              | Status Meeting                                                                                                                 |
-| Testing.                                                                                  | 9              | Progress Report                                                                                                                |
-| Meet with collaborators                                                                   | 9              | Status Meeting                                                                                                                 |
-| Prepare for demonstration.                                                                | 9              | Progress Report                                                                                                                |
-| Complete presentation.                                                                    | 9              | Demonstration at Open House Saturday, April 9, 2016 10 a.m. to 2 p.m.                                                          |
-| Complete final report. 1st round of Presentations.                                        | 9              | Presentation PowerPoint file due.                                                                                              |
-| Write video script. 2nd round of Presentations, delivery of project.                      | 9              | Final written report including final budget and record of expenditures, covering both this semester and the previous semester. |
-| Project videos.                                                                           | 9              | Video script due                                                                                                               |
-| Phase 2 Total                                                                         | 135        |                                                                                                                                |
-| Phase 3                                                                               |                |                                                                                                                                |
-| Interviews                                                                                | TBD            |                                                                                                                                |
-| Phase 3 Total                                                                         | TBD        |                                                                                                                                |
-| Material Estimates                                                                    | Cost       | Notes                                                                                                                      |
-| Phase 1                                                                               |                |                                                                                                                                |
-| Raspberry Pi 3.0(Kit), HDMI, Webcam, LED lights, PCB, Speaker                             | 189            |                                                                                                                                |
-| Peripherals with cables                                                                   |                |                                                                                                                                |
-| Sensors                                                                                   |                |                                                                                                                                |
-|                                                                                           |                |                                                                                                                                |
-|                                                                                           |                |                                                                                                                                |
-| Phase 1 Total                                                                         | \>\$200.00 |                                                                                                                                |
-| Phase 2                                                                               |                |                                                                                                                                |
-| Materials to improve functionality, fit, and finish of project.                           |                |                                                                                                                                |
-| Phase 2 Total                                                                         | TBD        |                                                                                                                                |
-| Phase 3                                                                               |                |                                                                                                                                |
-| Off campus colocation                                                                     | N/A            | N/A                                                                                                                            |
-| Shipping                                                                                | 25           |                                                                                                                                |
-| Tax                                                                                     | 18           |                                                                                                                                |
-| Duty                                                                                    | N/A          |                                                                                                                                |
-| Phase 3 Total                                                                         | 43         |                                                                                                                                |
+| Labour Estimates                                                                          | Hrs        | Notes                                                                                                                          |
+|-------------------------------------------------------------------------------------------|------------|--------------------------------------------------------------------------------------------------------------------------------|
+| Phase 1                                                                                   |            |                                                                                                                                |
+| Writing proposal.                                                                         | 9          | Tech identification quiz.                                                                                                      |
+| Creating project schedule. Initial project team meeting.                                  | 9          | Proposal due.                                                                                                                  |
+| Creating budget. Status Meeting.                                                          | 9          | Project Schedule due.                                                                                                          |
+| Acquiring components and writing progress report.                                         | 9          | Budget due.                                                                                                                    |
+| Mechanical assembly and writing progress report. Status Meeting.                          | 9          | Progress Report due (components acquired milestone).                                                                           |
+| PCB fabrication.                                                                          | 9          | Progress Report due (Mechanical Assembly milestone).                                                                           |
+| Interface wiring, Placard design, Status Meeting.                                         | 9          | PCB Due (power up milestone).                                                                                                  |
+| Preparing for demonstration.                                                              | 9          | Placard due.                                                                                                                   |
+| Writing progress report and demonstrating project.                                        | 9          | Progress Report due (Demonstrations at Open House Saturday, November 7, 2015 from 10 a.m. - 2 p.m.).                           |
+| Editing build video.                                                                      | 9          | Peer grading of demonstrations due.                                                                                            |
+| Incorporation of feedback from demonstration and writing progress report. Status Meeting. | 9          | 30 second build video due.                                                                                                     |
+| Practice presentations                                                                    | 9          | Progress Report due.                                                                                                           |
+| 1st round of Presentations, Collaborators present.                                        | 9          | Presentation PowerPoint file due.                                                                                              |
+| 2nd round of Presentations                                                                | 9          | Build instructions up due.                                                                                                     |
+| Project videos, Status Meeting.                                                           | 9          | 30 second script due.                                                                                                          |
+| Phase 1 Total                                                                             | 135        |                                                                                                                                |
+| Phase 2                                                                                   |            |                                                                                                                                |
+| Meet with collaborators                                                                   | 9          | Status Meeting                                                                                                                 |
+| Initial integration.                                                                      | 9          | Progress Report                                                                                                                |
+| Meet with collaborators                                                                   | 9          | Status Meeting                                                                                                                 |
+| Testing.                                                                                  | 9          | Progress Report                                                                                                                |
+| Meet with collaborators                                                                   | 9          | Status Meeting                                                                                                                 |
+| Meet with collaborators                                                                   | 9          | Status Meeting                                                                                                                 |
+| Incorporation of feedback.                                                                | 9          | Progress Report                                                                                                                |
+| Meet with collaborators                                                                   | 9          | Status Meeting                                                                                                                 |
+| Testing.                                                                                  | 9          | Progress Report                                                                                                                |
+| Meet with collaborators                                                                   | 9          | Status Meeting                                                                                                                 |
+| Prepare for demonstration.                                                                | 9          | Progress Report                                                                                                                |
+| Complete presentation.                                                                    | 9          | Demonstration at Open House Saturday, April 9, 2016 10 a.m. to 2 p.m.                                                          |
+| Complete final report. 1st round of Presentations.                                        | 9          | Presentation PowerPoint file due.                                                                                              |
+| Write video script. 2nd round of Presentations, delivery of project.                      | 9          | Final written report including final budget and record of expenditures, covering both this semester and the previous semester. |
+| Project videos.                                                                           | 9          | Video script due                                                                                                               |
+| Phase 2 Total                                                                             | 135        |                                                                                                                                |
+| Phase 3                                                                                   |            |                                                                                                                                |
+| Interviews                                                                                | TBD        |                                                                                                                                |
+| Phase 3 Total                                                                             | TBD        |                                                                                                                                |
+| Material Estimates                                                                        | Cost       | Notes                                                                                                                          |
+| Phase 1                                                                                   |            |                                                                                                                                |
+| Raspberry Pi 3.0(Kit), HDMI, Webcam, LED lights, PCB, Speaker                             | 189        |                                                                                                                                |
+| Peripherals with cables                                                                   |            |                                                                                                                                |
+| Sensors                                                                                   |            |                                                                                                                                |
+|                                                                                           |            |                                                                                                                                |
+|                                                                                           |            |                                                                                                                                |
+| Phase 1 Total                                                                             | \>\$200.00 |                                                                                                                                |
+| Phase 2                                                                                   |            |                                                                                                                                |
+| Materials to improve functionality, fit, and finish of project.                           |            |                                                                                                                                |
+| Phase 2 Total                                                                             | TBD        |                                                                                                                                |
+| Phase 3                                                                                   |            |                                                                                                                                |
+| Off campus colocation                                                                     | N/A        | N/A                                                                                                                            |
+| Shipping                                                                                  | 25         |                                                                                                                                |
+| Tax                                                                                       | 18         |                                                                                                                                |
+| Duty                                                                                      | N/A        |                                                                                                                                |
+| Phase 3 Total                                                                             | 43         |                                                                                                                                |
 
 Concluding remarks
 ------------------
@@ -313,7 +313,7 @@ Reports](https://github.com/Masoud647/Masoud647.github.io#26-progress-reports)
 [4.
 Recommendations](https://github.com/Masoud647/Masoud647.github.io#4-recommendationshttps://github.com/Masoud647/Masoud647.github.io#5-progress-reports)
 
-5. References
+1.  References
 
  
 
@@ -678,7 +678,7 @@ and will be easier to understand.
 
 Time Commitment Schedule:
 
-| Tasks                 | Time Required           |
+| Tasks                     | Time Required               |
 |---------------------------|-----------------------------|
 | Ordering Parts & Delivery | 2 Weeks                     |
 | Raspberry Pi Setup        | 1 hour                      |
@@ -713,17 +713,9 @@ updates from the developers.
 
 First of all, you’ll need to install python and the python/zbar library using
 the following commands:
-<pre><code>
-sudo apt-get install python-dev
 
-sudo apt-get install python-pip
-</pre></code>
 Next, you’ll need to install pillow
-<pre><code>
-sudo apt-get install python-pip
 
-sudo apt-get install python-httplib2
-</pre></code>
 After, go ahead and download the zbar library from this github
 account:[Here](https://github.com/npinchot/zbar)
 
@@ -828,11 +820,7 @@ doesn’t provide much.
 
 The first thing to do is to update your raspberry Pi to the latest settings, you
 can do so by the following commands:
-<pre><code>
-sudo apt-get update 
 
-sudo apt-get upgrade
-</pre></code>
 you’ll want to do this as updating software gets rid of unwanted bugs that could
 lead to Malicious data being stoned inside your cache.
 
@@ -881,20 +869,6 @@ configuration keys on each web interface page you’ll be using it in.
 
 An example might look like this:
 
-<pre><code>
-<script> // Initialize Firebase 
-var config = { apiKey: "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX", 
-authDomain: "humberparts.firebaseapp.com", 
-databaseURL: "https://humberparts.firebaseio.com", 
-storageBucket: "humberparts.appspot.com", 
-messagingSenderId: "XXXXXXXXXXXXXXX”
-};
- firebase.initializeApp(config);
- var ref = firebase.database().ref("pathTo/folder/");
-</script>
-
-</pre></code>
-
 Where ref will be where you’re going to be referencing data from every time you
 want to add retrieve data.
 
@@ -917,58 +891,7 @@ student’s parts and input that in a corresponding table.
 Here’s an example of the data snapshot function retrieving live student data and
 inserting it in a table.
 
-<pre><code>
-ref.once("value").then(function(snapshot) {
-		var i=0;
-		var index=0;
-		var count=0;
-		var partCount=0;
-		snapshot.forEach(function(childSnapshot) {
-			//number of children
-			var numChild = snapshot.numChildren();
-      			var key1 = [childSnapshot.key];
-      			// childData will be the actual contents of the child
-      			var childData = childSnapshot.val();
-			var dateR = snapshot.child(key1.toString()).child("date"+count).val();
-			var partR = snapshot.child(key1.toString()).child("part"+count).val();
-			cell1.innerHTML+="<b>"+key1+"<b><br>";
-			
-			for(var i=0;i<20;i++){
-				if(snapshot.child(key1.toString()).child("date"+i).val()==null){
-					//do nothing
-				}else{
-					dateR = snapshot.child(key1.toString()).child("date"+i).val();
-					partR = snapshot.child(key1.toString()).child("part"+i).val();
-					cell1.innerHTML+="<br>";
-					date_old = new Date(dateR.toString());
-					var diffDays = Math.round(Math.abs((date_now.getTime() - date_old.getTime())/(oneDay)));
-					if(diffDays > 3){
-						//more than 3 days old
-						cell2.innerHTML+="<mark>"+dateR+"</mark><br>";
-					}else{
-						//less than 3 days old
-						cell2.innerHTML+=dateR+"<br>";	
-					}//else
-					cell3.innerHTML+=partR+"<br>";
-					partCount++;
-				}//if
-			}//for
-			cell2.innerHTML+="<hr>"; 
-			cell3.innerHTML+="<hr>"; 
-			//number of students
-			itemN.innerHTML=numChild;
-			//number of parts in total 
-			part_num.innerHTML=partCount;
-			//add to array for search
-			arr[index]=key1.toString();
-			index++;
-			count++;
-  		}); //childSnapshot
-  	}); //snapshot
-
-</pre></code>
- 
-This function is also checking if a student has a part that is over 3 days old
+  This function is also checking if a student has a part that is over 3 days old
 and if that returns true, it will add a yellow highlighter under its date for
 each student. The cell1,2, and 3 is how each student is getting inserted into
 each row of the table, cell1 is for the student number, cell2 is for the part’s
@@ -987,9 +910,7 @@ again need your firebase configuration identifiers and your reference variable
 will have to set to where you’ll want to add data. Next, you’ll want to create
 element identifiers so that you can get input from the html input field and use
 them in JavaScript as strings, to do so use the following code:
-<pre><code>
-Var id = document.getElementById("student\_id").value;
-</pre></code>
+
 In my case, the ‘id’ variable is the student’s id and that’s what’s going to be
 added to the database including the part number provided that same way. To this
 data to the database, we will have to use the .update() function because using
@@ -997,15 +918,7 @@ the .set() function will delete all the older data and only display what’s new
 added.
 
 Function source code:
-<pre><code>
-		if(document.getElementById("part"+i).value !=null){
-	    		firebase.database().ref("dirTest/test2/"+id).update({
-				date0: date_p.toString(),
-				part0: document.getElementById("part"+i).value
-	    		});
-		}//1
 
-</pre></code>
 This if statement is first checking if the input field is null or empty, and if
 that returns a true, it will skip to the next field because we don’t want to be
 adding null fields in our database. But however, if the input wasn’t empty, it
@@ -1035,12 +948,6 @@ Installing the firebase-python library is fairly easy and can be done using the
 following commands:
 
  
-<pre><code>
-Sudo pip install requests 
-
-Sudo pip install python-firebase
-</pre></code>
- 
 
 ### Creating the python executable file to scan and send data to the database
 
@@ -1051,9 +958,6 @@ set up firebase, all that is required is to import the firebase library and then
 use the following code to connect it to your own database:
 
  
-<pre><code>
-firebase = firebase.FirebaseApplication('https://yourfirebase.firebaseio.com',None)
-</pre></code>
 
  
 
@@ -1061,10 +965,6 @@ firebase = firebase.FirebaseApplication('https://yourfirebase.firebaseio.com',No
 
             When you need to send data use the following code:
 
- 
-<pre><code>
-firebase.put('dir/path','value', symbol.data)
-</pre></code>
  
 
 where ‘smybol.data’ is a variable that holds the scanned barcode information.
@@ -1078,19 +978,7 @@ where ‘smybol.data’ is a variable that holds the scanned barcode information
 When your raspberry Pi is correctly sending data, all we have to do now is to
 create a function that will take the data and do something with it on a trigger.
 This trigger is going to be using the focus() Jquery function.
-<pre><code>
-if($("#part0").length){
-                $("#part0").focus(function() {
-                        //display the value
-                        ref2.once("value").then(function(snapshot) {
-                                snapshot.forEach(function(childSnapshot) {                                             
-                                        document.getElementById("part0").value=childSnapshot.val();       
-                                }); //childSnapshot
-                        }); //snapshot
-                });
-        }//if
 
-</pre></code>
 This function first checks if the element id exists, then checks if the field
 with ‘part0’ id is set on focus and if everything returns a true, it will
 retrieve a value from the scanned value by the raspberry Pi and input that value
@@ -1098,7 +986,7 @@ instantly to the input field.   
 
  
 
-### Source files download 
+### Source files download
 
  
 
@@ -1129,8 +1017,7 @@ page. The program can run by typing “python bar\_code.py” in the command lin
 JUnit testing can also be used in order to check the mobile application. But
 these requires some steps:
 
- 
-1.      Set up your testing environment
+  1.      Set up your testing environment
 
 You must have a directory module-name`/src/test/java/` where you must store the
 source files for the local unit tests under the Android Studio project. It is
@@ -1141,62 +1028,11 @@ use the standard APIs provided by the JUnit 4 framework.
  
 
 2.      Add libraries under dependencies
-<pre><code>
-dependencies {
-    // Required -- JUnit 4 framework
-    testCompile 'junit:junit:4.12'
-    // Optional -- Mockito framework
-    testCompile 'org.mockito:mockito-core:1.10.19'
-}
-</pre></code>
 
 3.      Create a local unit test class
 
 For instance, you can follow this example for sampling purposes:
-<pre><code>
-package humberparts.walkingprogrammers;
 
-import android.content.Context;
-import android.test.InstrumentationTestCase;
-
-import org.junit.Assert;
-import org.junit.Before;
-import org.junit.Test;
-
-import static org.junit.Assert.assertTrue;
-
-/**
- * Created by RAF on 2016-12-12.
- */
-public class DatabaseActivityTest extends InstrumentationTestCase {
-
-    private DatabaseActivity testDB= new DatabaseActivity(getInstrumentation().getTargetContext());
-
-    @Test
-    public void insertData() throws Exception {
-
-        assertTrue(testDB.insertData("n123","kk", "p123"));
-    }
-
-    @Test
-    public void search() throws Exception {
-
-        Assert.assertNotNull(testDB.search("n123"));
-    }
-
-    @Test
-    public void databaseViewer() throws Exception {
-        assertNotNull(testDB.databaseViewer());
-    }
-
-    @Test
-    public void deleteData() throws Exception {
-        assertNotNull(testDB.deleteData("n123"));
-
-    }
-
-}
-</pre></code>
 In this example, we tested the insertion of a new record in the database (Sign
 out items), search for a specific record, and show all the records in the
 database (View database) and deleting a record from the database (Return item)
@@ -1233,8 +1069,7 @@ Expected Results:
 
 As expected
 
- 
-Test Case \#2: Inventory Search
+  Test Case \#2: Inventory Search
 
 Purpose:
 
@@ -1252,7 +1087,6 @@ Enter the id number in the search on the toolbar and view that specific item
 Expected Results:
 
 As expected
-
 
 Test Case \#3: Decrement \# of stocks
 
@@ -1272,7 +1106,6 @@ Enter the student number and part number and click submit
 Expected Results:
 
 As expected
-
 
 Test Case \#4: View Database
 
@@ -1294,7 +1127,6 @@ Expected Results:
 
 As expected
 
-
 Test Case \#5: Settings
 
 Purpose:
@@ -1314,7 +1146,6 @@ Click on setting and the click on either “About us” or “Version \#”
 Expected Results:
 
 As expected
-
 
 Test Case \#6: Back Button
 
@@ -1357,8 +1188,7 @@ For example; admin and password: root
 
 Expected Results:
 
-As expected
- 
+As expected  
 
 Test Case \#2: Add Student
 
@@ -1378,7 +1208,6 @@ and click the submit button
 Expected Results:
 
 As expected
-
 
 Test Case \#3: Remove all Student parts
 
@@ -1400,8 +1229,7 @@ Expected Results:
 
 As expected
 
- 
-Test Case \#4: Remove Individual Student parts
+  Test Case \#4: Remove Individual Student parts
 
 Purpose:
 
@@ -1423,8 +1251,7 @@ Expected Results:
 
 As expected
 
- 
-Test Case \#5: Search student in view database
+  Test Case \#5: Search student in view database
 
 Purpose:
 
