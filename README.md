@@ -713,17 +713,17 @@ updates from the developers.
 
 First of all, you’ll need to install python and the python/zbar library using
 the following commands:
-
+<pre><code>
 sudo apt-get install python-dev
 
 sudo apt-get install python-pip
-
+</pre></code>
 Next, you’ll need to install pillow:
-
+<pre><code>
 sudo apt-get install python-pip
 
 sudo apt-get install python-httplib2
-
+</pre></code>
 After, go ahead and download the zbar library from this github
 account:[Here](https://github.com/npinchot/zbar)
 
@@ -828,10 +828,10 @@ doesn’t provide much.
 
 The first thing to do is to update your raspberry Pi to the latest settings, you
 can do so by the following commands:
-
+<pre><code>
 sudo apt-get update 
 sudo apt-get upgrade
-
+</pre></code>
 
 you’ll want to do this as updating software gets rid of unwanted bugs that could
 lead to Malicious data being stoned inside your cache.
@@ -851,9 +851,9 @@ And then adding it to working directory, don’t forget to change the file’s
 permission by executing the following command:
 
  
-
+<pre><code>
 Sudo chmod 711 firebase-client-jvm-2.0.2-sources.jar
-
+</pre></code>
 After doing so, your server should be firebase ready!
 
 ### Creating a firebase account
@@ -880,9 +880,10 @@ configuration keys on each web interface page you’ll be using it in.
  
 
 An example might look like this:
-
+<pre><code>
 <script> // Initialize Firebase 
-var config = { apiKey: "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX", authDomain: "humberparts.firebaseapp.com", 
+var config = { apiKey: "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX", 
+authDomain: "humberparts.firebaseapp.com", 
 databaseURL: "https://humberparts.firebaseio.com", 
 storageBucket: "humberparts.appspot.com", 
 messagingSenderId: "XXXXXXXXXXXXXXX”
@@ -890,7 +891,7 @@ messagingSenderId: "XXXXXXXXXXXXXXX”
  firebase.initializeApp(config);
  var ref = firebase.database().ref("pathTo/folder/");
 </script>
-
+</pre></code>
 Where ref will be where you’re going to be referencing data from every time you
 want to add retrieve data.
 
@@ -912,7 +913,7 @@ student’s parts and input that in a corresponding table.
 
 Here’s an example of the data snapshot function retrieving live student data and
 inserting it in a table.
-
+<pre><code>
 ref.once("value").then(function(snapshot) {
 		var i=0;
 		var index=0;
@@ -926,7 +927,7 @@ ref.once("value").then(function(snapshot) {
       			var childData = childSnapshot.val();
 			var dateR = snapshot.child(key1.toString()).child("date"+count).val();
 			var partR = snapshot.child(key1.toString()).child("part"+count).val();
-			cell1.innerHTML+="<b>"+key1+"<b><br>";
+			cell1.innerHTML+="<b>"+key1+"</b><br>";
 			
 			for(var i=0;i<20;i++){
 				if(snapshot.child(key1.toString()).child("date"+i).val()==null){
@@ -960,7 +961,7 @@ ref.once("value").then(function(snapshot) {
 			count++;
   		}); //childSnapshot
   	}); //snapshot
-
+</pre></code>
 
   This function is also checking if a student has a part that is over 3 days old
 and if that returns true, it will add a yellow highlighter under its date for
@@ -981,9 +982,9 @@ again need your firebase configuration identifiers and your reference variable
 will have to set to where you’ll want to add data. Next, you’ll want to create
 element identifiers so that you can get input from the html input field and use
 them in JavaScript as strings, to do so use the following code:
-
+<pre><code>
 Var id = document.getElementById("student_id").value;
-
+</pre></code>
 In my case, the ‘id’ variable is the student’s id and that’s what’s going to be
 added to the database including the part number provided that same way. To this
 data to the database, we will have to use the .update() function because using
@@ -991,14 +992,14 @@ the .set() function will delete all the older data and only display what’s new
 added.
 
 Function source code:
-
+<pre><code>
 if(document.getElementById("part"+i).value !=null){
 	    		firebase.database().ref("dirTest/test2/"+id).update({
 				date0: date_p.toString(),
 				part0: document.getElementById("part"+i).value
 	    		});
 		}//1
-
+</pre></code>
 This if statement is first checking if the input field is null or empty, and if
 that returns a true, it will skip to the next field because we don’t want to be
 adding null fields in our database. But however, if the input wasn’t empty, it
@@ -1026,10 +1027,10 @@ to the web interface application when the user focuses on a certain field.
 
 Installing the firebase-python library is fairly easy and can be done using the
 following commands:
-
+<pre><code>
 Sudo pip install requests 
 Sudo pip install python-firebase
-
+</pre></code>
 ### Creating the python executable file to scan and send data to the database
 
  
@@ -1037,14 +1038,14 @@ Sudo pip install python-firebase
 Programming in python is much easier than programming in any other language, to
 set up firebase, all that is required is to import the firebase library and then
 use the following code to connect it to your own database:
-
+<pre><code>
 firebase = firebase.FirebaseApplication('https://yourfirebase.firebaseio.com',None) 
+</pre></code>
 
-
-            When you need to send data use the following code:
-
- firebase.put('dir/path','value', symbol.data)
-
+When you need to send data use the following code:
+<pre><code>
+firebase.put('dir/path','value', symbol.data)
+</pre></code>
 where ‘smybol.data’ is a variable that holds the scanned barcode information.
 
  
@@ -1056,7 +1057,7 @@ where ‘smybol.data’ is a variable that holds the scanned barcode information
 When your raspberry Pi is correctly sending data, all we have to do now is to
 create a function that will take the data and do something with it on a trigger.
 This trigger is going to be using the focus() Jquery function.
-
+<pre><code>
 if($("#part0").length){
                 $("#part0").focus(function() {
                         //display the value
@@ -1068,7 +1069,7 @@ if($("#part0").length){
                 });
         }//if
 
-
+</pre></code>
 This function first checks if the element id exists, then checks if the field
 with ‘part0’ id is set on focus and if everything returns a true, it will
 retrieve a value from the scanned value by the raspberry Pi and input that value
@@ -1118,18 +1119,18 @@ use the standard APIs provided by the JUnit 4 framework.
  
 
 2.      Add libraries under dependencies
-
+<pre><code>
 dependencies {
     // Required -- JUnit 4 framework
     testCompile 'junit:junit:4.12'
     // Optional -- Mockito framework
     testCompile 'org.mockito:mockito-core:1.10.19'
 }
-
+</pre></code>
 3.      Create a local unit test class
 
 For instance, you can follow this example for sampling purposes:
-
+<pre><code>
 package humberparts.walkingprogrammers;
 
 import android.content.Context;
@@ -1172,7 +1173,7 @@ public class DatabaseActivityTest extends InstrumentationTestCase {
     }
 
 }
-
+</pre></code>
 In this example, we tested the insertion of a new record in the database (Sign
 out items), search for a specific record, and show all the records in the
 database (View database) and deleting a record from the database (Return item)
