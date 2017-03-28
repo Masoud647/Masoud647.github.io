@@ -2,7 +2,7 @@
 csl: apa.csl
 date: "March 28th, 2017"
 bibliography: RPiCitations.bib
-title: Humber Parts Crib Database by The Walking Programmers
+title: "\\Humber Parts Crib Database by The Walking Programmers"
 author: "Rafil Yashooa, Masoud Rahguzar, Divesh Oree"
 ---
 
@@ -331,8 +331,8 @@ Illustration/Diagrams
 
  
 
-1. Introduction/Overview 
-=========================
+1. Introduction/Overview
+========================
 
 The main point of this project is to create a new parts crib system that is more
 efficient and more advanced than just using paper slips to sign out item from
@@ -725,9 +725,13 @@ You’ll want to do this as your Raspberry Pi will get the latest patches and
 updates from the developers.
 
 First of all, you’ll need to install python and the python/zbar library using
-the following commands: \~\~ sudo apt-get install python-dev
+the following commands:
 
-sudo apt-get install python-pip \~\~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+sudo apt-get install python-dev
+
+sudo apt-get install python-pip 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Next, you’ll need to install pillow:
 
@@ -840,12 +844,9 @@ doesn’t provide much.
  
 
 The first thing to do is to update your raspberry Pi to the latest settings, you
-can do so by the following commands:
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
- sudo apt-get update sudo apt-get upgrade 
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-you’ll want to do this as updating software gets rid of unwanted bugs that could
-lead to Malicious data being stoned inside your cache.
+can do so by the following commands: \~\~\~ sudo apt-get update sudo apt-get
+upgrade \~\~\~ you’ll want to do this as updating software gets rid of unwanted
+bugs that could lead to Malicious data being stoned inside your cache.
 
  
 
@@ -877,20 +878,9 @@ Project” and following the instruction on the screen.
 To add and retrieve data from firebase, you’ll need to initialize the correct
 configuration keys on each web interface page you’ll be using it in.
 
-An example might look like this: 
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-<script> // Initialize Firebase 
-var config = { apiKey: "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
-authDomain: "humberparts.firebaseapp.com", 
-databaseURL: "https://humberparts.firebaseio.com", 
-storageBucket: "humberparts.appspot.com", 
-messagingSenderId: "XXXXXXXXXXXXXXX”
-};
- firebase.initializeApp(config);
- var ref = firebase.database().ref("pathTo/folder/");
-</script>
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+An example might look like this: \~\~\~\~
 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Where ref will be where you’re going to be referencing data from every time you
 want to add retrieve data.  
 
@@ -906,8 +896,8 @@ student’s parts and input that in a corresponding table.
 
   Here’s an example of the data snapshot function retrieving live student data
 and inserting it in a table.
-
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
 ref.once("value").then(function(snapshot) { var i=0; var index=0; var count=0;
 var partCount=0; snapshot.forEach(function(childSnapshot) { //number of children
 var numChild = snapshot.numChildren(); var key1 = [childSnapshot.key]; //
@@ -917,47 +907,47 @@ snapshot.child(key1.toString()).child("date"+count).val(); var partR =
 snapshot.child(key1.toString()).child("part"+count).val();
 cell1.innerHTML+=""+key1+"";
 
-
-        for(var i=0;i<20;i++){
-            if(snapshot.child(key1.toString()).child("date"+i).val()==null){
-                //do nothing
-            }else{
-                dateR = snapshot.child(key1.toString()).child("date"+i).val();
-                partR = snapshot.child(key1.toString()).child("part"+i).val();
-                cell1.innerHTML+="";
-                date_old = new Date(dateR.toString());
-                var diffDays = Math.round(Math.abs((date_now.getTime() - date_old.getTime())/(oneDay)));
-                if(diffDays > 3){
-                    //more than 3 days old
-                    cell2.innerHTML+=""+dateR+"";
-                }else{
-                    //less than 3 days old
-                    cell2.innerHTML+=dateR+"
-                }//else
-                cell3.innerHTML+=partR+"";
-                partCount++;
-            }//if
-        }//for
-        cell2.innerHTML+="''"; 
-        cell3.innerHTML+="''"; 
-        //number of students
-        itemN.innerHTML=numChild;
-        //number of parts in total 
-        part_num.innerHTML=partCount;
-        //add to array for search
-        arr[index]=key1.toString();
-        index++;
-        count++;
-    }); //childSnapshot
-}); //snapshot
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-This function is also checking if a student has a part that is over 3 days old
-and if that returns true, it will add a yellow highlighter under its date for
-each student. The cell1,2, and 3 is how each student is getting inserted into
-each row of the table, cell1 is for the student number, cell2 is for the part’s
-date, and cell3 is for the last column which is the part number. The partR and
-dateR variables are the part and date that is getting retrieved from each
-student.
+    for(var i=0;i<20;i++){
+        if(snapshot.child(key1.toString()).child("date"+i).val()==null){
+            //do nothing
+        }else{
+            dateR = snapshot.child(key1.toString()).child("date"+i).val();
+            partR = snapshot.child(key1.toString()).child("part"+i).val();
+            cell1.innerHTML+="";
+            date_old = new Date(dateR.toString());
+            var diffDays = Math.round(Math.abs((date_now.getTime() - date_old.getTime())/(oneDay)));
+            if(diffDays > 3){
+                //more than 3 days old
+                cell2.innerHTML+=""+dateR+"";
+            }else{
+                //less than 3 days old
+                cell2.innerHTML+=dateR+"
+            }//else
+            cell3.innerHTML+=partR+"";
+            partCount++;
+        }//if
+    }//for
+    cell2.innerHTML+="''"; 
+    cell3.innerHTML+="''"; 
+    //number of students
+    itemN.innerHTML=numChild;
+    //number of parts in total 
+    part_num.innerHTML=partCount;
+    //add to array for search
+    arr[index]=key1.toString();
+    index++;
+    count++;
+}); //childSnapshot
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+}); //snapshot \~\~\~\~ This function is also checking if a student has a part
+that is over 3 days old and if that returns true, it will add a yellow
+highlighter under its date for each student. The cell1,2, and 3 is how each
+student is getting inserted into each row of the table, cell1 is for the student
+number, cell2 is for the part’s date, and cell3 is for the last column which is
+the part number. The partR and dateR variables are the part and date that is
+getting retrieved from each student.
 
 As you can already tell, loops are the key for this function, here we have
 nested for loops each working together at corresponding rates in order to
@@ -981,20 +971,20 @@ data to the database, we will have to use the .update() function because using
 the .set() function will delete all the older data and only display what’s newly
 added.
 
-Function source code: 
+Function source code:
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 if(document.getElementById("part"+i).value !=null){
 firebase.database().ref("dirTest/test2/"+id).update({ date0: date\_p.toString(),
 part0: document.getElementById("part"+i).value }); }//1
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
- 
-This if statement is first checking if the input field is null or empty, and if that returns a
-true, it will skip to the next field because we don’t want to be adding null
-fields in our database. But however, if the input wasn’t empty, it would take
-the input from the input id ‘part+i’ (I as in number) and we add that into the
-database. The date is added using the Date() function as it is build in within
-the JavaScript API.
+
+This if statement is first checking if the input field is null or empty, and if
+that returns a true, it will skip to the next field because we don’t want to be
+adding null fields in our database. But however, if the input wasn’t empty, it
+would take the input from the input id ‘part+i’ (I as in number) and we add that
+into the database. The date is added using the Date() function as it is build in
+within the JavaScript API.
 
 ### Getting the scanner to work with the web interface
 
@@ -1007,11 +997,8 @@ to the web interface application when the user focuses on a certain field.  
 ### Installing the python-firebase library on a raspberry Pi
 
 Installing the firebase-python library is fairly easy and can be done using the
-following commands:
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-Sudo pip install requests 
-Sudo pip install python-firebase 
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+following commands: \~\~\~\~ Sudo pip install requests Sudo pip install
+python-firebase \~\~\~\~
 
 ### Creating the python executable file to scan and send data to the database
 
@@ -1023,19 +1010,19 @@ use the following code to connect it to your own database:
 firebase = firebase.FirebaseApplication('https://yourfirebase.firebaseio.com',None)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-When you need to send data use the following code: 
+When you need to send data use the following code:
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 firebase.put('dir/path','value', symbol.data)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
- 
+
 where ‘smybol.data’ is a variable that holds the scanned barcode information.  
 
 ### Setting up the web interface to retrieve scanned barcode
 
 When your raspberry Pi is correctly sending data, all we have to do now is to
 create a function that will take the data and do something with it on a trigger.
-This trigger is going to be using the focus() Jquery function. 
+This trigger is going to be using the focus() Jquery function.
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 if($("#part0").length){
@@ -1050,10 +1037,10 @@ if($("#part0").length){
         }//if
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-This function first checks if the element id exists, then checks if the field with ‘part0’ id is set
-on focus and if everything returns a true, it will retrieve a value from the
-scanned value by the raspberry Pi and input that value instantly to the input
-field.   
+This function first checks if the element id exists, then checks if the field
+with ‘part0’ id is set on focus and if everything returns a true, it will
+retrieve a value from the scanned value by the raspberry Pi and input that value
+instantly to the input field.   
 
 ### Source files download
 
@@ -1092,22 +1079,22 @@ normally already exists when you create a new project. Then you will have to
 configure the testing dependencies for your project so that it will be able to
 use the standard APIs provided by the JUnit 4 framework.
 
-2. Add libraries under dependencies
+1.  Add libraries under dependencies
 
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 dependencies {
     // Required -- JUnit 4 framework
     testCompile 'junit:junit:4.12'
     // Optional -- Mockito framework
     testCompile 'org.mockito:mockito-core:1.10.19'
 }
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-3. Create a local unit test class
+1.  Create a local unit test class
 
 For instance, you can follow this example for sampling purposes:
 
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 package humberparts.walkingprogrammers;
 
 import android.content.Context; import android.test.InstrumentationTestCase;
@@ -1147,10 +1134,9 @@ public void deleteData() throws Exception {
 }
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-In this example, we tested the insertion of a new record in the
-database (Sign out items), search for a specific record, and show all the
-records in the database (View database) and deleting a record from the database
-(Return item)
+In this example, we tested the insertion of a new record in the database (Sign
+out items), search for a specific record, and show all the records in the
+database (View database) and deleting a record from the database (Return item)
 
 ### Test Cases
 
