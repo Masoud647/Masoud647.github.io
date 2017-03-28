@@ -1622,7 +1622,9 @@ makes a total of \$264.97 for our project budget.
 
 Sincerely,
 
-Rafil Yashooa \pagebreak   3. Conclusions ==============
+Rafil Yashooa \pagebreak
+
+1.  Conclusions
 
 The project, Humber Parts Crib has been created to keep track of all items in
 the parts crib when items are lent out and returned back. The Humber Parts Crib
@@ -1634,7 +1636,9 @@ application will be able to display the inventory status of the parts crib,
 helping students determine if there is an item they want in the parts crib. The
 website application will contain the administrative tools/control to be able to
 lend out and return items which will be used by the employee at the parts crib.
-\pagebreak   4. Recommendations ==================
+\pagebreak
+
+1.  Recommendations
 
 Throughout the creation process of our project there are recommendations that
 could be made if reproduced again.  The first being the web camera, having a
@@ -1646,5 +1650,4 @@ drawn out of from raspberry pi instead of a power outlet can help lessen the
 need of power cables and any other type of cable. Lastly, making the code much
 more efficient allowing for better results when scanning barcodes.
 
-5. References
-=============
+1.  References
