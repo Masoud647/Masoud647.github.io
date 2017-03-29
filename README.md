@@ -1857,7 +1857,8 @@ Sincerely,
 
 Rafil Yashooa \pagebreak
 
-1.  Conclusions
+3. Conclusion
+=============
 
 The project, Humber Parts Crib has been created to keep track of all items in
 the parts crib when items are lent out and returned back. The Humber Parts Crib
@@ -1871,7 +1872,8 @@ website application will contain the administrative tools/control to be able to
 lend out and return items which will be used by the employee at the parts crib.
 \pagebreak
 
-1.  Recommendations
+4. Recommendations
+==================
 
 Throughout the creation process of our project there are recommendations that
 could be made if reproduced again.  The first being the web camera, having a
@@ -1881,6 +1883,7 @@ for a smaller and compact case which can be portable if need. Secondly, have a
 better designed circuit board for the audio amplifier in which power can be
 drawn out of from raspberry pi instead of a power outlet can help lessen the
 need of power cables and any other type of cable. Lastly, making the code much
-more efficient allowing for better results when scanning barcodes.
+more efficient allowing for better results when scanning barcodes. \pagebreak
 
-1.  References
+5. References
+=============
